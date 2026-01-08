@@ -51,5 +51,7 @@ Implementation of various Dockerfile repair techniques.
 | **Hybrid DGR** | `hd_tool_LLM.py` | Hybrid DGR combining LLMs with rule-based tools |
 
 ## 🔄 Workflow
+Data Collection → Fast-build Filtering → Repair Application → Evaluation
 
-1. **Data Collection** → **Fast-build Filtering** → **Repair Application** → **Evaluation**
+## 📂 Data Availability
+The source code for the entire dataset collection and processing pipeline is provided in this repository (`dataset_build/` and `dataset_fast_build/`). The final, curated benchmark dataset used in our evaluation will be made publicly available upon the acceptance/publication of the associated research paper.
