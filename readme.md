@@ -28,13 +28,12 @@ Tools for evaluating the effectiveness of Dockerfile repairs.
 | `build_analyzer_pure_rules.py` | Analyzes which stage of Dockerfile builds fail |
 | `build.py` | Executes build tests for Dockerfiles |
 | `evaluate_smell_count.py` | Evaluates repair effectiveness by counting Dockerfile smells |
-| `hadolint.py` | Runs Hadolint to generate evaluation reports on Dockerfile quality |
+| `hadolint.py` | Runs Hadolint to generate evaluation reports on Dockerfile smells |
 
 ### 4. Storage Directories
 | Directory | Purpose |
 |-----------|---------|
 | `evaluate_result/` | Stores repair results and build outcomes |
-| (Other output directories) | Temporary files, logs, and intermediate results |
 
 ### 5. Repair Methods (`repair_methods/`)
 Implementation of various Dockerfile repair techniques.
