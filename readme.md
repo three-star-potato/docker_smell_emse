@@ -29,6 +29,8 @@ Tools for evaluating the effectiveness of Dockerfile repairs.
 | `build.py` | Executes build tests for Dockerfiles |
 | `evaluate_smell_count.py` | Evaluates repair effectiveness by counting Dockerfile smells |
 | `hadolint.py` | Runs Hadolint to generate evaluation reports on Dockerfile smells |
+| `train_data_get.py` | Generate dataset for Fine-tune |
+| `level.json` | Functionality and severity evaluation metrics |
 
 ### 4. Storage Directories
 | Directory | Purpose |
