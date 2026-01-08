@@ -1,0 +1,33 @@
+FROM ubuntu:22.04 AS base
+
+RUN apt-get -qq update && \
+    apt-get -qq install -y --no-install-recommends sbcl curl gcc libpng-dev git && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt
+RUN curl -s 'https://beta.quicklisp.org/quicklisp.lisp' > /opt/quicklisp.lisp && \
+    mkdir -p /opt/quicklisp && \
+    sbcl --noinform --load /opt/quicklisp.lisp \
+         --eval '(quicklisp-quickstart:install :path "/opt/quicklisp")' \
+         --eval '(sb-ext:quit)' && \
+    mkdir -p /opt/quicklisp/local-projects && \
+    mkdir -p /opt/data && \
+    apt-get -qq remove -y curl && \
+    apt-get -qq autoremove -y && \
+    apt-get -qq autoclean -y && \
+    rm -rf /var/lib/apt/lists/*
+
+FROM base AS build
+
+WORKDIR /opt
+COPY src quicklisp/local-projects/weird/src
+COPY test quicklisp/local-projects/weird/test
+COPY weird.asd quicklisp/local-projects/weird
+COPY run-tests.sh quicklisp/local-projects/weird/run-tests.sh
+RUN mkdir -p /root/quicklisp && ln -s /opt/quicklisp/setup.lisp /root/quicklisp/setup.lisp
+
+RUN git clone https://github.com/inconvergent/cl-veq.git quicklisp/local-projects/veq
+
+WORKDIR /opt/quicklisp/local-projects/weird
+
+CMD ["bash", "./run-tests.sh"]

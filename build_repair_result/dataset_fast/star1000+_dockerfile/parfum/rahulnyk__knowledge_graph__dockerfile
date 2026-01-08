@@ -1,0 +1,1 @@
+RUN curl -f -sSL https://install.python-poetry.org | python3 -

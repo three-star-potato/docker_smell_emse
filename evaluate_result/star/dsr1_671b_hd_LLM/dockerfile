@@ -1,0 +1,10 @@
+FROM node:18
+COPY . /root/typing-word
+WORKDIR /root/typing-word
+EXPOSE 3000
+# 设置npm镜像源以避免超时
+RUN npm config set registry https://registry.npmmirror.com/
+RUN npm install
+# 设置npm镜像源以避免超时
+RUN npm config set registry https://registry.npmmirror.com/
+CMD ["npm", "start"]

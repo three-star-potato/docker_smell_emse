@@ -1,0 +1,30 @@
+FROM python:3.12-alpine
+
+LABEL maintainer="Rhino Assessment Team <cloudgoat@rhinosecuritylabs.com>"
+LABEL cloudgoat.version="2.3.1"
+
+RUN apk add --no-cache \
+    bash \
+    bash-completion \
+    docker-bash-completion \
+    openssh \
+    curl \
+    unzip \
+    jq \
+    && ARCH=$(uname -m) \
+    && case "$ARCH" in \
+        x86_64) DOWNLOAD_URL="https://releases.hashicorp.com/terraform/1.11.2/terraform_1.11.2_linux_amd64.zip" ;; \
+        i686) DOWNLOAD_URL="https://releases.hashicorp.com/terraform/1.11.2/terraform_1.11.2_linux_386.zip" ;; \
+        aarch64) DOWNLOAD_URL="https://releases.hashicorp.com/terraform/1.11.2/terraform_1.11.2_linux_arm64.zip" ;; \
+        *) echo "Unsupported architecture: $ARCH" && exit 1 ;; \
+    esac \
+    && curl -L -o terraform.zip "$DOWNLOAD_URL" \
+    && unzip terraform.zip -d /usr/bin/ \
+    && rm terraform.zip \
+    && pip3 install --no-cache-dir awscli==1.38.11 --upgrade
+
+WORKDIR /usr/src/cloudgoat/
+COPY ./ ./
+RUN pip3 install --no-cache-dir .
+
+ENTRYPOINT ["/bin/bash"]

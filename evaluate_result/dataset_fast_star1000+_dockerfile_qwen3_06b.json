@@ -1,0 +1,512 @@
+[
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/google-gemini__gemini-fullstack-langgraph-quickstart__Dockerfile",
+    "issues": [
+      "-:26 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:26 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:26 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:52 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/danger__danger__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:16 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/1n3__blackwidow__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/fifocode__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/buffalowill__oxml_xxe__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/test_results_report.json",
+    "issues": [
+      "/dev/stdin:1:1 unexpected '[' expecting '#', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, end of input, or whitespaces"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/chrisleekr__binance-trading-bot__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:38 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:40 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:42 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:47 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/aaronjanse__asciidots__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tchiotludo__akhq__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/jokkedk__webgrind__Dockerfile",
+    "issues": [
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:5 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/mikemcquaid__strap__Dockerfile",
+    "issues": [
+      "/dev/stdin:58:1 unexpected 'G' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/awslabs__amazon-ecr-credential-helper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tailcallhq__tailcall__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/hiifeng__V2ray-for-Doprax__Dockerfile",
+    "issues": [
+      "-:5 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/brainmaestro__composer-git-hooks__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/LanQian528__chat2api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/zhayujie__bot-on-anything__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/opengs__uashield__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/rstudio__plumber__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/datalux__osintgram__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/why2lyj__youxiang-itchat__Dockerfile",
+    "issues": [
+      "-:4 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:13 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/egzumer__uv-k5-firmware-custom__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:1 DL3029 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use --platform flag with FROM"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/consumet__api.consumet.org__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/steveltn__https-portal__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:30 SC2006 \u001b[96mstyle\u001b[0m: Use $(...) notation instead of legacy backticks `...`.",
+      "-:38 SC2006 \u001b[96mstyle\u001b[0m: Use $(...) notation instead of legacy backticks `...`.",
+      "-:47 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/zhangmingzhao1__streamerhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/enablesecurity__wafw00f__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/eko__monday__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/friendsofphp__php-cs-fixer__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments",
+      "-:48 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected test to end here (don't wrap commands in []/[[]]). Fix any mentioned problems and try again."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/q191201771__lal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/davideviolante__angular-full-stack__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/nihaojob__vue-fabric-editor__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/vi__websocat__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/danielbayerlein__dashboard__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/allinssl__allinssl__Dockerfile",
+    "issues": [
+      "/dev/stdin:21:1 unexpected 'R' expecting a new line followed by the next instruction"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tree3333__uni-llm-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tfutils__tfenv__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/phyver__gameshell__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/owenashurst__agar.io-clone__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/janishar__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": [
+      "-:22 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/hashpals__name-that-hash__DockerFile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:5 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/mendableai__firecrawl-mcp-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/vasanthv__jsonbox__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/vitalif__grive2__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /",
+      "-:7 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias",
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:19 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/HelgeSverre__ollama-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/ying-ck__fanqienovel-downloader__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/leandromoreira__cdn-up-and-running__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:4 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/chatgpt-web-dev__chatgpt-web__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/gautamkrishnar__nothing-private__Dockerfile",
+    "issues": [
+      "/dev/stdin:7:5 unexpected 'd' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/qeeqbox__social-analyzer__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/flozz__p0wny-shell__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/xiaomiku01__fansmedalhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/jorgebastida__awslogs__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/givanz__vvvebjs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/yamadashy__repopack__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/psi-4ward__psitransfer__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/phpvirtualbox__phpvirtualbox__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/silinternational__ecs-deploy__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tencent__mmkv__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/bhupesh-v__ugit__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/zero6992__chatgpt-discord-bot__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:31 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/mevdschee__php-crud-api__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/e1ven__robohash__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/amark__gun__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:32 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/mher__flower__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/sysgears__apollo-universal-starter-kit__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/ErlichLiu__DeepClaude__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/tuhinshubhra__cmseek__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/byt3bl33d3r__deathstar__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/vexorian__dizquetv__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/vickscarlet__liferestart__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/jpmens__jo__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:2 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:7 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/pad-ws__pad.ws__Dockerfile",
+    "issues": [
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/SoraWebui__SoraWebui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/academicpages__academicpages.github.io__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/ramitsurana__awesome-kubernetes__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL4003 \u001b[1m\u001b[93mwarning\u001b[0m: Multiple `CMD` instructions found. If you list more than one `CMD` then only the last `CMD` will take effect",
+      "-:13 DL4003 \u001b[1m\u001b[93mwarning\u001b[0m: Multiple `CMD` instructions found. If you list more than one `CMD` then only the last `CMD` will take effect"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/zotify-dev__zotify__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/rmax__scrapy-redis__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/richardyc__chrome-gpt__Dockerfile",
+    "issues": [
+      "-:11 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/ronreiter__interactive-tutorials__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/shaarli__shaarli__Dockerfile",
+    "issues": [
+      "/dev/stdin:6:1 unexpected 'A' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/jakobhoeg__nextjs-ollama-llm-ui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/pradumnasaraf__devops__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/star7th__showdoc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/fishros__install__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_methods/Distillation/test_output/allinurl__goaccess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  }
+]

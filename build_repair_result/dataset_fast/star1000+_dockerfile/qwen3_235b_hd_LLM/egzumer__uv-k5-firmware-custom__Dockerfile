@@ -1,0 +1,6 @@
+FROM archlinux:latest
+RUN pacman -Syyu base-devel arm-none-eabi-gcc arm-none-eabi-newlib git python-pip python-crcmod --noconfirm
+WORKDIR /app
+COPY . .
+RUN git config --global advice.detachedHead false && \
+    git submodule update --init --recursive

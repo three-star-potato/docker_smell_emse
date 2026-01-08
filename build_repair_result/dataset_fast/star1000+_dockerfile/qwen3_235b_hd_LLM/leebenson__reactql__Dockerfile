@@ -1,0 +1,20 @@
+FROM node:12.2.0-alpine AS builder
+
+ENV NPM_CONFIG_LOGLEVEL notice
+
+RUN apk add --no-cache python2 make g++
+
+WORKDIR /build
+COPY package*.json ./
+RUN npm ci
+
+COPY . .
+
+RUN npm run build:production
+
+FROM node:12.2.0-alpine
+WORKDIR /app
+
+COPY --from=builder /build .
+
+CMD ["npm", "run", "production"]

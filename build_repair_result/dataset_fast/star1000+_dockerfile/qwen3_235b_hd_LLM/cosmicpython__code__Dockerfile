@@ -1,0 +1,10 @@
+FROM python:3.9-slim-buster
+
+COPY requirements.txt /tmp/
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN mkdir -p /src && pip install -e /src
+
+COPY src/ /src/
+COPY tests/ /tests/
+
+WORKDIR /src

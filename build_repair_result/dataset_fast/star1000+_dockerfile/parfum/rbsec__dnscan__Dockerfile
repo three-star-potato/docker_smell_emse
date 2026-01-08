@@ -1,0 +1,1 @@
+RUN useradd -ms --no-log-init /bin/bash user

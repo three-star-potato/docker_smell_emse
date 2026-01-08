@@ -1,0 +1,57 @@
+FROM php:7.4-apache
+LABEL maintainer="Fork CMS <info@fork-cms.com>"
+
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
+
+# Install system dependencies and PHP extensions in a single layer
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    libonig-dev \
+    libzip-dev \
+    unzip \
+    g++ \
+    libicu-dev \
+    zlib1g-dev \
+    # Build dependencies needed for PECL extensions (e.g., xdebug)
+    gcc \
+    make \
+    autoconf \
+    dpkg-dev \
+    pkg-config && \
+    docker-php-ext-configure gd --with-freetype --with-jpeg && \
+    docker-php-ext-install -j$(nproc) gd pdo_mysql mbstring zip intl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Custom php.ini settings
+COPY var/docker/php/php.ini ${PHP_INI_DIR}/php.ini
+
+# Install and configure XDebug
+RUN set -o pipefail; pecl install xdebug-2.9.8 && \
+    docker-php-ext-enable xdebug && \
+    rm -rf /tmp/pear
+
+# Install composer
+RUN set -o pipefail; curl -sS https://getcomposer.org/installer | \
+    php -- --install-dir=/usr/bin/ --filename=composer
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Install composer dependencies (without autoloader to preserve cache)
+COPY composer.json ./
+COPY composer.lock ./
+RUN composer install --prefer-dist --no-dev --no-autoloader --no-scripts --no-progress && \
+    composer clear-cache
+
+# Copy application code
+COPY . /var/www/html
+
+# Dump optimized autoloader and fix permissions
+RUN composer dump-autoload --optimize --classmap-authoritative --no-dev && \
+    chown -R www-data:www-data /var/www/html
+
+# Expose ports
+EXPOSE 80 443

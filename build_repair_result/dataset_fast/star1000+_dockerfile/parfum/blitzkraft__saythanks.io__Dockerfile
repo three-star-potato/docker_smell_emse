@@ -1,0 +1,31 @@
+FROM ubuntu:18.04
+
+# Installing python
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y libpq-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y python3-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y python3-pip && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get clean
+
+RUN python3 -m pip install --no-cache-dir --upgrade pip
+RUN python3 -m pip install --no-cache-dir --upgrade pillow
+
+WORKDIR /saythanks
+
+# Installing requirements
+COPY ./requirements.txt .
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
+
+# Copying the app
+COPY . .
+
+EXPOSE 5000
+CMD [ "python3", "t.py" ]

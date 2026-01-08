@@ -1,0 +1,15 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+COPY . /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends nginx && rm -rf /var/lib/apt/lists/* && \
+    mkdir -p /etc/nginx/sites-enabled
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+RUN rm -rf /etc/nginx/sites-enabled/default && cp /app/nginx.example.conf /etc/nginx/sites-enabled/default
+
+CMD ["sh", "-c", "python3 main.py & nginx -g 'daemon off;'"]
+
+EXPOSE 80
+EXPOSE 8000

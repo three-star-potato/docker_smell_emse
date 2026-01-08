@@ -1,0 +1,2620 @@
+[
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/statsd__statsd__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sea-team__gofound__Dockerfile",
+    "issues": [
+      "-:29 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/m4tt72__terminal__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/l2xu__betterbahn__Dockerfile",
+    "issues": [
+      "-:33 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/google-gemini__gemini-fullstack-langgraph-quickstart__Dockerfile",
+    "issues": [
+      "-:29 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:29 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:29 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:46 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/danger__danger__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/oupala__apaxy__Dockerfile",
+    "issues": [
+      "-:2 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:40 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:43 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:47 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/m4ll0k__secretfinder__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:9 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:9 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kong__mockbin__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pwnlandia__mhn__Dockerfile",
+    "issues": [
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:20 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:20 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zalando__patroni__Dockerfile",
+    "issues": [
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:33 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:33 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:33 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:125 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:125 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:125 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nemesida-waf__waf-bypass__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:9 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:23 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ivanfioravanti__chatbot-ollama__Dockerfile",
+    "issues": [
+      "-:11 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/beanstalkd__beanstalkd__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/1n3__blackwidow__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/bashly-framework__bashly__Dockerfile",
+    "issues": [
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/womsxd__mihoyobbstools__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mongoengine__mongoengine__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/shekyan__slowhttptest__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fifocode__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/thewhiteh4t__pwnedornot__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hectorqin__reader__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/janoside__btc-rpc-explorer__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apidoc__apidoc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/connectai-e__feishu-openai__Dockerfile",
+    "issues": [
+      "-:26 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/willfarrell__docker-autoheal__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/buffalowill__oxml_xxe__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lqqyt2423__wechat_spider__Dockerfile",
+    "issues": [
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ekalinin__github-markdown-toc__Dockerfile",
+    "issues": [
+      "-:6 DL3027 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use apt as it is meant to be an end-user tool, use apt-get or apt-cache instead"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/narkoz__gitlab__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/guillaumebriday__laravel-blog__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:7 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:18 DL3060 \u001b[92minfo\u001b[0m: `yarn cache clean` missing after `yarn install` was run.",
+      "-:28 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/chrisleekr__binance-trading-bot__Dockerfile",
+    "issues": [
+      "/dev/stdin:11:5 unexpected 'm' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/aaronjanse__asciidots__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tomastomecek__sen__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cloudflare__flan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tchiotludo__akhq__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/matthiasmullie__minify__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:13 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jokkedk__webgrind__Dockerfile",
+    "issues": [
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cyberark__kubiscan__Dockerfile",
+    "issues": [
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:35 SC2188 \u001b[1m\u001b[93mwarning\u001b[0m: This redirection doesn't have a command. Move to its command (or use 'true' as no-op)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/haugene__docker-transmission-openvpn__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC1083 \u001b[1m\u001b[93mwarning\u001b[0m: This } is literal. Check expression (missing ;/\\n?) or quote it.",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:35 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:65 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fastapi-admin__fastapi-admin__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:45 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:45 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/markqvist__nomadnet__Dockerfile",
+    "issues": [
+      "/dev/stdin:5:5 unexpected 'p' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hartator__wayback-machine-downloader__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:30 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/axiros__terminal_markdown_viewer__Dockerfile",
+    "issues": [
+      "-:16 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/github__pages-gem__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:34 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:44 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:44 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apachecn__ailearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/openfunction__openfunction__Dockerfile",
+    "issues": [
+      "-:11 SC2153 \u001b[92minfo\u001b[0m: Possible misspelling: GOPROXY may not be assigned. Did you mean NO_PROXY?"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/googlechromelabs__comlink__Dockerfile",
+    "issues": [
+      "-:3 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:13 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/c4urself__bump2version__Dockerfile",
+    "issues": [
+      "-:3 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:6 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/m3n0sd0n4ld__goofuzz__Dockerfile",
+    "issues": [
+      "-:8 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/azgaar__fantasy-map-generator__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vasanthv__hello__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mar10__wsgidav__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mickhansen__graphql-sequelize__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kpcyrd__sniffglue__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nabla-c0d3__sslyze__Dockerfile",
+    "issues": [
+      "-:16 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:16 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:16 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/elceef__dnstwist__Dockerfile",
+    "issues": [
+      "-:15 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected 'fi'. Fix any mentioned problems and try again."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mislav__hub__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ynqa__jnv__Dockerfile",
+    "issues": [
+      "-:16 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/datafolklabs__cement__Dockerfile",
+    "issues": [
+      "-:2 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:16 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:35 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/replexica__replexica__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/wanglin2__mind-map__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/missuo__FreeGPT35__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vasanthv__tlk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zdennis__activerecord-import__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mikemcquaid__strap__Dockerfile",
+    "issues": [
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 SC1001 \u001b[92minfo\u001b[0m: This \\u will be a regular 'u' in this context.",
+      "-:37 SC1001 \u001b[92minfo\u001b[0m: This \\u will be a regular 'u' in this context.",
+      "-:42 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:42 SC1001 \u001b[92minfo\u001b[0m: This \\u will be a regular 'u' in this context.",
+      "-:49 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:49 SC1001 \u001b[92minfo\u001b[0m: This \\u will be a regular 'u' in this context.",
+      "-:49 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:60 SC1001 \u001b[92minfo\u001b[0m: This \\u will be a regular 'u' in this context."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/joeferner__redis-commander__Dockerfile",
+    "issues": [
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:26 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:51 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/awslabs__amazon-ecr-credential-helper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/perftools__xhgui__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:88 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/xinliangnote__go-gin-api__Dockerfile",
+    "issues": [
+      "/dev/stdin:4:1 unexpected 'd' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/honmashironeko__ProxyCat__Dockerfile",
+    "issues": [
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/docker__docker-bench-security__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/gilesknap__gphotos-sync__Dockerfile",
+    "issues": [
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jtsang4__claude-to-chatgpt__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kozmer__log4j-shell-poc__Dockerfile",
+    "issues": [
+      "-:10 SC2115 \u001b[1m\u001b[93mwarning\u001b[0m: Use \"${var:?}\" to ensure this never expands to /* ."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vastsa__filecodebox__Dockerfile",
+    "issues": [
+      "-:3 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:9 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:16 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:22 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ms-jpq__chadtree__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/github__hub__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:25 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`",
+      "-:26 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tailcallhq__tailcall__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:18 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/basherpm__basher__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/forkcms__forkcms__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:26 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:29 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:33 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:44 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:44 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:53 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/inconvergent__weird__Dockerfile",
+    "issues": [
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:14 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/composite-primary-keys__composite_primary_keys__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hiifeng__V2ray-for-Doprax__Dockerfile",
+    "issues": [
+      "-:6 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/koalalorenzo__python-digitalocean__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/grab__cursor-talk-to-figma-mcp__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/upserve__docker-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pure-admin__pure-admin-thin__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/miso-belica__sumy__Dockerfile",
+    "issues": [
+      "-:3 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:3 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/reactjs__server-components-demo__Dockerfile",
+    "issues": [
+      "-:16 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/insoxin__api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/catchpoint__WebPageTest.api-nodejs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/brainmaestro__composer-git-hooks__Dockerfile",
+    "issues": [
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/LanQian528__chat2api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fusionjs__fusionjs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zhayujie__bot-on-anything__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/869413421__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:23 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/d4vinci__cr3dov3r__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cakephp__chronos__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/imaegoo__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/n3d1117__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:25 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fabston__tradingview-webhook-bot__Dockerfile",
+    "issues": [
+      "-:2 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:13 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mushorg__conpot__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:30 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/edgurgel__poxa__Dockerfile",
+    "issues": [
+      "-:41 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/guzzle__guzzle__Dockerfile",
+    "issues": [
+      "-:34 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mrsked__mrsk__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:27 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`",
+      "-:34 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:37 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/martanne__vis__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:29 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that.",
+      "-:35 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:35 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:35 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options.",
+      "-:49 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/opengs__uashield__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/chadoe__docker-cleanup-volumes__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/leebenson__reactql__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/closeio__tasktiger__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:10 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:21 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/alseambusher__crontab-ui__Dockerfile",
+    "issues": [
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/itstoggle__plex_debrid__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rstudio__plumber__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/magic-akari__lrc-maker__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/red5d__docker-autocompose__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/gautamkrishnar__socli__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/yonggekkk__doprax-xray__Dockerfile",
+    "issues": [
+      "-:11 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:12 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/datalux__osintgram__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nytimes__library__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ptrofimov__beanstalk_console__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ikuaitu__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:8 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rom-rb__rom__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/why2lyj__youxiang-itchat__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/drewsif__pishrink__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/s3rius__fastapi-template__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:28 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:39 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/egzumer__uv-k5-firmware-custom__Dockerfile",
+    "issues": [
+      "-:1 DL3029 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use --platform flag with FROM",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:7 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/42school__norminette__Dockerfile",
+    "issues": [
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:12 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/devicefarmer__stf__Dockerfile",
+    "issues": [
+      "-:10 DL3029 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use --platform flag with FROM",
+      "-:17 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options.",
+      "-:43 DL3029 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use --platform flag with FROM",
+      "-:50 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:50 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:77 DL3029 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use --platform flag with FROM"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/Estom__notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jarun__buku__Dockerfile",
+    "issues": [
+      "-:18 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:18 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/theexplainthis__chatgpt-line-bot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/corneliusweig__rakkess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/aksakalli__gtop__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/consumet__api.consumet.org__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/0xacb__recollapse__Dockerfile",
+    "issues": [
+      "-:13 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/blechschmidt__massdns__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/oh-my-fish__oh-my-fish__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/assimon__dujiaoka__Dockerfile",
+    "issues": [
+      "-:21 SC2028 \u001b[92minfo\u001b[0m: echo may not expand escape sequences. Use printf."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ankane__pgsync__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kyb3r__modmail__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lanmaster53__recon-ng__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lyrictian__gin-admin__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:28 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:28 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/steveltn__https-portal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zhangmingzhao1__streamerhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lunarmodules__busted__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/elixirkoans__elixir-koans__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:4 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/enablesecurity__wafw00f__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jedisct1__minisign__Dockerfile",
+    "issues": [
+      "/dev/stdin:4:1 unexpected 'd' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/unblockneteasemusic__server__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/atjiu__pybbs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/usarmyresearchlab__dshell__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:18 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:18 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/w5teams__w5__Dockerfile",
+    "issues": [
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:13 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/flike__kingshard__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/PagerDuty__incident-response-docs__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:19 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:19 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/eko__monday__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/blitzkraft__saythanks.io__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hagopj13__node-express-boilerplate__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/friendsofphp__php-cs-fixer__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:13 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments",
+      "-:64 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:64 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lukemathwalker__zero-to-production__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/q191201771__lal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/miguelgrinberg__flasky__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rbsec__dnscan__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/p1ngul1n0__blackbird__Dockerfile",
+    "issues": [
+      "-:4 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:10 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rushter__mlalgorithms__Dockerfile",
+    "issues": [
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:22 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tgcatub__catuserbot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/expdev07__coronavirus-tracker-api__Dockerfile",
+    "issues": [
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nowthis__sankeymatic__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/wasi-master__13ft__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/christophetd__log4shell-vulnerable-app__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/protectai__vulnhuntr__Dockerfile",
+    "issues": [
+      "-:8 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /",
+      "-:30 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/davideviolante__angular-full-stack__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kripken__ammo.js__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/xitanggg__open-resume__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/teamultroid__ultroid__Dockerfile",
+    "issues": [
+      "-:11 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pogjester__company-research-agent__Dockerfile",
+    "issues": [
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/stepci__stepci__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/p403n1x87__austin__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:28 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ionic-team__ionic-cli__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pablouser1__proxitok__Dockerfile",
+    "issues": [
+      "-:7 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/blenderskool__blaze__Dockerfile",
+    "issues": [
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nihaojob__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:11 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vi__websocat__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:26 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/danielbayerlein__dashboard__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cormanz__smartgpt__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nakanomikuorg__arch-guide__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rhinosecuritylabs__pacu__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fsociety-team__fsociety__Dockerfile",
+    "issues": [
+      "-:22 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:30 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:33 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/n64decomp__sm64__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:31 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/phpmetrics__phpmetrics__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/net-ssh__net-ssh__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ekzhang__bore__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/disease-sh__api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apple__swift-docc__Dockerfile",
+    "issues": [
+      "-:8 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mjl-__mox__Dockerfile",
+    "issues": [
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/shadowmoose__redditdownloader__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/clytage__rawon__Dockerfile",
+    "issues": [
+      "-:11 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:27 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:41 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/edubart__nelua-lang__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vasanthv__talk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zyronon__typing-word__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/allinssl__allinssl__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:14 SC2059 \u001b[92minfo\u001b[0m: Don't use variables in the printf format string. Use printf '..%s..' \"$foo\"."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kevinchappell__formbuilder__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/smithery-ai__mcp-obsidian__Dockerfile",
+    "issues": [
+      "-:15 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/guaguaguaxia__weekly_report__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:39 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/holtwick__briefing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/0x727__observerward__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:44 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:51 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/snailyp__gemini-balance__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/getAsterisk__deepclaude__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:34 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:34 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tree3333__uni-llm-api__Dockerfile",
+    "issues": [
+      "-:3 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rdavydov__twitch-channel-points-miner-v2__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:34 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:34 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:48 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jnunemaker__flipper__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:9 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/marven11__fenjing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/giacomo-b__rust-stakeholder__Dockerfile",
+    "issues": [
+      "-:22 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/prometheus-pve__prometheus-pve-exporter__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tfutils__tfenv__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:6 SC3009 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, brace expansion is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tighten__takeout__Dockerfile",
+    "issues": [
+      "-:10 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/phyver__gameshell__Dockerfile",
+    "issues": [
+      "-:16 DL3027 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use apt as it is meant to be an end-user tool, use apt-get or apt-cache instead",
+      "-:36 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ayaka14732__chatgptapifree__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jhao104__proxy_pool__Dockerfile",
+    "issues": [
+      "-:8 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mobilenativefoundation__xclogparser__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cosmicpython__code__Dockerfile",
+    "issues": [
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ondras__wwwsqldesigner__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/orvice__ss-panel__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:14 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tinysearch__tinysearch__Dockerfile",
+    "issues": [
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:27 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:39 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/owenashurst__agar.io-clone__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sameersbn__docker-postgresql__Dockerfile",
+    "issues": [
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/studygolang__studygolang__Dockerfile",
+    "issues": [
+      "-:17 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/peak__s5cmd__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/janishar__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/aws-cloudformation__cloudformation-guard__Dockerfile",
+    "issues": [
+      "-:6 DL3027 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use apt as it is meant to be an end-user tool, use apt-get or apt-cache instead"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hashpals__name-that-hash__DockerFile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:11 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/evyatarmeged__raccoon__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/xwiki-labs__cryptpad__Dockerfile",
+    "issues": [
+      "-:36 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image.",
+      "-:40 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/stellar__soroban-example-dapp__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/LLM-Red-Team__kimi-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/glacambre__firenvim__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mendableai__firecrawl-mcp-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vasanthv__jsonbox__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pmotschmann__evolve__Dockerfile",
+    "issues": [
+      "-:21 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vitalif__grive2__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:17 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/HelgeSverre__ollama-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ying-ck__fanqienovel-downloader__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/johnroper100__dropplets__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mrvautin__expresscart__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/travisjeffery__timecop__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/leandromoreira__cdn-up-and-running__Dockerfile",
+    "issues": [
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kelektiv__node.bcrypt.js__Dockerfile",
+    "issues": [
+      "-:26 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/alpinelinux__docker-alpine__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/OWASP__API-Security__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:8 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nerzal__gocloak__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/twikoojs__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/chatgpt-web-dev__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:45 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mrs4s__go-cqhttp__Dockerfile",
+    "issues": [
+      "-:11 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/wolveix__satisfactory-server__Dockerfile",
+    "issues": [
+      "-:36 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:36 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sceptre__sceptre__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/yym68686__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:6 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:10 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sealedsaucer__online-forever__Dockerfile",
+    "issues": [
+      "-:14 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ozguralp__gmapsapiscanner__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rtcamp__action-slack-notify__Dockerfile",
+    "issues": [
+      "-:24 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:38 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/0xdkd__auxpi__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lfe__lfe__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hack4impact__flask-base__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`",
+      "-:22 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:29 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/gautamkrishnar__nothing-private__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ther1d__shell_gpt__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/kern__filepizza__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/git-quick-stats__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/LLM-Red-Team__deepseek-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/joye61__pic-smaller__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/go-spatial__tegola__Dockerfile",
+    "issues": [
+      "-:42 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:49 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:59 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sj26__mailcatcher__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tl-open-source__tl-rtc-file__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/airtai__faststream__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/The-Pocket__Tutorial-Codebase-Knowledge__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/wbthomason__packer.nvim__Dockerfile",
+    "issues": [
+      "-:9 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:14 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:22 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/qeeqbox__social-analyzer__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/renatomarinho__laravel-page-speed__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:7 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cla-assistant__cla-assistant__Dockerfile",
+    "issues": [
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/chaitin__veinmind-tools__Dockerfile",
+    "issues": [
+      "-:7 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/flozz__p0wny-shell__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/harishsg993010__damn-vulnerable-MCP-server__Dockerfile",
+    "issues": [
+      "-:16 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:28 SC2028 \u001b[92minfo\u001b[0m: echo may not expand escape sequences. Use printf."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cnpm__cnpmjs.org__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/xiaomiku01__fansmedalhelper__Dockerfile",
+    "issues": [
+      "-:4 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/iann0036__former2__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/crobertsbmw__deckofcards__Dockerfile",
+    "issues": [
+      "-:11 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/dokku__dokku-letsencrypt__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/bee-san__pywhat__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/luolongfei__freenom__Dockerfile",
+    "issues": [
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jorgebastida__awslogs__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:19 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:26 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/szad670401__hyperlpr__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/givanz__vvvebjs__Dockerfile",
+    "issues": [
+      "-:8 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/claudiugeorgiu__playstoredownloader__Dockerfile",
+    "issues": [
+      "-:14 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:21 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:21 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sighook__pixload__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/eldraco__domain_analyzer__Dockerfile",
+    "issues": [
+      "-:22 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:22 DL3027 \u001b[1m\u001b[93mwarning\u001b[0m: Do not use apt as it is meant to be an end-user tool, use apt-get or apt-cache instead",
+      "-:22 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jbesomi__texthero__Dockerfile",
+    "issues": [
+      "-:12 DL3060 \u001b[92minfo\u001b[0m: `yarn cache clean` missing after `yarn install` was run."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/umputun__reproxy__Dockerfile",
+    "issues": [
+      "-:12 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 SC3057 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, string indexing is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/yamadashy__repopack__Dockerfile",
+    "issues": [
+      "-:4 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rhinosecuritylabs__cloudgoat__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/psi-4ward__psitransfer__Dockerfile",
+    "issues": [
+      "-:23 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:37 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/harsxv__tinystatus__Dockerfile",
+    "issues": [
+      "-:12 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/netptop__siteproxy__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ambionics__phpggc__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:14 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/knrt10__kubernetes-basiclearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/Toperlock__sing-box-subscribe__Dockerfile",
+    "issues": [
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/devinus__poison__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:22 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/Zie619__n8n-workflows__Dockerfile",
+    "issues": [
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/phpvirtualbox__phpvirtualbox__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/scanapi__scanapi__Dockerfile",
+    "issues": [
+      "-:12 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rbanffy__3270font__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/guptarohit__asciigraph__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tecnativa__docker-socket-proxy__Dockerfile",
+    "issues": [
+      "-:46 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/silinternational__ecs-deploy__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tencent__mmkv__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/babaohuang__GeminiProChat__Dockerfile",
+    "issues": [
+      "-:13 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/s0md3v__photon__Dockerfile",
+    "issues": [
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/qodo-ai__qodo-cover__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/spectolabs__hoverfly__Dockerfile",
+    "issues": [
+      "-:8 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/modmail-dev__modmail__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:21 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:25 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:26 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/bhupesh-v__ugit__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zero6992__chatgpt-discord-bot__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/migueravila__bento__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rdbo__libmem__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/haibbo__cf-openai-azure-proxy__Dockerfile",
+    "issues": [
+      "-:25 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tiangolo__nginx-rtmp-docker__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:23 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:27 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:32 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:32 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:55 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mevdschee__php-crud-api__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/freeopcua__python-opcua__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/threatexpress__domainhunter__dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:4 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apachecn__mit-18.06-linalg-notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jamesmawm__high-frequency-trading-model-with-ib__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/e1ven__robohash__Dockerfile",
+    "issues": [
+      "-:18 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:18 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apachecn__Interview__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/gwuhaolin__livego__Dockerfile",
+    "issues": [
+      "-:32 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ericciarla__trendFinder__Dockerfile",
+    "issues": [
+      "-:31 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nilsherzig__LLocalSearch__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/armon__bloomd__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:8 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:17 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/erikdubbelboer__phpredisadmin__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:15 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/talebook__talebook__Dockerfile",
+    "issues": [
+      "-:10 SC2268 \u001b[96mstyle\u001b[0m: Avoid x-prefix in comparisons as it no longer serves a purpose.",
+      "-:34 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:40 SC2268 \u001b[96mstyle\u001b[0m: Avoid x-prefix in comparisons as it no longer serves a purpose.",
+      "-:47 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:61 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image.",
+      "-:75 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:88 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:89 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:113 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:128 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:154 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:154 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:154 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/amark__gun__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mher__flower__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pypa__gh-action-pypi-publish__Dockerfile",
+    "issues": [
+      "-:21 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:27 DL3021 \u001b[1m\u001b[91merror\u001b[0m: COPY with more than 2 arguments requires the last argument to end with /"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sysgears__apollo-universal-starter-kit__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/waylaidwanderer__node-chatgpt-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ErlichLiu__DeepClaude__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tuhinshubhra__cmseek__Dockerfile",
+    "issues": [
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:15 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nadrad__h-m-m__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/byt3bl33d3r__deathstar__Dockerfile",
+    "issues": [
+      "-:23 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jtesta__ssh-audit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/changeweb__unifiedtransform__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:18 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:26 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/threat9__routersploit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/elasticsearch-dump__elasticsearch-dump__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/4x99__code6__Dockerfile",
+    "issues": [
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:17 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vexorian__dizquetv__Dockerfile",
+    "issues": [
+      "-:13 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:13 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jef__streetmerchant__Dockerfile",
+    "issues": [
+      "-:25 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/threema-ch__threema-web__Dockerfile",
+    "issues": [
+      "-:28 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:35 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:38 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vickscarlet__liferestart__Dockerfile",
+    "issues": [
+      "-:9 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/apachecn__fe4ml-zh__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/LibreSpark__LibreTV__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/Chanzhaoyu__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:6 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/levywang__avhub__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/bellingcat__octosuite__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/sinaatalay__rendercv__Dockerfile",
+    "issues": [
+      "/dev/stdin:1:1 unexpected 's' expecting '#', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, end of input, or whitespaces"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jpmens__jo__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/nwtgck__piping-server__Dockerfile",
+    "issues": [
+      "-:23 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/exentriquesolutions__nip.io__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/MarSeventh__CloudFlare-ImgBed__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/srmklive__laravel-paypal__Dockerfile",
+    "issues": [
+      "-:16 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:16 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/tdurieux__anonymous_github__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/cyclotruc__gitingest__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:14 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates).",
+      "-:37 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:46 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pad-ws__pad.ws__Dockerfile",
+    "issues": [
+      "-:27 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zenika__alpine-chrome__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/SoraWebui__SoraWebui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/academicpages__academicpages.github.io__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:8 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/eyebluecn__tank__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:28 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:34 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/thewhiteh4t__finalrecon__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/acecilia__OpenWRTInvasion__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ramitsurana__awesome-kubernetes__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:17 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/schenkd__nginx-ui__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ngerakines__commitment__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/libccy__noname__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zotify-dev__zotify__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/schlagmichdoch__pairdrop__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rahulnyk__knowledge_graph__dockerfile",
+    "issues": [
+      "/dev/stdin:5:1 unexpected 'c' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/desaster__kippo__Dockerfile",
+    "issues": [
+      "-:13 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/rmax__scrapy-redis__Dockerfile",
+    "issues": [
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/lxfater__inpaint-web__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fullhunt__log4j-scan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/HerbertHe__iptv-sources__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/shadowsocks__go-shadowsocks2__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:18 DL3062 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in go. Instead of `go install <package>` use `go install <package>@<version>`",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/forthebadge__for-the-badge__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/richardyc__chrome-gpt__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/arzzen__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:11 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/postgresml__pgcat__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/ronreiter__interactive-tutorials__Dockerfile",
+    "issues": [
+      "-:20 SC3045 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, export -workers is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/shaarli__shaarli__Dockerfile",
+    "issues": [
+      "-:6 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:36 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/thp__urlwatch__Dockerfile",
+    "issues": [
+      "-:10 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:21 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:21 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/zilliztech__deep-searcher__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jakobhoeg__nextjs-ollama-llm-ui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mermade__openapi-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/xingpingcn__enhanced-FaaS-in-China__Dockerfile",
+    "issues": [
+      "-:17 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/pradumnasaraf__devops__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fnproject__fn__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/hylang__hy__Dockerfile",
+    "issues": [
+      "-:9 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/devanshbatham__paramspider__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/mandiant__speakeasy__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:7 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/trusted-ai__aix360__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:17 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:20 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:20 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/reactiflux__discord-irc__Dockerfile",
+    "issues": [
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:30 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/star7th__showdoc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/fishros__install__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/chaifeng__ufw-docker__Dockerfile",
+    "issues": [
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:14 SC1088 \u001b[1m\u001b[91merror\u001b[0m: Parsing stopped here. Invalid use of parentheses?",
+      "-:14 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/jinnlynn__genpac__Dockerfile",
+    "issues": [
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/dcalsky__zzkia__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/maid__maid__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/gosnmp__gosnmp__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 SC1012 \u001b[1m\u001b[93mwarning\u001b[0m: \\n is just literal 'n' here. For line feed, use a quoted, literal line feed instead.",
+      "-:28 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/CBIhalsen__PolyglotPDF__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/allinurl__goaccess__Dockerfile",
+    "issues": [
+      "/dev/stdin:5:1 unexpected 'd' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/satnaing__astro-paper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/vm03__payload_dumper__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:17 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/msr25_icl_qwen3_235b/alexbers__mtprotoproxy__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  }
+]

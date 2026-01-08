@@ -1,0 +1,12 @@
+FROM node:lts AS builder
+
+WORKDIR /app
+COPY . .
+RUN corepack enable && \
+    pnpm install --frozen-lockfile --strict-peer-dependencies && \
+    pnpm run build
+
+FROM nginx:alpine
+
+RUN apk update && apk upgrade
+COPY --from=builder /app/build /usr/share/nginx/html

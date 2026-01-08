@@ -1,0 +1,11 @@
+{
+  "total_files": 37,
+  "successful_repairs": 37,
+  "failed_repairs": 0,
+  "skipped_repairs": 0,
+  "success_rate": 100.0,
+  "avg_repair_time": 17.59,
+  "total_processing_time": 650.86,
+  "output_directory": "build_repair_result",
+  "timestamp": "2025-11-22T12:05:27.786410"
+}

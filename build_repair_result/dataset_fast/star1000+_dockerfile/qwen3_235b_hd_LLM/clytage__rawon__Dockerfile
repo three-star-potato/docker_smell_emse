@@ -1,0 +1,46 @@
+FROM ghcr.io/hazmi35/node:22-dev-alpine as build-stage
+
+WORKDIR /tmp/build
+
+# Prepare pnpm with corepack
+RUN corepack enable && corepack prepare pnpm@latest
+
+# Copy package files
+COPY package.json pnpm-lock.yaml *.npmrc ./
+RUN pnpm fetch
+
+# Install dependencies
+RUN pnpm install --offline --frozen-lockfile
+
+# Copy all project files and build
+COPY . .
+RUN pnpm run build
+
+# Prune devDependencies
+RUN pnpm prune --production
+
+# Production stage
+FROM ghcr.io/hazmi35/node:22-alpine
+
+LABEL name="rawon"
+LABEL maintainer="Stegripe Development <support@stegripe.org>"
+
+WORKDIR /app
+
+# Install runtime dependencies
+RUN apk add --no-cache ffmpeg python3 && ln -sf python3 /usr/bin/python
+
+# Copy built artifacts from build stage
+COPY --from=build-stage /tmp/build/package.json .
+COPY --from=build-stage /tmp/build/node_modules ./node_modules
+COPY --from=build-stage /tmp/build/dist ./dist
+COPY --from=build-stage /tmp/build/yt-dlp-utils ./yt-dlp-utils
+COPY --from=build-stage /tmp/build/lang ./lang
+COPY --from=build-stage /tmp/build/index.js ./index.js
+
+# Environment and volume
+ENV NODE_ENV=production
+VOLUME /app/scripts
+
+# Start command
+CMD ["node", "--es-module-specifier-resolution=node", "index.js"]

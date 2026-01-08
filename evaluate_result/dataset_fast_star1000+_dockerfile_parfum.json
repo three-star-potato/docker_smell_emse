@@ -1,0 +1,2723 @@
+[
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/statsd__statsd__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sea-team__gofound__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/m4tt72__terminal__Dockerfile",
+    "issues": [
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:13 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:14 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/l2xu__betterbahn__Dockerfile",
+    "issues": [
+      "-:32 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/google-gemini__gemini-fullstack-langgraph-quickstart__Dockerfile",
+    "issues": [
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:44 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/danger__danger__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/oupala__apaxy__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:30 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:33 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:46 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/m4ll0k__secretfinder__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kong__mockbin__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pwnlandia__mhn__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:4 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zalando__patroni__Dockerfile",
+    "issues": [
+      "-:19 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:19 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:107 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:107 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:107 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nemesida-waf__waf-bypass__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ivanfioravanti__chatbot-ollama__Dockerfile",
+    "issues": [
+      "-:10 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/beanstalkd__beanstalkd__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/1n3__blackwidow__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/bashly-framework__bashly__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/womsxd__mihoyobbstools__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mongoengine__mongoengine__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:5 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/shekyan__slowhttptest__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fifocode__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/thewhiteh4t__pwnedornot__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:3 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:7 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:12 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hectorqin__reader__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/janoside__btc-rpc-explorer__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apidoc__apidoc__Dockerfile",
+    "issues": [
+      "-:22 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/connectai-e__feishu-openai__Dockerfile",
+    "issues": [
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/willfarrell__docker-autoheal__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/buffalowill__oxml_xxe__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lqqyt2423__wechat_spider__Dockerfile",
+    "issues": [
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ekalinin__github-markdown-toc__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/narkoz__gitlab__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/guillaumebriday__laravel-blog__Dockerfile",
+    "issues": [
+      "-:12 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/chrisleekr__binance-trading-bot__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:38 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:40 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:47 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/aaronjanse__asciidots__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tomastomecek__sen__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:4 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cloudflare__flan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tchiotludo__akhq__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/matthiasmullie__minify__Dockerfile",
+    "issues": [
+      "-:7 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:8 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:9 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jokkedk__webgrind__Dockerfile",
+    "issues": [
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cyberark__kubiscan__Dockerfile",
+    "issues": [
+      "-:44 SC2188 \u001b[1m\u001b[93mwarning\u001b[0m: This redirection doesn't have a command. Move to its command (or use 'true' as no-op)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/haugene__docker-transmission-openvpn__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:3 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:28 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:44 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fastapi-admin__fastapi-admin__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/markqvist__nomadnet__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hartator__wayback-machine-downloader__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/axiros__terminal_markdown_viewer__Dockerfile",
+    "issues": [
+      "-:3 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/github__pages-gem__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apachecn__ailearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/openfunction__openfunction__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/googlechromelabs__comlink__Dockerfile",
+    "issues": [
+      "-:3 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:5 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:11 SC3046 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, 'source' in place of '.' is undefined.",
+      "-:11 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:19 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/c4urself__bump2version__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:12 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:14 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:15 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/m3n0sd0n4ld__goofuzz__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/azgaar__fantasy-map-generator__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vasanthv__hello__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mar10__wsgidav__Dockerfile",
+    "issues": [
+      "-:16 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:21 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mickhansen__graphql-sequelize__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kpcyrd__sniffglue__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nabla-c0d3__sslyze__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/elceef__dnstwist__Dockerfile",
+    "issues": [
+      "-:5 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mislav__hub__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ynqa__jnv__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/datafolklabs__cement__Dockerfile",
+    "issues": [
+      "-:2 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 SC2006 \u001b[96mstyle\u001b[0m: Use $(...) notation instead of legacy backticks `...`.",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/replexica__replexica__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/wanglin2__mind-map__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/missuo__FreeGPT35__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vasanthv__tlk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zdennis__activerecord-import__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mikemcquaid__strap__Dockerfile",
+    "issues": [
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:45 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/joeferner__redis-commander__Dockerfile",
+    "issues": [
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:19 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/awslabs__amazon-ecr-credential-helper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/perftools__xhgui__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 SC1070 \u001b[1m\u001b[91merror\u001b[0m: Parsing stopped here. Mismatched keywords or invalid parentheses?",
+      "-:88 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:91 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:93 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/xinliangnote__go-gin-api__Dockerfile",
+    "issues": [
+      "-:13 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:16 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:19 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined.",
+      "-:22 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/honmashironeko__ProxyCat__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/docker__docker-bench-security__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/gilesknap__gphotos-sync__Dockerfile",
+    "issues": [
+      "-:25 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jtsang4__claude-to-chatgpt__Dockerfile",
+    "issues": [
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kozmer__log4j-shell-poc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vastsa__filecodebox__Dockerfile",
+    "issues": [
+      "-:18 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ms-jpq__chadtree__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/github__hub__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tailcallhq__tailcall__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/basherpm__basher__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/forkcms__forkcms__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:8 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:26 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:50 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:70 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/inconvergent__weird__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:14 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:17 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/composite-primary-keys__composite_primary_keys__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hiifeng__V2ray-for-Doprax__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:4 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/koalalorenzo__python-digitalocean__Dockerfile",
+    "issues": [
+      "-:4 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:14 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/grab__cursor-talk-to-figma-mcp__Dockerfile",
+    "issues": [
+      "-:2 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/upserve__docker-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pure-admin__pure-admin-thin__Dockerfile",
+    "issues": [
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:7 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/miso-belica__sumy__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/reactjs__server-components-demo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/insoxin__api__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/catchpoint__WebPageTest.api-nodejs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/brainmaestro__composer-git-hooks__Dockerfile",
+    "issues": [
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:14 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:15 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/LanQian528__chat2api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fusionjs__fusionjs__Dockerfile",
+    "issues": [
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zhayujie__bot-on-anything__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/869413421__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:27 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/d4vinci__cr3dov3r__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:5 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cakephp__chronos__Dockerfile",
+    "issues": [
+      "-:10 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/imaegoo__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/n3d1117__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fabston__tradingview-webhook-bot__Dockerfile",
+    "issues": [
+      "-:2 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mushorg__conpot__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/edgurgel__poxa__Dockerfile",
+    "issues": [
+      "-:15 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:32 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:40 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/guzzle__guzzle__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mrsked__mrsk__Dockerfile",
+    "issues": [
+      "-:4 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:26 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/martanne__vis__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:22 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that.",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:24 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:26 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:28 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:28 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:28 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/opengs__uashield__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/chadoe__docker-cleanup-volumes__Dockerfile",
+    "issues": [
+      "-:8 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/leebenson__reactql__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:29 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/closeio__tasktiger__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/alseambusher__crontab-ui__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/itstoggle__plex_debrid__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rstudio__plumber__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/magic-akari__lrc-maker__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/red5d__docker-autocompose__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/gautamkrishnar__socli__Dockerfile",
+    "issues": [
+      "-:9 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/yonggekkk__doprax-xray__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:4 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/datalux__osintgram__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nytimes__library__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ptrofimov__beanstalk_console__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ikuaitu__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rom-rb__rom__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/why2lyj__youxiang-itchat__Dockerfile",
+    "issues": [
+      "-:3 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:10 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/drewsif__pishrink__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/s3rius__fastapi-template__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:35 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:39 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/egzumer__uv-k5-firmware-custom__Dockerfile",
+    "issues": [
+      "/dev/stdin:1:16 unexpected 'l' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/42school__norminette__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/devicefarmer__stf__Dockerfile",
+    "issues": [
+      "-:20 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected 'fi'. Fix any mentioned problems and try again.",
+      "-:75 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:75 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected 'fi'. Fix any mentioned problems and try again."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/Estom__notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jarun__buku__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/theexplainthis__chatgpt-line-bot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/corneliusweig__rakkess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:9 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/aksakalli__gtop__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:9 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:10 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/consumet__api.consumet.org__Dockerfile",
+    "issues": [
+      "-:7 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/0xacb__recollapse__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/blechschmidt__massdns__Dockerfile",
+    "issues": [
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/oh-my-fish__oh-my-fish__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/assimon__dujiaoka__Dockerfile",
+    "issues": [
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:5 SC2028 \u001b[92minfo\u001b[0m: echo may not expand escape sequences. Use printf.",
+      "-:6 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ankane__pgsync__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:5 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kyb3r__modmail__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lanmaster53__recon-ng__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lyrictian__gin-admin__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/steveltn__https-portal__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:30 SC2006 \u001b[96mstyle\u001b[0m: Use $(...) notation instead of legacy backticks `...`.",
+      "-:33 SC2006 \u001b[96mstyle\u001b[0m: Use $(...) notation instead of legacy backticks `...`.",
+      "-:42 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zhangmingzhao1__streamerhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lunarmodules__busted__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/elixirkoans__elixir-koans__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:7 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/enablesecurity__wafw00f__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jedisct1__minisign__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:26 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/unblockneteasemusic__server__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/atjiu__pybbs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/usarmyresearchlab__dshell__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:25 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/w5teams__w5__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/flike__kingshard__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/PagerDuty__incident-response-docs__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/eko__monday__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/blitzkraft__saythanks.io__Dockerfile",
+    "issues": [
+      "-:4 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hagopj13__node-express-boilerplate__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/friendsofphp__php-cs-fixer__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments",
+      "-:47 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected test to end here (don't wrap commands in []/[[]]). Fix any mentioned problems and try again."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lukemathwalker__zero-to-production__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:21 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/q191201771__lal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/miguelgrinberg__flasky__Dockerfile",
+    "issues": [
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rbsec__dnscan__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/p1ngul1n0__blackbird__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rushter__mlalgorithms__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tgcatub__catuserbot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/expdev07__coronavirus-tracker-api__Dockerfile",
+    "issues": [
+      "-:6 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nowthis__sankeymatic__Dockerfile",
+    "issues": [
+      "-:3 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/wasi-master__13ft__Dockerfile",
+    "issues": [
+      "-:21 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/christophetd__log4shell-vulnerable-app__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/protectai__vulnhuntr__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/davideviolante__angular-full-stack__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kripken__ammo.js__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/xitanggg__open-resume__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/teamultroid__ultroid__Dockerfile",
+    "issues": [
+      "-:12 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pogjester__company-research-agent__Dockerfile",
+    "issues": [
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:44 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/stepci__stepci__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/p403n1x87__austin__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ionic-team__ionic-cli__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pablouser1__proxitok__Dockerfile",
+    "issues": [
+      "-:4 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/blenderskool__blaze__Dockerfile",
+    "issues": [
+      "-:28 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:29 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nihaojob__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vi__websocat__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/danielbayerlein__dashboard__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cormanz__smartgpt__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nakanomikuorg__arch-guide__Dockerfile",
+    "issues": [
+      "-:8 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rhinosecuritylabs__pacu__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fsociety-team__fsociety__Dockerfile",
+    "issues": [
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/n64decomp__sm64__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/phpmetrics__phpmetrics__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/net-ssh__net-ssh__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:25 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`",
+      "-:29 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ekzhang__bore__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/disease-sh__api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apple__swift-docc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mjl-__mox__Dockerfile",
+    "issues": [
+      "-:7 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/shadowmoose__redditdownloader__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/clytage__rawon__Dockerfile",
+    "issues": [
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:16 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:22 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:34 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:35 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:36 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:37 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:38 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:39 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/edubart__nelua-lang__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:4 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:12 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:19 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:22 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vasanthv__talk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zyronon__typing-word__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/allinssl__allinssl__Dockerfile",
+    "issues": [
+      "/dev/stdin:21:1 unexpected 'R' expecting a new line followed by the next instruction"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kevinchappell__formbuilder__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/smithery-ai__mcp-obsidian__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/guaguaguaxia__weekly_report__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:33 SC2154 \u001b[1m\u001b[93mwarning\u001b[0m: OPENAPI_API_Key is referenced but not assigned.",
+      "-:34 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:48 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/holtwick__briefing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/0x727__observerward__Dockerfile",
+    "issues": [
+      "/dev/stdin:1:11 unexpected 'l' expecting '#', '\\', ADD, ARG, CMD, COPY, ENTRYPOINT, ENV, EXPOSE, FROM, HEALTHCHECK, LABEL, MAINTAINER, ONBUILD, RUN, SHELL, STOPSIGNAL, USER, VOLUME, WORKDIR, a pragma, at least one space, or end of input"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/snailyp__gemini-balance__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/getAsterisk__deepclaude__Dockerfile",
+    "issues": [
+      "-:2 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:21 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tree3333__uni-llm-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rdavydov__twitch-channel-points-miner-v2__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jnunemaker__flipper__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/marven11__fenjing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/giacomo-b__rust-stakeholder__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/prometheus-pve__prometheus-pve-exporter__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tfutils__tfenv__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tighten__takeout__Dockerfile",
+    "issues": [
+      "-:5 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/phyver__gameshell__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:16 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:22 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:33 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ayaka14732__chatgptapifree__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jhao104__proxy_pool__Dockerfile",
+    "issues": [
+      "-:3 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mobilenativefoundation__xclogparser__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cosmicpython__code__Dockerfile",
+    "issues": [
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ondras__wwwsqldesigner__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/orvice__ss-panel__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:12 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tinysearch__tinysearch__Dockerfile",
+    "issues": [
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:32 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:32 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:42 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/owenashurst__agar.io-clone__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sameersbn__docker-postgresql__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:27 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/studygolang__studygolang__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/peak__s5cmd__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/janishar__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/aws-cloudformation__cloudformation-guard__Dockerfile",
+    "issues": [
+      "-:4 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:18 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hashpals__name-that-hash__DockerFile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/evyatarmeged__raccoon__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/xwiki-labs__cryptpad__Dockerfile",
+    "issues": [
+      "-:16 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:28 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:32 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/stellar__soroban-example-dapp__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:10 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/LLM-Red-Team__kimi-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/glacambre__firenvim__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mendableai__firecrawl-mcp-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vasanthv__jsonbox__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pmotschmann__evolve__Dockerfile",
+    "issues": [
+      "-:13 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vitalif__grive2__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:25 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/HelgeSverre__ollama-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ying-ck__fanqienovel-downloader__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/johnroper100__dropplets__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mrvautin__expresscart__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/travisjeffery__timecop__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/leandromoreira__cdn-up-and-running__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kelektiv__node.bcrypt.js__Dockerfile",
+    "issues": [
+      "-:28 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:28 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:28 SC1070 \u001b[1m\u001b[91merror\u001b[0m: Parsing stopped here. Mismatched keywords or invalid parentheses?",
+      "-:57 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/alpinelinux__docker-alpine__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/OWASP__API-Security__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:7 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nerzal__gocloak__Dockerfile",
+    "issues": [
+      "-:2 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/twikoojs__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/chatgpt-web-dev__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:44 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mrs4s__go-cqhttp__Dockerfile",
+    "issues": [
+      "-:11 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:15 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/wolveix__satisfactory-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sceptre__sceptre__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:7 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/yym68686__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sealedsaucer__online-forever__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ozguralp__gmapsapiscanner__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rtcamp__action-slack-notify__Dockerfile",
+    "issues": [
+      "-:24 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:37 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/0xdkd__auxpi__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lfe__lfe__Dockerfile",
+    "issues": [
+      "-:13 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hack4impact__flask-base__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:9 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/gautamkrishnar__nothing-private__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ther1d__shell_gpt__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/kern__filepizza__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/git-quick-stats__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/LLM-Red-Team__deepseek-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/joye61__pic-smaller__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/go-spatial__tegola__Dockerfile",
+    "issues": [
+      "-:44 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:54 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:64 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:64 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sj26__mailcatcher__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tl-open-source__tl-rtc-file__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/airtai__faststream__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/The-Pocket__Tutorial-Codebase-Knowledge__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/wbthomason__packer.nvim__Dockerfile",
+    "issues": [
+      "-:4 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:9 SC3009 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, brace expansion is undefined.",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:18 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/qeeqbox__social-analyzer__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/renatomarinho__laravel-page-speed__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:33 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cla-assistant__cla-assistant__Dockerfile",
+    "issues": [
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/chaitin__veinmind-tools__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:2 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/flozz__p0wny-shell__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/harishsg993010__damn-vulnerable-MCP-server__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:24 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:27 SC1037 \u001b[1m\u001b[91merror\u001b[0m: Braces are required for positionals over 9, e.g. ${10}.",
+      "-:32 SC2028 \u001b[92minfo\u001b[0m: echo may not expand escape sequences. Use printf."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cnpm__cnpmjs.org__Dockerfile",
+    "issues": [
+      "-:2 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/xiaomiku01__fansmedalhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/iann0036__former2__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/crobertsbmw__deckofcards__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/dokku__dokku-letsencrypt__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/bee-san__pywhat__Dockerfile",
+    "issues": [
+      "-:2 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/luolongfei__freenom__Dockerfile",
+    "issues": [
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jorgebastida__awslogs__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/szad670401__hyperlpr__Dockerfile",
+    "issues": [
+      "-:3 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:7 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:10 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:10 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/givanz__vvvebjs__Dockerfile",
+    "issues": [
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/claudiugeorgiu__playstoredownloader__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sighook__pixload__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/eldraco__domain_analyzer__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:17 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jbesomi__texthero__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/umputun__reproxy__Dockerfile",
+    "issues": [
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:14 SC3057 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, string indexing is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/yamadashy__repopack__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rhinosecuritylabs__cloudgoat__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:7 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/psi-4ward__psitransfer__Dockerfile",
+    "issues": [
+      "-:6 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/harsxv__tinystatus__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/netptop__siteproxy__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ambionics__phpggc__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:13 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/knrt10__kubernetes-basiclearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/Toperlock__sing-box-subscribe__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/devinus__poison__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:19 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/Zie619__n8n-workflows__Dockerfile",
+    "issues": [
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/phpvirtualbox__phpvirtualbox__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/scanapi__scanapi__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rbanffy__3270font__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/guptarohit__asciigraph__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tecnativa__docker-socket-proxy__Dockerfile",
+    "issues": [
+      "-:36 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/silinternational__ecs-deploy__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tencent__mmkv__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/babaohuang__GeminiProChat__Dockerfile",
+    "issues": [
+      "-:11 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/s0md3v__photon__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/qodo-ai__qodo-cover__Dockerfile",
+    "issues": [
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/spectolabs__hoverfly__Dockerfile",
+    "issues": [
+      "-:4 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:6 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/modmail-dev__modmail__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/bhupesh-v__ugit__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zero6992__chatgpt-discord-bot__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/migueravila__bento__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rdbo__libmem__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/haibbo__cf-openai-azure-proxy__Dockerfile",
+    "issues": [
+      "-:17 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tiangolo__nginx-rtmp-docker__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:15 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:21 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:21 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`. Or consider using `-q` or `-nv` (shorthands for `--quiet` or `--no-verbose`).",
+      "-:30 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:30 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mevdschee__php-crud-api__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/freeopcua__python-opcua__Dockerfile",
+    "issues": [
+      "-:3 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:5 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/threatexpress__domainhunter__dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apachecn__mit-18.06-linalg-notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jamesmawm__high-frequency-trading-model-with-ib__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/e1ven__robohash__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apachecn__Interview__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/gwuhaolin__livego__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:9 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ericciarla__trendFinder__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nilsherzig__LLocalSearch__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/armon__bloomd__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:17 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:17 SC2164 \u001b[1m\u001b[93mwarning\u001b[0m: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.",
+      "-:46 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/erikdubbelboer__phpredisadmin__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/talebook__talebook__Dockerfile",
+    "issues": [
+      "-:7 SC2268 \u001b[96mstyle\u001b[0m: Avoid x-prefix in comparisons as it no longer serves a purpose.",
+      "-:18 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:19 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:20 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:21 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:22 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:27 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:31 SC2268 \u001b[96mstyle\u001b[0m: Avoid x-prefix in comparisons as it no longer serves a purpose.",
+      "-:38 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:58 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:69 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:70 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:101 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:129 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:129 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/amark__gun__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:32 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mher__flower__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pypa__gh-action-pypi-publish__Dockerfile",
+    "issues": [
+      "-:17 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sysgears__apollo-universal-starter-kit__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/waylaidwanderer__node-chatgpt-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ErlichLiu__DeepClaude__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tuhinshubhra__cmseek__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 DL3000 \u001b[1m\u001b[91merror\u001b[0m: Use absolute WORKDIR"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nadrad__h-m-m__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/byt3bl33d3r__deathstar__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jtesta__ssh-audit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/changeweb__unifiedtransform__Dockerfile",
+    "issues": [
+      "-:23 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:43 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:47 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/threat9__routersploit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/elasticsearch-dump__elasticsearch-dump__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/4x99__code6__Dockerfile",
+    "issues": [
+      "-:14 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:18 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:18 SC2129 \u001b[96mstyle\u001b[0m: Consider using { cmd1; cmd2; } >> file instead of individual redirects.",
+      "-:47 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vexorian__dizquetv__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jef__streetmerchant__Dockerfile",
+    "issues": [
+      "-:19 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:23 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/threema-ch__threema-web__Dockerfile",
+    "issues": [
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:26 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vickscarlet__liferestart__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/apachecn__fe4ml-zh__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/LibreSpark__LibreTV__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/Chanzhaoyu__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:21 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:38 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/levywang__avhub__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/bellingcat__octosuite__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/sinaatalay__rendercv__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jpmens__jo__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/nwtgck__piping-server__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/exentriquesolutions__nip.io__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/MarSeventh__CloudFlare-ImgBed__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/srmklive__laravel-paypal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/tdurieux__anonymous_github__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/cyclotruc__gitingest__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:14 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates).",
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pad-ws__pad.ws__Dockerfile",
+    "issues": [
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zenika__alpine-chrome__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/SoraWebui__SoraWebui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/academicpages__academicpages.github.io__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:31 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:32 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/eyebluecn__tank__Dockerfile",
+    "issues": [
+      "-:5 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:21 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/thewhiteh4t__finalrecon__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:6 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/acecilia__OpenWRTInvasion__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ramitsurana__awesome-kubernetes__Dockerfile",
+    "issues": [
+      "-:3 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL4003 \u001b[1m\u001b[93mwarning\u001b[0m: Multiple `CMD` instructions found. If you list more than one `CMD` then only the last `CMD` will take effect",
+      "-:12 DL4003 \u001b[1m\u001b[93mwarning\u001b[0m: Multiple `CMD` instructions found. If you list more than one `CMD` then only the last `CMD` will take effect",
+      "-:15 DL4003 \u001b[1m\u001b[93mwarning\u001b[0m: Multiple `CMD` instructions found. If you list more than one `CMD` then only the last `CMD` will take effect"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/schenkd__nginx-ui__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ngerakines__commitment__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/libccy__noname__Dockerfile",
+    "issues": [
+      "-:7 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zotify-dev__zotify__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/schlagmichdoch__pairdrop__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rahulnyk__knowledge_graph__dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/desaster__kippo__Dockerfile",
+    "issues": [
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/rmax__scrapy-redis__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/lxfater__inpaint-web__Dockerfile",
+    "issues": [
+      "-:13 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fullhunt__log4j-scan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/HerbertHe__iptv-sources__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/shadowsocks__go-shadowsocks2__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3062 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in go. Instead of `go install <package>` use `go install <package>@<version>`",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/forthebadge__for-the-badge__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/richardyc__chrome-gpt__Dockerfile",
+    "issues": [
+      "-:13 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments",
+      "-:17 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments",
+      "-:22 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/arzzen__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/postgresml__pgcat__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/ronreiter__interactive-tutorials__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/shaarli__shaarli__Dockerfile",
+    "issues": [
+      "-:6 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:14 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:20 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:21 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/thp__urlwatch__Dockerfile",
+    "issues": [
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/zilliztech__deep-searcher__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jakobhoeg__nextjs-ollama-llm-ui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mermade__openapi-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/xingpingcn__enhanced-FaaS-in-China__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/pradumnasaraf__devops__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fnproject__fn__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:11 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/hylang__hy__Dockerfile",
+    "issues": [
+      "-:5 DL4000 \u001b[1m\u001b[91merror\u001b[0m: MAINTAINER is deprecated"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/devanshbatham__paramspider__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/mandiant__speakeasy__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:38 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:40 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:45 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/trusted-ai__aix360__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:12 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:15 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/reactiflux__discord-irc__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/star7th__showdoc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/fishros__install__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/chaifeng__ufw-docker__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:7 SC3009 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, brace expansion is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/jinnlynn__genpac__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/dcalsky__zzkia__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/maid__maid__Dockerfile",
+    "issues": [
+      "-:9 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/gosnmp__gosnmp__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/CBIhalsen__PolyglotPDF__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/allinurl__goaccess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/satnaing__astro-paper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/vm03__payload_dumper__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/parfum/alexbers__mtprotoproxy__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  }
+]

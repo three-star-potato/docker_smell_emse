@@ -1,0 +1,1 @@
+useradd --no-log-init -g nodejs -s /bin/bash -d /home/nodejs -m nodejs

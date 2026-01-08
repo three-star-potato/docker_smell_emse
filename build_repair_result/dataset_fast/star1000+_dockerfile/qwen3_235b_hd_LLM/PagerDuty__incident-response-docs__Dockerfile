@@ -1,0 +1,19 @@
+FROM cimg/python:3.9.2
+
+RUN pip3 install --no-cache-dir mkdocs pymdown-extensions pygments
+
+WORKDIR /tmp
+RUN git clone https://github.com/pagerduty/mkdocs-theme-pagerduty \
+    && cd mkdocs-theme-pagerduty \
+    && python3 setup.py install
+
+# Create user with sudo privileges if needed, but avoid sudo in container
+RUN useradd -m --uid 1000 mkdocs
+
+WORKDIR /docs
+USER mkdocs
+
+EXPOSE 8000
+
+ENTRYPOINT ["mkdocs"]
+CMD ["serve", "--dev-addr=0.0.0.0:8000"]

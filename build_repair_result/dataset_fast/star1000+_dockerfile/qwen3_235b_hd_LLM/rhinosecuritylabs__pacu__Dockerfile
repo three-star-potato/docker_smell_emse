@@ -1,0 +1,26 @@
+FROM python:3.9-alpine
+
+LABEL maintainer="Rhino Assessment Team <pacu@rhinosecuritylabs.com>"
+LABEL pacu.version="1.6.1"
+
+# Set working directory first to ensure subsequent commands run in correct context
+WORKDIR /usr/src/pacu/
+
+# Copy source files before installing dependencies to allow pip install .
+COPY ./ ./
+
+# Install system and Python dependencies in a single layer, using --no-cache-dir for pip
+RUN apk add --no-cache \
+    python3 \
+    py3-pip \
+    zip \
+    curl \
+    unzip \
+    && pip3 install --upgrade pip \
+    && pip3 install --no-cache-dir awscli \
+    && pip install --no-cache-dir .
+
+# Disable AWS EC2 metadata service by default
+RUN echo 'AWS_EC2_METADATA_DISABLED=true' >> /etc/profile
+
+ENTRYPOINT ["pacu"]

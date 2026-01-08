@@ -1,0 +1,1 @@
+RUN python3 -m pip wheel -w dist --no-binary "cffi" --no-binary -r requirements.txt

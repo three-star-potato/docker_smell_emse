@@ -1,0 +1,2446 @@
+[
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/statsd__statsd__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sea-team__gofound__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/m4tt72__terminal__Dockerfile",
+    "issues": [
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/l2xu__betterbahn__Dockerfile",
+    "issues": [
+      "-:32 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/google-gemini__gemini-fullstack-langgraph-quickstart__Dockerfile",
+    "issues": [
+      "-:25 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:25 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:45 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/danger__danger__Dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:22 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/oupala__apaxy__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/m4ll0k__secretfinder__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kong__mockbin__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pwnlandia__mhn__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zalando__patroni__Dockerfile",
+    "issues": [
+      "-:19 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:19 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:19 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:19 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:108 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:108 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:108 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nemesida-waf__waf-bypass__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:5 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ivanfioravanti__chatbot-ollama__Dockerfile",
+    "issues": [
+      "-:8 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/beanstalkd__beanstalkd__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/1n3__blackwidow__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/bashly-framework__bashly__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/womsxd__mihoyobbstools__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mongoengine__mongoengine__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/shekyan__slowhttptest__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fifocode__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/thewhiteh4t__pwnedornot__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hectorqin__reader__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/janoside__btc-rpc-explorer__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apidoc__apidoc__Dockerfile",
+    "issues": [
+      "-:22 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/connectai-e__feishu-openai__Dockerfile",
+    "issues": [
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/willfarrell__docker-autoheal__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/buffalowill__oxml_xxe__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lqqyt2423__wechat_spider__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ekalinin__github-markdown-toc__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/narkoz__gitlab__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/guillaumebriday__laravel-blog__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/chrisleekr__binance-trading-bot__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:44 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/aaronjanse__asciidots__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tomastomecek__sen__Dockerfile",
+    "issues": [
+      "-:4 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cloudflare__flan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tchiotludo__akhq__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/matthiasmullie__minify__Dockerfile",
+    "issues": [
+      "-:9 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:10 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:11 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:12 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:12 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jokkedk__webgrind__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cyberark__kubiscan__Dockerfile",
+    "issues": [
+      "-:44 SC2188 \u001b[1m\u001b[93mwarning\u001b[0m: This redirection doesn't have a command. Move to its command (or use 'true' as no-op)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/haugene__docker-transmission-openvpn__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:30 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:30 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:45 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fastapi-admin__fastapi-admin__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:7 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/markqvist__nomadnet__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hartator__wayback-machine-downloader__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/axiros__terminal_markdown_viewer__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/github__pages-gem__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:4 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apachecn__ailearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/openfunction__openfunction__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/googlechromelabs__comlink__Dockerfile",
+    "issues": [
+      "-:3 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root",
+      "-:5 DL4005 \u001b[1m\u001b[93mwarning\u001b[0m: Use SHELL to change the default shell",
+      "-:13 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/c4urself__bump2version__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/m3n0sd0n4ld__goofuzz__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/azgaar__fantasy-map-generator__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vasanthv__hello__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mar10__wsgidav__Dockerfile",
+    "issues": [
+      "-:16 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mickhansen__graphql-sequelize__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kpcyrd__sniffglue__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nabla-c0d3__sslyze__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/elceef__dnstwist__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mislav__hub__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ynqa__jnv__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/datafolklabs__cement__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/replexica__replexica__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/wanglin2__mind-map__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/missuo__FreeGPT35__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vasanthv__tlk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zdennis__activerecord-import__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mikemcquaid__strap__Dockerfile",
+    "issues": [
+      "-:17 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:45 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/joeferner__redis-commander__Dockerfile",
+    "issues": [
+      "-:19 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:19 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:19 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/awslabs__amazon-ecr-credential-helper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/perftools__xhgui__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:92 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias",
+      "-:93 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias",
+      "-:94 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/xinliangnote__go-gin-api__Dockerfile",
+    "issues": [
+      "-:25 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/honmashironeko__ProxyCat__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/docker__docker-bench-security__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/gilesknap__gphotos-sync__Dockerfile",
+    "issues": [
+      "-:25 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jtsang4__claude-to-chatgpt__Dockerfile",
+    "issues": [
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kozmer__log4j-shell-poc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vastsa__filecodebox__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ms-jpq__chadtree__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/github__hub__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tailcallhq__tailcall__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 SC2239 \u001b[1m\u001b[91merror\u001b[0m: Ensure the shebang uses an absolute path to the interpreter.",
+      "-:3 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:4 SC2239 \u001b[1m\u001b[91merror\u001b[0m: Ensure the shebang uses an absolute path to the interpreter.",
+      "-:6 SC2239 \u001b[1m\u001b[91merror\u001b[0m: Ensure the shebang uses an absolute path to the interpreter."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/basherpm__basher__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/forkcms__forkcms__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:8 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:26 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:26 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:50 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:70 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/inconvergent__weird__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/composite-primary-keys__composite_primary_keys__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hiifeng__V2ray-for-Doprax__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/koalalorenzo__python-digitalocean__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/grab__cursor-talk-to-figma-mcp__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/upserve__docker-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pure-admin__pure-admin-thin__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/miso-belica__sumy__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/reactjs__server-components-demo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/insoxin__api__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/catchpoint__WebPageTest.api-nodejs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/brainmaestro__composer-git-hooks__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/LanQian528__chat2api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fusionjs__fusionjs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zhayujie__bot-on-anything__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/869413421__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/d4vinci__cr3dov3r__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cakephp__chronos__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/imaegoo__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/n3d1117__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fabston__tradingview-webhook-bot__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mushorg__conpot__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/edgurgel__poxa__Dockerfile",
+    "issues": [
+      "-:33 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/guzzle__guzzle__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mrsked__mrsk__Dockerfile",
+    "issues": [
+      "-:4 DL3022 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY --from` should reference a previously defined `FROM` alias",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:26 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/martanne__vis__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:22 SC2016 \u001b[92minfo\u001b[0m: Expressions don't expand in single quotes, use double quotes for that.",
+      "-:26 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:26 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/opengs__uashield__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/chadoe__docker-cleanup-volumes__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/leebenson__reactql__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/closeio__tasktiger__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/alseambusher__crontab-ui__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/itstoggle__plex_debrid__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rstudio__plumber__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/magic-akari__lrc-maker__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/red5d__docker-autocompose__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/gautamkrishnar__socli__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/yonggekkk__doprax-xray__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/datalux__osintgram__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nytimes__library__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ptrofimov__beanstalk_console__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ikuaitu__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rom-rb__rom__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/why2lyj__youxiang-itchat__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/drewsif__pishrink__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:4 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/s3rius__fastapi-template__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/egzumer__uv-k5-firmware-custom__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/42school__norminette__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/devicefarmer__stf__Dockerfile",
+    "issues": [
+      "-:20 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:20 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:20 SC2164 \u001b[1m\u001b[93mwarning\u001b[0m: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.",
+      "-:75 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:75 SC2035 \u001b[92minfo\u001b[0m: Use ./*glob* or -- *glob* so names with dashes won't become options.",
+      "-:75 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:75 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/Estom__notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jarun__buku__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/theexplainthis__chatgpt-line-bot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/corneliusweig__rakkess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/aksakalli__gtop__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/consumet__api.consumet.org__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/0xacb__recollapse__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/blechschmidt__massdns__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/oh-my-fish__oh-my-fish__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/assimon__dujiaoka__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ankane__pgsync__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:5 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kyb3r__modmail__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lanmaster53__recon-ng__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lyrictian__gin-admin__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/steveltn__https-portal__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:43 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zhangmingzhao1__streamerhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lunarmodules__busted__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/elixirkoans__elixir-koans__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/enablesecurity__wafw00f__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jedisct1__minisign__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:16 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/unblockneteasemusic__server__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/atjiu__pybbs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/usarmyresearchlab__dshell__Dockerfile",
+    "issues": [
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:25 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/w5teams__w5__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:5 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/flike__kingshard__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/PagerDuty__incident-response-docs__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/eko__monday__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/blitzkraft__saythanks.io__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hagopj13__node-express-boilerplate__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/friendsofphp__php-cs-fixer__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:46 SC1072 \u001b[1m\u001b[91merror\u001b[0m: Expected test to end here (don't wrap commands in []/[[]]). Fix any mentioned problems and try again."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lukemathwalker__zero-to-production__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:22 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/q191201771__lal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/miguelgrinberg__flasky__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rbsec__dnscan__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/p1ngul1n0__blackbird__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rushter__mlalgorithms__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tgcatub__catuserbot__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/expdev07__coronavirus-tracker-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nowthis__sankeymatic__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/wasi-master__13ft__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/christophetd__log4shell-vulnerable-app__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/protectai__vulnhuntr__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/davideviolante__angular-full-stack__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kripken__ammo.js__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/xitanggg__open-resume__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/teamultroid__ultroid__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pogjester__company-research-agent__Dockerfile",
+    "issues": [
+      "-:20 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/stepci__stepci__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/p403n1x87__austin__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:3 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:3 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ionic-team__ionic-cli__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pablouser1__proxitok__Dockerfile",
+    "issues": [
+      "-:5 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/blenderskool__blaze__Dockerfile",
+    "issues": [
+      "-:28 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:29 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nihaojob__vue-fabric-editor__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vi__websocat__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/danielbayerlein__dashboard__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cormanz__smartgpt__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:4 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:4 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nakanomikuorg__arch-guide__Dockerfile",
+    "issues": [
+      "-:8 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rhinosecuritylabs__pacu__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:23 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fsociety-team__fsociety__Dockerfile",
+    "issues": [
+      "-:21 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/n64decomp__sm64__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/phpmetrics__phpmetrics__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/net-ssh__net-ssh__Dockerfile",
+    "issues": [
+      "-:12 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:32 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ekzhang__bore__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/disease-sh__api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apple__swift-docc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mjl-__mox__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/shadowmoose__redditdownloader__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/clytage__rawon__Dockerfile",
+    "issues": [
+      "-:7 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:14 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:30 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/edubart__nelua-lang__Dockerfile",
+    "issues": [
+      "-:2 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:18 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vasanthv__talk__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zyronon__typing-word__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/allinssl__allinssl__Dockerfile",
+    "issues": [
+      "/dev/stdin:21:1 unexpected 'R' expecting a new line followed by the next instruction"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kevinchappell__formbuilder__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/smithery-ai__mcp-obsidian__Dockerfile",
+    "issues": [
+      "-:6 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/guaguaguaxia__weekly_report__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/holtwick__briefing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/0x727__observerward__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:29 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/snailyp__gemini-balance__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/getAsterisk__deepclaude__Dockerfile",
+    "issues": [
+      "-:2 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:21 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tree3333__uni-llm-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rdavydov__twitch-channel-points-miner-v2__Dockerfile",
+    "issues": [
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jnunemaker__flipper__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/marven11__fenjing__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/giacomo-b__rust-stakeholder__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/prometheus-pve__prometheus-pve-exporter__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tfutils__tfenv__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tighten__takeout__Dockerfile",
+    "issues": [
+      "-:6 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:7 DL3023 \u001b[1m\u001b[91merror\u001b[0m: `COPY --from` cannot reference its own `FROM` alias",
+      "-:10 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/phyver__gameshell__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ayaka14732__chatgptapifree__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jhao104__proxy_pool__Dockerfile",
+    "issues": [
+      "-:13 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mobilenativefoundation__xclogparser__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cosmicpython__code__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ondras__wwwsqldesigner__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/orvice__ss-panel__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:12 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tinysearch__tinysearch__Dockerfile",
+    "issues": [
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:32 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:32 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:42 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/owenashurst__agar.io-clone__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sameersbn__docker-postgresql__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:5 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:29 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/studygolang__studygolang__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/peak__s5cmd__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/janishar__nodejs-backend-architecture-typescript__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/aws-cloudformation__cloudformation-guard__Dockerfile",
+    "issues": [
+      "-:4 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:6 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:18 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hashpals__name-that-hash__DockerFile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:5 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/evyatarmeged__raccoon__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/xwiki-labs__cryptpad__Dockerfile",
+    "issues": [
+      "-:9 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/stellar__soroban-example-dapp__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:6 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:6 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting.",
+      "-:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/LLM-Red-Team__kimi-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/glacambre__firenvim__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mendableai__firecrawl-mcp-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vasanthv__jsonbox__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pmotschmann__evolve__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vitalif__grive2__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:9 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:16 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/HelgeSverre__ollama-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ying-ck__fanqienovel-downloader__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/johnroper100__dropplets__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:5 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something",
+      "-:5 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mrvautin__expresscart__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/travisjeffery__timecop__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/leandromoreira__cdn-up-and-running__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kelektiv__node.bcrypt.js__Dockerfile",
+    "issues": [
+      "-:28 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/alpinelinux__docker-alpine__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/OWASP__API-Security__Dockerfile",
+    "issues": [
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nerzal__gocloak__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/twikoojs__twikoo__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/chatgpt-web-dev__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:40 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mrs4s__go-cqhttp__Dockerfile",
+    "issues": [
+      "-:14 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/wolveix__satisfactory-server__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sceptre__sceptre__Dockerfile",
+    "issues": [
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/yym68686__chatgpt-telegram-bot__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sealedsaucer__online-forever__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ozguralp__gmapsapiscanner__Dockerfile",
+    "issues": [
+      "-:5 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rtcamp__action-slack-notify__Dockerfile",
+    "issues": [
+      "-:24 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:24 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/0xdkd__auxpi__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lfe__lfe__Dockerfile",
+    "issues": [
+      "-:13 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hack4impact__flask-base__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3028 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in gem install. Instead of `gem install <gem>` use `gem install <gem>:<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/gautamkrishnar__nothing-private__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ther1d__shell_gpt__Dockerfile",
+    "issues": [
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/kern__filepizza__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/git-quick-stats__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/LLM-Red-Team__deepseek-free-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/joye61__pic-smaller__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/go-spatial__tegola__Dockerfile",
+    "issues": [
+      "-:44 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:44 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:47 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:52 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:62 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sj26__mailcatcher__Dockerfile",
+    "issues": [
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tl-open-source__tl-rtc-file__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/airtai__faststream__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/The-Pocket__Tutorial-Codebase-Knowledge__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/wbthomason__packer.nvim__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/qeeqbox__social-analyzer__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/renatomarinho__laravel-page-speed__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cla-assistant__cla-assistant__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/chaitin__veinmind-tools__Dockerfile",
+    "issues": [
+      "-:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/flozz__p0wny-shell__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/harishsg993010__damn-vulnerable-MCP-server__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:24 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cnpm__cnpmjs.org__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/xiaomiku01__fansmedalhelper__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/iann0036__former2__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/crobertsbmw__deckofcards__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/dokku__dokku-letsencrypt__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/bee-san__pywhat__Dockerfile",
+    "issues": [
+      "-:2 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/luolongfei__freenom__Dockerfile",
+    "issues": [
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jorgebastida__awslogs__Dockerfile",
+    "issues": [
+      "-:4 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/szad670401__hyperlpr__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:9 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/givanz__vvvebjs__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/claudiugeorgiu__playstoredownloader__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sighook__pixload__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/eldraco__domain_analyzer__Dockerfile",
+    "issues": [
+      "-:9 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jbesomi__texthero__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/umputun__reproxy__Dockerfile",
+    "issues": [
+      "-:12 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:14 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:14 SC3057 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, string indexing is undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/yamadashy__repopack__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:21 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rhinosecuritylabs__cloudgoat__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/psi-4ward__psitransfer__Dockerfile",
+    "issues": [
+      "-:8 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:20 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/harsxv__tinystatus__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/netptop__siteproxy__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ambionics__phpggc__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:15 SC2086 \u001b[92minfo\u001b[0m: Double quote to prevent globbing and word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/knrt10__kubernetes-basiclearning__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/Toperlock__sing-box-subscribe__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/devinus__poison__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/Zie619__n8n-workflows__Dockerfile",
+    "issues": [
+      "-:14 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/phpvirtualbox__phpvirtualbox__Dockerfile",
+    "issues": [
+      "-:2 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/scanapi__scanapi__Dockerfile",
+    "issues": [
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rbanffy__3270font__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/guptarohit__asciigraph__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tecnativa__docker-socket-proxy__Dockerfile",
+    "issues": [
+      "-:36 DL3002 \u001b[1m\u001b[93mwarning\u001b[0m: Last USER should not be root"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/silinternational__ecs-deploy__Dockerfile",
+    "issues": [
+      "-:4 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tencent__mmkv__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/babaohuang__GeminiProChat__Dockerfile",
+    "issues": [
+      "-:12 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/s0md3v__photon__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/qodo-ai__qodo-cover__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/spectolabs__hoverfly__Dockerfile",
+    "issues": [
+      "-:4 DL3062 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in go. Instead of `go install <package>` use `go install <package>@<version>`",
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/modmail-dev__modmail__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:15 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:17 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/bhupesh-v__ugit__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zero6992__chatgpt-discord-bot__Dockerfile",
+    "issues": [
+      "-:13 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/migueravila__bento__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rdbo__libmem__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/haibbo__cf-openai-azure-proxy__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tiangolo__nginx-rtmp-docker__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:22 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:30 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mevdschee__php-crud-api__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/freeopcua__python-opcua__Dockerfile",
+    "issues": [
+      "-:3 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/threatexpress__domainhunter__dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apachecn__mit-18.06-linalg-notes__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jamesmawm__high-frequency-trading-model-with-ib__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/e1ven__robohash__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apachecn__Interview__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/gwuhaolin__livego__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ericciarla__trendFinder__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nilsherzig__LLocalSearch__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/armon__bloomd__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation.",
+      "-:11 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:15 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/erikdubbelboer__phpredisadmin__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/talebook__talebook__Dockerfile",
+    "issues": [
+      "-:27 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly",
+      "-:38 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:38 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:51 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:58 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:58 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+      "-:69 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:70 DL3048 \u001b[96mstyle\u001b[0m: Invalid label key.",
+      "-:102 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:130 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:130 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:130 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/amark__gun__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:26 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:30 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mher__flower__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pypa__gh-action-pypi-publish__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sysgears__apollo-universal-starter-kit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/waylaidwanderer__node-chatgpt-api__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ErlichLiu__DeepClaude__Dockerfile",
+    "issues": [
+      "-:8 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tuhinshubhra__cmseek__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nadrad__h-m-m__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/byt3bl33d3r__deathstar__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jtesta__ssh-audit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/changeweb__unifiedtransform__Dockerfile",
+    "issues": [
+      "-:10 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:10 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/threat9__routersploit__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/elasticsearch-dump__elasticsearch-dump__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/4x99__code6__Dockerfile",
+    "issues": [
+      "-:18 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vexorian__dizquetv__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jef__streetmerchant__Dockerfile",
+    "issues": [
+      "-:22 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/threema-ch__threema-web__Dockerfile",
+    "issues": [
+      "-:23 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vickscarlet__liferestart__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/apachecn__fe4ml-zh__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/LibreSpark__LibreTV__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/Chanzhaoyu__chatgpt-web__Dockerfile",
+    "issues": [
+      "-:4 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:21 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`",
+      "-:38 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/levywang__avhub__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:8 DL3009 \u001b[92minfo\u001b[0m: Delete the apt lists (/var/lib/apt/lists) after installing something"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/bellingcat__octosuite__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:9 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/sinaatalay__rendercv__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jpmens__jo__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:2 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/nwtgck__piping-server__Dockerfile",
+    "issues": [
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/exentriquesolutions__nip.io__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/MarSeventh__CloudFlare-ImgBed__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/srmklive__laravel-paypal__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/tdurieux__anonymous_github__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/cyclotruc__gitingest__Dockerfile",
+    "issues": [
+      "-:6 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:14 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:14 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates).",
+      "-:33 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:40 DL3046 \u001b[1m\u001b[93mwarning\u001b[0m: `useradd` without flag `-l` and high UID will result in excessively large Image."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pad-ws__pad.ws__Dockerfile",
+    "issues": [
+      "-:24 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zenika__alpine-chrome__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/SoraWebui__SoraWebui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/academicpages__academicpages.github.io__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/eyebluecn__tank__Dockerfile",
+    "issues": [
+      "-:21 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/thewhiteh4t__finalrecon__Dockerfile",
+    "issues": [
+      "-:3 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:3 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/acecilia__OpenWRTInvasion__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ramitsurana__awesome-kubernetes__Dockerfile",
+    "issues": [
+      "-:5 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3025 \u001b[1m\u001b[93mwarning\u001b[0m: Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/schenkd__nginx-ui__Dockerfile",
+    "issues": [
+      "-:3 DL3045 \u001b[1m\u001b[93mwarning\u001b[0m: `COPY` to a relative destination without `WORKDIR` set.",
+      "-:5 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ngerakines__commitment__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/libccy__noname__Dockerfile",
+    "issues": [
+      "-:7 DL3016 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in npm. Instead of `npm install <package>` use `npm install <package>@<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zotify-dev__zotify__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:11 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/schlagmichdoch__pairdrop__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rahulnyk__knowledge_graph__dockerfile",
+    "issues": [
+      "-:12 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:16 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/desaster__kippo__Dockerfile",
+    "issues": [
+      "-:18 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/rmax__scrapy-redis__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/lxfater__inpaint-web__Dockerfile",
+    "issues": [
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fullhunt__log4j-scan__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:8 DL3059 \u001b[92minfo\u001b[0m: Multiple consecutive `RUN` instructions. Consider consolidation."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/HerbertHe__iptv-sources__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/shadowsocks__go-shadowsocks2__Dockerfile",
+    "issues": [
+      "-:6 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:6 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:6 DL3062 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in go. Instead of `go install <package>` use `go install <package>@<version>`",
+      "-:14 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/forthebadge__for-the-badge__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/richardyc__chrome-gpt__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/arzzen__git-quick-stats__Dockerfile",
+    "issues": [
+      "-:1 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC3037 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, echo flags are undefined."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/postgresml__pgcat__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:11 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/ronreiter__interactive-tutorials__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/shaarli__shaarli__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag",
+      "-:31 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/thp__urlwatch__Dockerfile",
+    "issues": [
+      "-:15 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/zilliztech__deep-searcher__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jakobhoeg__nextjs-ollama-llm-ui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mermade__openapi-gui__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/xingpingcn__enhanced-FaaS-in-China__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/pradumnasaraf__devops__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fnproject__fn__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:7 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory",
+      "-:12 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/hylang__hy__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/devanshbatham__paramspider__Dockerfile",
+    "issues": [
+      "-:8 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/mandiant__speakeasy__Dockerfile",
+    "issues": [
+      "-:7 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:13 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:13 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/trusted-ai__aix360__Dockerfile",
+    "issues": [
+      "-:9 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/reactiflux__discord-irc__Dockerfile",
+    "issues": [
+      "-:9 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/star7th__showdoc__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/fishros__install__Dockerfile",
+    "issues": [
+      "-:2 DL3007 \u001b[1m\u001b[93mwarning\u001b[0m: Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/chaifeng__ufw-docker__Dockerfile",
+    "issues": [
+      "-:7 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`",
+      "-:7 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`",
+      "-:7 DL4006 \u001b[1m\u001b[93mwarning\u001b[0m: Set the SHELL option -o pipefail before RUN with a pipe in it. If you are using /bin/sh in an alpine image or if your shell is symlinked to busybox then consider explicitly setting your SHELL to /bin/ash, or disable this check",
+      "-:7 SC3009 \u001b[1m\u001b[93mwarning\u001b[0m: In POSIX sh, brace expansion is undefined.",
+      "-:31 DL3020 \u001b[1m\u001b[91merror\u001b[0m: Use COPY instead of ADD for files and folders",
+      "-:37 DL3020 \u001b[1m\u001b[91merror\u001b[0m: Use COPY instead of ADD for files and folders"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/jinnlynn__genpac__Dockerfile",
+    "issues": [
+      "-:10 DL3013 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`",
+      "-:10 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:10 SC2102 \u001b[92minfo\u001b[0m: Ranges can only match single chars (mentioned due to duplicates)."
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/dcalsky__zzkia__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/maid__maid__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/gosnmp__gosnmp__Dockerfile",
+    "issues": [
+      "-:4 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/CBIhalsen__PolyglotPDF__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/allinurl__goaccess__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:21 SC2046 \u001b[1m\u001b[93mwarning\u001b[0m: Quote this to prevent word splitting.",
+      "-:27 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/satnaing__astro-paper__Dockerfile",
+    "issues": []
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/vm03__payload_dumper__Dockerfile",
+    "issues": [
+      "-:3 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`",
+      "-:3 DL3019 \u001b[92minfo\u001b[0m: Use the `--no-cache` switch to avoid the need to use `--update` and remove `/var/cache/apk/*` when done installing packages",
+      "-:11 DL3018 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"
+    ]
+  },
+  {
+    "dockerfile_path": "repair_result/dataset_fast/star1000+_dockerfile/qwen3_32b_hd_LLM_nothink_2/alexbers__mtprotoproxy__Dockerfile",
+    "issues": [
+      "-:3 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`"
+    ]
+  }
+]

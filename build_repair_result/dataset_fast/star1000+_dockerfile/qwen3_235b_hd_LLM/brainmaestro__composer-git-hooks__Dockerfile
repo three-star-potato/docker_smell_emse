@@ -1,0 +1,11 @@
+FROM composer:2.3
+WORKDIR /app
+
+COPY ./composer.* ./
+RUN sed -i '/\.\/cghooks .*/d' composer.json && \
+    composer install
+
+COPY . .
+RUN composer check-style && \
+    composer test && \
+    ./cghooks add

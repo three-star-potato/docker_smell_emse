@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+WORKDIR /austin
+COPY . /austin
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends autoconf build-essential libunwind-dev binutils-dev libiberty-dev zlib1g-dev && \
+    autoreconf --install && \
+    ./configure && \
+    make && \
+    make install && \
+    rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,17 @@
+# Based on Preview 7
+# https://soroban.stellar.org/docs/reference/releases
+
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install --no-install-recommends -y curl && rm -rf /var/lib/apt/lists/*;
+
+RUN curl -L --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN echo $PATH
+ENV PATH="$PATH:/root/.cargo/bin"
+RUN rustup target add wasm32-unknown-unknown
+
+RUN apt-get install --no-install-recommends -y build-essential && rm -rf /var/lib/apt/lists/*;
+# WORKDIR /
+RUN mkdir /workspace
+WORKDIR /workspace
+ENV IS_USING_DOCKER=true

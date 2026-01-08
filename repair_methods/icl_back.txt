@@ -1,0 +1,117 @@
+# site from https://sites.google.com/view/msrdra25/home
+
+import argparse
+import docker
+import time
+import json
+import pandas as pd
+from openai import OpenAI
+import nltk
+nltk.download('punkt')
+
+from nltk.tokenize import word_tokenize
+import os
+
+# Constants
+API_KEY = "your_api_key"
+DOCKER_CLIENT = docker.from_env()
+
+# Initialize OpenAI client
+client = OpenAI(api_key=API_KEY)
+
+
+
+def make_api_call(dockerfile_content):
+    prompt = f"""
+     You are an expert in Docker and software refactoring. You're provided with a Dockerfile. Your task is to analyze this Dockerfile in detail and perform the following steps:
+
+1. **Identify Problems:** Identify any problems or inefficiencies in the Dockerfile that could be optimized. Focus on issues related to build efficiency, image size, understanbility and maintainability.
+
+2. **Refactoring Techniques:** After identifying the problems, go through the following list of refactoring techniques and determine which ones could be applied to solve the identified problems:
+   - Replace ADD with COPY Instruction: Replace `ADD` with `COPY` for non-URL sources to improve clarity and reduce build context size. if there is no add used don't opt for this refactoring
+   - Inline Run Instructions: Combine adjacent `RUN` commands using `&&` to reduce the number of layers and optimize the image size.
+   - Multistage builds to separate the build environment from the runtime environment, reducing the final image size.
+   - Update Base-Image-TAG:  when the base image tag is 'latest'. Specify an explicit version in the `FROM` statement instead of using `latest`.
+   - Update Base Image: verify if the current base image is oversized, or a more specific image is available (based on the packages and dependencies used in the Dockerfile). Update the `FROM` statement to a more suitable base image and perform necessary changes if needed to ensure compatibility.
+   - Rename Image: when stages' names are missing or could be better for clarity and understandability add meaningful names or rename using `AS` in multi-stage builds
+   - Add ARG instruction: Introduce ARG instructions to definie build time variables to customize and parameterize the build process without hardcoding values.
+   - Introduce environment variables for configuration instead of hard-coded values.
+   - Inline stage: if multi-staging is used in the dockerfile, verify its worthiness and if it does not reduce complexity or if all intermediate artifacts are needed in the final image. Remove multi-stage building.
+   - Sort Instructions: Rearrange instructions to optimize layer caching.
+
+3. **Apply Refactorings:** Based on the assessment in step 2, refactor the Dockerfile. Implement the selected refactoring techniques, ensuring that each change maintains or improves the functionality and performance of the Dockerfile. Provide a detailed explanation for each refactoring applied, including how it addresses the issues identified in step 1.
+    ##Dockerfile for Analysis:
+    {dockerfile_content}
+4. **Output Format:** Your response should be structured as follows:
+   - **Original Problems:** Identify the current problems.
+   - **Refactoring you will to apply:** Describe each refactoring technique applied and its rationale. (if any; otherwise leave empty)
+   - **Refactored Dockerfile:** Provide the complete refactored Dockerfile that can be copied and used immeditly into the project, that incorporates all the changes.(if any; otherwise keep same dockerfile)
+
+
+Ensure that the final refactored Dockerfile is fully functional, ready to be built, and optimized according to the refactoring techniques listed. The response should be clear, concise, and directly applicable to the provided Dockerfile.
+    """
+    response = client.chat.completions.create(
+        messages=[
+            {"role": "system", "content": " You are an expert in Docker and software refactoring. You're provided a Dockerfile and must recommend improvements strictly from a predefined list of refactorings the output should be JSON  of the Original Problems, Refactorings you are willing to apply and the new Refactored Dockerfile (the dockerfile should be in plain text, no array and correct syntax ready to be built): ."},
+            {"role": "user", "content": prompt},
+        ],
+        model="gpt-4o",
+        temperature=0,
+        response_format={ "type": "json_object" }
+    )
+    results = response.choices[0].message.content
+
+    return results
+
+def update_dockerfile(dockerfile_path, new_content):
+    """Update the Dockerfile with new content and print it."""
+    with open(dockerfile_path, 'w') as file:
+        file.write(new_content)
+    print("Updated Dockerfile content:")
+    print(new_content)
+
+def build_dockerfile(dockerfile_path, tag):
+    """Build Dockerfile and print build metrics."""
+    context_path = os.path.dirname(dockerfile_path)
+    print(f"Building Docker image from {dockerfile_path}...")
+    start_time = time.time()
+    image, _ = DOCKER_CLIENT.images.build(path=context_path, dockerfile=os.path.basename(dockerfile_path), tag=tag)
+    build_time = time.time() - start_time
+    image_size = image.attrs['Size']
+    print(f"Image built with tag {tag}, Build Time: {build_time} seconds, Size: {image_size} bytes")
+    return build_time, image_size
+
+def main():
+    parser = argparse.ArgumentParser(description="Refactor Dockerfile using AI suggestions.")
+    parser.add_argument("--dockerfile_path", required=True, help="Path to the Dockerfile to refactor")
+    parser.add_argument("--tag", required=True, help="Tag for the built Docker image")
+    args = parser.parse_args()
+
+
+
+    # Read the test Dockerfile
+    with open(args.dockerfile_path, 'r') as file:
+        test_dockerfile = file.read()
+
+    api_result = make_api_call(test_dockerfile)
+    data = json.loads(api_result)
+    refactored_dockerfile = data["Refactored Dockerfile"]
+
+
+    # Update and build Dockerfile
+    with open(args.dockerfile_path, 'w') as file:
+        file.write(refactored_dockerfile)
+    print("Updated Dockerfile content:")
+    print(refactored_dockerfile)
+
+    # Build Dockerfile and print metrics
+    context_path = os.path.dirname(args.dockerfile_path)
+    print(f"Building Docker image from {args.dockerfile_path}...")
+    start_time = time.time()
+    image, _ = DOCKER_CLIENT.images.build(path=context_path, dockerfile=os.path.basename(args.dockerfile_path), tag=args.tag)
+    build_time = time.time() - start_time
+    image_size = image.attrs['Size']
+    print(f"Image built with tag {args.tag}, Build Time: {build_time} seconds, Size: {image_size} bytes")
+
+if __name__ == "__main__":
+    main()

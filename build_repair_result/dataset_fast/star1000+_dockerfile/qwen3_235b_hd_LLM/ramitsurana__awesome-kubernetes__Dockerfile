@@ -1,0 +1,14 @@
+FROM ubuntu:16.04
+
+LABEL maintainer="Ramit Surana"
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends nginx git python-pip && \
+    rm -rf /var/lib/apt/lists/*
+
+EXPOSE 80
+
+CMD git clone https://github.com/ramitsurana/awesome-kubernetes && \
+    cd awesome-kubernetes && \
+    pip install grip && \
+    grip --bind-address 0.0.0.0 --port 80 .

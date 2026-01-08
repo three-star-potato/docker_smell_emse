@@ -1,0 +1,6 @@
+FROM node:latest
+COPY . /root/typing-word
+WORKDIR /root/typing-thing
+EXPOSE 3000
+RUN npm install
+CMD ["npm", "start"]

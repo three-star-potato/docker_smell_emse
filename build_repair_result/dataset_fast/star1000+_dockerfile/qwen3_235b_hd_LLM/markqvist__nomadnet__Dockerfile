@@ -1,0 +1,27 @@
+FROM python:3.12-alpine as build
+
+RUN apk add --no-cache build-base linux-headers libffi-dev cargo && \
+    python -m venv /opt/venv
+
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip3 install --no-cache-dir setuptools-rust pyopenssl cryptography
+
+WORKDIR /app
+COPY . /app
+RUN pip3 install --no-cache-dir .
+
+# Use multi-stage build, as we don't need rust compilation on the final image
+FROM python:3.12-alpine
+
+LABEL org.opencontainers.image.documentation="https://github.com/markqvist/NomadNet#nomad-network-daemon-with-docker"
+
+ENV PATH="/opt/venv/bin:$PATH" \
+    PYTHONUNBUFFERED="yes"
+
+COPY --from=build /opt/venv /opt/venv
+
+VOLUME /root/.reticulum
+VOLUME /root/.nomadnetwork
+
+ENTRYPOINT ["nomadnet"]
+CMD ["--daemon"]

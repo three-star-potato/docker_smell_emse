@@ -1,0 +1,50 @@
+FROM php:7.4-apache
+
+EXPOSE 80
+
+ENV MYSQL_HOST="mysql"
+ENV MYSQL_PORT="3306"
+ENV MYSQL_DATABASE="code6"
+ENV MYSQL_USERNAME=""
+ENV MYSQL_PASSWORD=""
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+
+WORKDIR /var/www/html
+
+# Copy application code and entrypoint script
+COPY . /var/www/html
+COPY docker-entrypoint.sh /var/www/html/docker-entrypoint.sh
+
+# Install system deps, PHP extensions, configure Apache, set up tools and run Composer
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
+    echo 'deb http://mirrors.aliyun.com/debian buster main' >> /etc/apt/sources.list && \
+    echo 'deb http://mirrors.aliyun.com/debian buster-updates main' >> /etc/apt/sources.list && \
+    apt-get update && \
+    apt-get install -y --allow-downgrades --no-install-recommends zip cron vim zlib1g=1:1.2.11.dfsg-1+deb10u1 zlib1g-dev libpng-dev && \
+    rm -rf /var/lib/apt/lists/* && \
+    \
+    docker-php-ext-install pdo_mysql && \
+    docker-php-ext-install gd && \
+    \
+    sed -ri -e "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/sites-available/*.conf && \
+    sed -ri -e "s!/var/www/!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf && \
+    \
+    rm -rf /etc/localtime && \
+    ln -s /usr/share/zoneinfo/PRC /etc/localtime && \
+    \
+    echo "alias ll='ls -l'" >> /etc/bash.bashrc && \
+    \
+    { \
+        echo 'set fileencodings=utf-8'; \
+        echo 'set termencoding=utf-8'; \
+        echo 'set encoding=utf-8'; \
+    } >> /etc/vim/vimrc && \
+    \
+    curl -sS https://mirrors.aliyun.com/composer/composer.phar -o composer.phar && \
+    chmod +x composer.phar && \
+    mv composer.phar /usr/local/bin/composer && \
+    composer config repo.packagist composer https://mirrors.aliyun.com/composer/ && \
+    composer install --no-dev --no-progress --optimize-autoloader && \
+    chmod +x docker-entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "docker-entrypoint.sh"]

@@ -1,0 +1,801 @@
+[
+  {
+    "id": "DL1001",
+    "defaultSeverity": "Info",
+    "function_impact": "Maintainability",
+    "description": "Please refrain from using inline ignore pragmas # hadolint ignore=DLxxxx."
+  },
+  {
+    "id": "DL3000",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Use absolute WORKDIR."
+  },
+  {
+    "id": "DL3001",
+    "defaultSeverity": "Info",
+    "function_impact": "Security",
+    "description": "For some bash commands it makes no sense running them in a Docker container like ssh, vim, shutdown, service, ps, free, top, kill, mount, ifconfig."
+  },
+  {
+    "id": "DL3002",
+    "defaultSeverity": "Warning",
+    "function_impact": "Security",
+    "description": "Last user should not be root."
+  },
+  {
+    "id": "DL3003",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use WORKDIR to switch to a directory."
+  },
+  {
+    "id": "DL3004",
+    "defaultSeverity": "Error",
+    "function_impact": "Security",
+    "description": "Do not use sudo as it leads to unpredictable behavior. Use a tool like gosu to enforce root."
+  },
+  {
+    "id": "DL3006",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Always tag the version of an image explicitly."
+  },
+  {
+    "id": "DL3007",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag."
+  },
+  {
+  "id": "DL3008",
+  "defaultSeverity": "Warning",
+  "function_impact": "Security",
+  "description": "Pin versions in apt-get install."
+  },
+  {
+    "id": "DL3009",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Delete the apt-get lists after installing something."
+  },
+  {
+    "id": "DL3010",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Use ADD for extracting archives into an image."
+  },
+  {
+    "id": "DL3011",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Valid UNIX ports range from 0 to 65535."
+  },
+  {
+    "id": "DL3012",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Multiple HEALTHCHECK instructions."
+  },
+  {
+    "id": "DL3013",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Pin versions in pip."
+  },
+  {
+    "id": "DL3014",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use the -y switch."
+  },
+{
+  "id": "DL3015",
+  "defaultSeverity": "Info",
+  "function_impact": "Security",
+  "description": "Avoid additional packages by specifying --no-install-recommends."
+},
+  {
+    "id": "DL3016",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Pin versions in npm."
+  },
+  {
+    "id": "DL3018",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Pin versions in apk add. Instead of apk add <package> use apk add <package>=<version>."
+  },
+  {
+    "id": "DL3019",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Use the --no-cache switch to avoid the need to use --update and remove /var/cache/apk/* when done installing packages."
+  },
+{
+  "id": "DL3020",
+  "defaultSeverity": "Error",
+  "function_impact": "Security",
+  "description": "Use COPY instead of ADD for files and folders."
+},
+  {
+    "id": "DL3021",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "COPY with more than 2 arguments requires the last argument to end with /"
+  },
+  {
+    "id": "DL3022",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "COPY --from should reference a previously defined FROM alias"
+  },
+  {
+    "id": "DL3023",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "COPY --from cannot reference its own FROM alias"
+  },
+  {
+    "id": "DL3024",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "FROM aliases (stage names) must be unique"
+  },
+  {
+    "id": "DL3025",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use arguments JSON notation for CMD and ENTRYPOINT arguments"
+  },
+  {
+    "id": "DL3026",
+    "defaultSeverity": "Error",
+    "function_impact": "Security",
+    "description": "Use only an allowed registry in the FROM image"
+  },
+  {
+    "id": "DL3027",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Do not use apt as it is meant to be an end-user tool, use apt-get or apt-cache instead"
+  },
+  {
+    "id": "DL3028",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Pin versions in gem install. Instead of gem install <gem> use gem install <gem>:<version>"
+  },
+  {
+    "id": "DL3029",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Do not use --platform flag with FROM."
+  },
+  {
+    "id": "DL3030",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use the -y switch to avoid manual input yum install -y <package>"
+  },
+  {
+    "id": "DL3032",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "yum clean all missing after yum command."
+  },
+  {
+    "id": "DL3033",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Specify version with yum install -y <package>-<version>"
+  },
+  {
+    "id": "DL3034",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Non-interactive switch missing from zypper command: zypper install -y"
+  },
+  {
+    "id": "DL3035",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Do not use zypper dist-upgrade."
+  },
+  {
+    "id": "DL3036",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "zypper clean missing after zypper use."
+  },
+  {
+    "id": "DL3037",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Specify version with zypper install -y <package>[=]<version>."
+  },
+  {
+    "id": "DL3038",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use the -y switch to avoid manual input dnf install -y <package>"
+  },
+  {
+    "id": "DL3040",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "dnf clean all missing after dnf command."
+  },
+  {
+    "id": "DL3041",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Specify version with dnf install -y <package>-<version>"
+  },
+  {
+    "id": "DL3042",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "Avoid cache directory with pip install --no-cache-dir <package>."
+  },
+  {
+    "id": "DL3043",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "ONBUILD, FROM or MAINTAINER triggered from within ONBUILD instruction."
+  },
+  {
+    "id": "DL3044",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Do not refer to an environment variable within the same ENV statement where it is defined."
+  },
+  {
+    "id": "DL3045",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "COPY to a relative destination without WORKDIR set."
+  },
+  {
+    "id": "DL3046",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "useradd without flag -l and high UID will result in excessively large Image."
+  },
+  {
+    "id": "DL3047",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "wget without flag --progress will result in excessively bloated build logs when downloading larger files."
+  },
+  {
+    "id": "DL3048",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Invalid Label Key"
+  },
+  {
+    "id": "DL3049",
+    "defaultSeverity": "Info",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is missing."
+  },
+  {
+    "id": "DL3050",
+    "defaultSeverity": "Info",
+    "function_impact": "Maintainability",
+    "description": "Superfluous label(s) present."
+  },
+  {
+    "id": "DL3051",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is empty."
+  },
+  {
+    "id": "DL3052",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is not a valid URL."
+  },
+  {
+    "id": "DL3053",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is not a valid time format - must conform to RFC3339."
+  },
+  {
+    "id": "DL3054",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is not a valid SPDX license identifier."
+  },
+  {
+    "id": "DL3055",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is not a valid git hash."
+  },
+  {
+    "id": "DL3056",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> does not conform to semantic versioning."
+  },
+  {
+    "id": "DL3057",
+    "defaultSeverity": "Info",
+    "function_impact": "Maintainability",
+    "description": "HEALTHCHECK instruction missing."
+  },
+  {
+    "id": "DL3058",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Label <label> is not a valid email format - must conform to RFC5322."
+  },
+  {
+    "id": "DL3059",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Multiple consecutive RUN instructions. Consider consolidation."
+  },
+  {
+    "id": "DL3060",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "yarn cache clean missing after yarn install was run."
+  },
+  {
+    "id": "DL3061",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Invalid instruction order. Dockerfile must begin with FROM, ARG or comment."
+  },
+  {
+    "id": "DL4000",
+    "defaultSeverity": "Error",
+    "function_impact": "Maintainability",
+    "description": "MAINTAINER is deprecated."
+  },
+  {
+    "id": "DL4001",
+    "defaultSeverity": "Warning",
+    "function_impact": "Efficiency",
+    "description": "Either use Wget or Curl but not both."
+  },
+  {
+    "id": "DL4003",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Multiple CMD instructions found."
+  },
+  {
+    "id": "DL4004",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Multiple ENTRYPOINT instructions found."
+  },
+  {
+    "id": "DL4005",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Use SHELL to change the default shell."
+  },
+  {
+    "id": "DL4006",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Set the SHELL option -o pipefail before RUN with a pipe in it"
+  },
+  {
+    "id": "SC1000",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "$ is not used specially and should therefore be escaped."
+  },
+  {
+    "id": "SC1001",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "This \\c will be a regular 'c' in this context."
+  },
+  {
+    "id": "SC1007",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Remove space after = if trying to assign a value (or for empty string, use var='' ...)."
+  },
+  {
+    "id": "SC1010",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use semicolon or linefeed before done (or quote to make it literal)."
+  },
+  {
+    "id": "SC1018",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "This is a unicode non-breaking space. Delete it and retype as space."
+  },
+  {
+    "id": "SC1035",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "You need a space here"
+  },
+  {
+    "id": "SC1045",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "It's not foo &; bar, just foo & bar."
+  },
+  {
+    "id": "SC1065",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Trying to declare parameters? Don't. Use () and refer to params as $1, $2 etc."
+  },
+  {
+    "id": "SC1066",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Don't use $ on the left side of assignments."
+  },
+  {
+    "id": "SC1068",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Don't put spaces around the = in assignments."
+  },
+  {
+    "id": "SC1077",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "For command expansion, the tick should slant left (` vs ´)."
+  },
+  {
+    "id": "SC1078",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Did you forget to close this double-quoted string?"
+  },
+  {
+    "id": "SC1079",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "This is actually an end quote, but due to next char, it looks suspect."
+  },
+  {
+    "id": "SC1081",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Scripts are case sensitive. Use if, not If."
+  },
+  {
+    "id": "SC1083",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "This {/} is literal. Check expression (missing ;/\\n?) or quote it."
+  },
+  {
+    "id": "SC1086",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Don't use $ on the iterator name in for loops."
+  },
+  {
+    "id": "SC1087",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Braces are required when expanding arrays, as in ${array[idx]}."
+  },
+  {
+    "id": "SC1095",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "You need a space or linefeed between the function name and body."
+  },
+  {
+    "id": "SC1097",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Unexpected ==. For assignment, use =. For comparison, use [ .. ] or [[ .. ]]."
+  },
+  {
+    "id": "SC1098",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Quote/escape special characters when using eval, e.g. eval \"a=(b)\"."
+  },
+  {
+    "id": "SC1099",
+    "defaultSeverity": "Info",
+    "function_impact": "Correctness",
+    "description": "You need a space before the #."
+  },
+  {
+    "id": "SC2002",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Useless cat. Consider cmd < file | .. or cmd file | .. instead."
+  },
+  {
+    "id": "SC2015",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Note that A && B || C is not if-then-else. C may run when A is true."
+  },
+  {
+    "id": "SC2026",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "This word is outside of quotes. Did you intend to 'nest '\"'single quotes'\"' instead'?"
+  },
+  {
+    "id": "SC2028",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "echo won't expand escape sequences. Consider printf."
+  },
+  {
+    "id": "SC2035",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use ./*glob* or -- *glob* so names with dashes won't become options."
+  },
+  {
+    "id": "SC2039",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "In POSIX sh, something is undefined."
+  },
+  {
+    "id": "SC2046",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Quote this to prevent word splitting"
+  },
+  {
+    "id": "SC2086",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Double quote to prevent globbing and word splitting."
+  },
+  {
+    "id": "SC2140",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Word is in the form \"A\"B\"C\" (B indicated). Did you mean \"ABC\" or \"A\\\"B\\\"C\"?"
+  },
+  {
+    "id": "SC2154",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "var is referenced but not assigned."
+  },
+  {
+    "id": "SC2155",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Declare and assign separately to avoid masking return values."
+  },
+  {
+    "id": "SC2164",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use cd ... || exit in case cd fails."
+  },
+    {
+    "id": "SC2185",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Specify explicit path for find instead of relying on default behavior to ensure POSIX compliance."
+  },
+  {
+    "id": "SC3040",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Using set -o with non-POSIX options may cause compatibility issues in different shell implementations."
+  },
+  {
+    "id": "SC2216",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Avoid piping to commands like rm that don't read stdin; use glob patterns or loops instead."
+  },
+  {
+    "id": "SC2183",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "printf format string contains more variables than passed arguments, which may cause unexpected behavior."
+  },
+  {
+    "id": "SC2010",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Prevent filename parsing issues by avoiding ls | grep patterns; use glob expansion instead."
+  },
+    {
+    "id": "SC2016",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Expressions don't expand in single quotes; use double quotes for variable expansion."
+  },
+  {
+    "id": "SC2102",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Glob ranges must match single characters; rewrite patterns with multiple character ranges appropriately."
+  },
+  {
+    "id": "SC1091",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "ShellCheck cannot follow sourced files; use directives to specify source location or ignore with source=/dev/null."
+  },
+  {
+    "id": "SC2239",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Shebang must use absolute path to interpreter; use /bin/sh or /usr/bin/env for portability."
+  },
+  {
+    "id": "SC1072",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Parser error due to incomplete shellcheck directive; correct directive usage required."
+  },
+  {
+    "id": "SC2114",
+    "defaultSeverity": "Warning",
+    "function_impact": "Security",
+    "description": "Accidental space in deletion path may cause system directory removal; verify paths to prevent catastrophic deletion."
+  },
+    {
+    "id": "SC3037",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "POSIX sh does not support echo flags; prefer printf for portable output formatting."
+  },
+  {
+    "id": "SC1070",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Critical syntax error detected; mismatched keywords/parentheses that halt script execution."
+  },
+  {
+    "id": "SC2006",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Prefer $(...) over legacy backticks for command substitution to avoid quoting issues and nesting problems."
+  },
+  {
+    "id": "SC2038",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Handle filename special characters safely using -print0/-0 with xargs or -exec + with find."
+  },
+  {
+    "id": "SC2059",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Avoid variables in printf format strings to prevent unintended escape sequence interpretation; use format specifiers."
+  },
+  {
+    "id": "SC2067",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Terminate -exec properly with quoted ';' or '+' and avoid shell operators; use sh -c for complex logic."
+  },
+  {
+    "id": "SC2215",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Flag character (-) misused as command; likely missing test brackets or invalid line continuation."
+  },
+    {
+    "id": "SC2261",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Multiple redirections conflict for same file descriptor; use cat/tee for inputs/outputs or pass filenames directly."
+  },
+  {
+    "id": "SC2267",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "GNU xargs -i is deprecated; migrate to POSIX-standard -I{} for replacement strings."
+  },
+  {
+    "id": "SC3020",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "&> redirection shorthand undefined in POSIX sh; use explicit > file 2>&1 syntax for portability."
+  },
+  {
+  "id": "DL3005",
+  "defaultSeverity": "Warning",
+  "function_impact": "Correctness",
+  "description": "Avoid apt-get dist-upgrade to maintain consistent, reproducible builds. Base images should include necessary updates, and dist-upgrade can cause inconsistent dependencies and isolation failures when modifying system components."
+},
+{
+    "id": "SC2034",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Variable appears unused. Verify it or export it."
+  },
+  {
+    "id": "SC2129",
+    "defaultSeverity": "Info",
+    "function_impact": "Efficiency",
+    "description": "Consider using { cmd1; cmd2; } >> file instead of individual redirects for performance."
+  },
+  {
+    "id": "SC2145",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Argument mixes string and array. Use * or separate arguments properly."
+  },
+  {
+    "id": "SC2153",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Possible Misspelling: Detected unassigned variable with similar named variable existing."
+  },
+  {
+    "id": "SC2174",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "With -p, -m permissions only apply to deepest directory. Set permissions separately on parent dirs."
+  },
+  {
+    "id": "SC2188",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Redirection lacks command. Attach to command or use 'true' for explicit no-op."
+  },{
+    "id": "SC2268",
+    "defaultSeverity": "Warning",
+    "function_impact": "Maintainability",
+    "description": "Avoid x-prefix in comparisons (e.g., [ x$var = xval ]) as obsolete practice; modern shells safely handle special characters directly."
+  },
+  {
+    "id": "SC2276",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Unquoted '=' in command name likely indicates assignment/comparison syntax error; use [ ] for tests or remove quoting for assignments."
+  },
+  {
+    "id": "SC2288",
+    "defaultSeverity": "Error",
+    "function_impact": "Correctness",
+    "description": "Command ending with symbol (apostrophe/bracket/comma) indicates syntax error; typically caused by incorrect quoting or missing whitespace."
+  },
+  {
+    "id": "SC2308",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Replace non-POSIX expr (length/substr/index) with portable alternatives: ${#var} for length, ${var:offset:len} (bash) or cut (POSIX) for substrings."
+  },
+  {
+    "id": "SC3009",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Brace expansion {1..5} undefined in POSIX sh; use while/seq loops or explicit list for compatibility with minimal shells like dash."
+  },
+  {
+    "id": "SC3014",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Use '=' for string comparisons in [ ]; '==' is bashism unsupported in POSIX sh environments like dash."
+  },
+  {
+    "id": "SC3028",
+    "defaultSeverity": "Warning",
+    "function_impact": "Correctness",
+    "description": "Special variables (RANDOM/UID/PIPESTATUS) are bashisms; replace with portable alternatives: $(id -u) for UID, $(awk 'BEGIN{srand();print rand()}') for randomness."
+  }
+]
+
+

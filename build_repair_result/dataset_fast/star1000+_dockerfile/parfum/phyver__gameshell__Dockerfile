@@ -1,0 +1,1 @@
+COPY --chown=gsh-user:gsh-user https://github.com/phyver/GameShell/releases/download/latest/gameshell.sh gameshell.sh
