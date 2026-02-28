@@ -4,19 +4,19 @@ from collections import defaultdict, Counter
 from typing import List, Dict, Tuple, Any, Optional
 
 def read_json(file_path: str) -> List[Dict]:
-    """读取JSON文件，增加类型提示和更详细的错误处理"""
+    """Read JSON file, add type hints and more detailed error handling"""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except json.JSONDecodeError as e:
-        print(f"JSON解析错误 {file_path}: {e}")
+        print(f"JSON parsing error {file_path}: {e}")
         return []
     except Exception as e:
-        print(f"读取文件错误 {file_path}: {e}")
+        print(f"Error reading file {file_path}: {e}")
         return []
 
 def calculate_smell_score(issues: List[str], severity_mapping: Dict[str, str]) -> int:
-    """计算单个Dockerfile的问题分数，优化解析逻辑"""
+    """Calculate issue score for a single Dockerfile, optimize parsing logic"""
     SEVERITY_WEIGHTS = {
         "Error": 5,
         "Warning": 3,
@@ -36,29 +36,29 @@ def calculate_smell_score(issues: List[str], severity_mapping: Dict[str, str]) -
     return score
 
 def get_dockerfile_name(path: str) -> str:
-    """从完整路径中提取Dockerfile文件名，增加路径处理健壮性"""
+    """Extract Dockerfile filename from full path, enhance path processing robustness"""
     try:
         return os.path.basename(path)
     except Exception:
         return path
 
 def analyze_best_solutions(dockerfile_scores: Dict[str, List[Tuple[int, int, str]]]) -> Tuple[List[int], List[Dict]]:
-    """分析最优解分布，现在只返回所有最优解的方法索引和详细信息"""
-    all_best = []   # 所有最优解的方法索引
-    best_details = []   # 最优解的详细信息
+    """Analyze optimal solution distribution, now only returns all optimal solution method indices and details"""
+    all_best = []   # All optimal solution method indices
+    best_details = []   # Details of optimal solutions
     
     for dockerfile_name, scores in dockerfile_scores.items():
         if not scores:
             continue
             
-        # 找出最低分
+        # Find the lowest score
         min_score = min(score for (_, score, _) in scores)
         
-        # 找出所有最优解的方法
+        # Find all optimal solution methods
         best_methods = [file_idx for (file_idx, score, _) in scores if score == min_score]
         all_best.extend(best_methods)
         
-        # 保存最优解详细信息
+        # Save optimal solution details
         for file_idx, score, path in scores:
             if score == min_score:
                 best_details.append({
@@ -71,7 +71,7 @@ def analyze_best_solutions(dockerfile_scores: Dict[str, List[Tuple[int, int, str
     return all_best, best_details
 
 def get_stats(best_sources: List[int], file_paths: List[str]) -> Tuple[List[Dict], int]:
-    """计算统计结果，提取为独立函数"""
+    """Calculate statistical results, extracted as independent function"""
     total_best = len(best_sources) if best_sources else 1
     file_counts = Counter(best_sources)
     
@@ -86,17 +86,17 @@ def get_stats(best_sources: List[int], file_paths: List[str]) -> Tuple[List[Dict
             "rank": file_idx + 1
         })
     
-    # 按比例降序排序（比例相同时按原始顺序排序）
+    # Sort in descending order by percentage (sort by original order when percentages are equal)
     results.sort(key=lambda x: (-x["percentage"], x["rank"]))
     return results, total_best
 
 def print_analysis_results(results: Dict, analysis_name: str) -> None:
-    """打印分析结果，优化输出格式"""
-    title = f"{analysis_name}分析结果"
+    """Print analysis results, optimize output format"""
+    title = f"{analysis_name} Analysis Results"
 
     print(f"\n{title}")
     print("=" * 120)
-    print(f"{'排名':<5} {'修复方法':<60} {'最优解次数':<12} {'占比(%)':<10} {'文件顺序':<10} {'覆盖率':<10}")
+    print(f"{'Rank':<5} {'Repair Method':<60} {'Optimal Count':<12} {'Percentage(%)':<10} {'File Order':<10} {'Coverage':<10}")
     print("-" * 120)
     
     for i, result in enumerate(results["results"], 1):
@@ -105,9 +105,9 @@ def print_analysis_results(results: Dict, analysis_name: str) -> None:
               f"{(result['best_count']/results['dockerfile_count'])*100:.1f}%")
     
     print("=" * 120)
-    print(f"统计摘要: 总Dockerfile数量={results['dockerfile_count']} | "
-          f"最优解总数={results['total_best']} | "
-          f"平均覆盖率={(results['total_best']/results['dockerfile_count'])*100:.1f}%")
+    print(f"Summary: Total Dockerfiles={results['dockerfile_count']} | "
+          f"Total Optimal Solutions={results['total_best']} | "
+          f"Average Coverage={(results['total_best']/results['dockerfile_count'])*100:.1f}%")
 
 def generate_all_solutions_report(
     dockerfile_scores: Dict[str, List[Tuple[int, int, str]]], 
@@ -115,10 +115,10 @@ def generate_all_solutions_report(
     output_file: Optional[str] = None
 ) -> None:
     """
-    生成所有解决方案的详细报告，包括最优解和非最优解
-    :param dockerfile_scores: Dockerfile评分数据
-    :param file_paths: 所有方法文件路径列表
-    :param output_file: 输出文件路径，如果为None则打印到控制台
+    Generate detailed report for all solutions, including optimal and non-optimal solutions
+    :param dockerfile_scores: Dockerfile score data
+    :param file_paths: List of all method file paths
+    :param output_file: Output file path, if None then print to console
     """
     report = []
     
@@ -126,10 +126,10 @@ def generate_all_solutions_report(
         if not scores:
             continue
             
-        # 找出最低分(最优解)
+        # Find the lowest score (optimal solution)
         min_score = min(score for (_, score, _) in scores)
         
-        # 收集所有方法的得分信息
+        # Collect score information for all methods
         methods_info = []
         for file_idx, score, original_path in scores:
             method_name = os.path.basename(file_paths[file_idx])
@@ -146,7 +146,7 @@ def generate_all_solutions_report(
                 "method_index": file_idx
             })
         
-        # 按分数排序
+        # Sort by score
         methods_info.sort(key=lambda x: x["score"])
         
         report.append({
@@ -156,20 +156,20 @@ def generate_all_solutions_report(
             "method_count": len(methods_info)
         })
     
-    # 按Dockerfile名称排序
+    # Sort by Dockerfile name
     report.sort(key=lambda x: x["dockerfile_name"])
     
     if output_file:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
-        print(f"所有解决方案的详细报告已保存到 {output_file}")
+        print(f"Detailed report of all solutions saved to {output_file}")
     else:
-        print("\n所有Dockerfile的解决方案详细报告:")
+        print("\nDetailed report of solutions for all Dockerfiles:")
         print("=" * 150)
         for item in report:
-            print(f"\nDockerfile: {item['dockerfile_name']} (最低分: {item['min_score']})")
+            print(f"\nDockerfile: {item['dockerfile_name']} (Lowest Score: {item['min_score']})")
             print("-" * 150)
-            print(f"{'方法名称':<30} {'得分':<8} {'是否最优':<10} {'差距':<8} {'方法索引':<10} {'原始Dockerfile路径':<60}")
+            print(f"{'Method Name':<30} {'Score':<8} {'Optimal?':<10} {'Gap':<8} {'Method Index':<10} {'Original Dockerfile Path':<60}")
             print("-" * 150)
             for method in item["methods"]:
                 print(f"{method['method']:<30} {method['score']:<8} "
@@ -179,17 +179,17 @@ def generate_all_solutions_report(
         print("=" * 150)
 
 def process_dataset(file_paths: List[str], severity_file: str, dataset_name: str) -> Dict:
-    """处理单个数据集，添加生成所有解决方案报告的功能"""
-    print(f"\n正在处理数据集: {dataset_name}")
+    """Process a single dataset, add functionality to generate all solutions report"""
+    print(f"\nProcessing dataset: {dataset_name}")
     
-    # 读取严重级别映射
+    # Read severity level mapping
     severity_data = read_json(severity_file)
     severity_mapping = {item['id']: item['defaultSeverity'] for item in severity_data}
     
-    # 收集所有Dockerfile的分数（按文件名分组）
+    # Collect scores for all Dockerfiles (grouped by filename)
     dockerfile_scores = defaultdict(list)
     
-    # 为每个文件收集所有Dockerfile的分数
+    # Collect scores for all Dockerfiles for each file
     for file_idx, file_path in enumerate(file_paths):
         data = read_json(file_path)
         for item in data:
@@ -198,17 +198,17 @@ def process_dataset(file_paths: List[str], severity_file: str, dataset_name: str
             score = calculate_smell_score(item.get("issues", []), severity_mapping)
             dockerfile_scores[dockerfile_name].append((file_idx, score, dockerfile_path))
     
-    # 分析最优解 - 现在只返回所有最优解
+    # Analyze optimal solutions - now only returns all optimal solutions
     all_best, best_details = analyze_best_solutions(dockerfile_scores)
     
-    # 计算统计结果
+    # Calculate statistical results
     results, total_best = get_stats(all_best, file_paths)
 
-    # 更新best_details中的方法名
+    # Update method name in best_details
     for detail in best_details:
         detail["best_method"] = os.path.basename(file_paths[detail["method_index"]])
     
-    # 生成所有解决方案的报告（包括非最优解）
+    # Generate report for all solutions (including non-optimal ones)
     generate_all_solutions_report(
         dockerfile_scores, 
         file_paths,
@@ -220,29 +220,27 @@ def process_dataset(file_paths: List[str], severity_file: str, dataset_name: str
         "dockerfile_count": len(dockerfile_scores),
         "total_best": total_best,
         "best_details": best_details,
-        "all_scores": dockerfile_scores  # 保留所有评分数据
+        "all_scores": dockerfile_scores  # Retain all score data
     }
 
 def main():
-    # 配置文件路径
+    # Configure file paths
     severity_file = "evaluate/level.json"
     
-    # 只处理Star1000+数据集
+    # Only process Star1000+ dataset
     star_dataset = {
         "name": "Star1000+ Dockerfiles",
         "files": [
             "evaluate_result/dataset_fast_star1000+_dockerfile.json",
             "evaluate_result/dataset_fast_star1000+_dockerfile_parfum.json",
-            # "evaluate_result/dataset_fast_star1000+_dockerfile_dockercleaner.json",
             "evaluate_result/dataset_fast_star1000+_dockerfile_qwen3_235b_hd_LLM.json",
             "evaluate_result/dataset_fast_star1000+_dockerfile_qwen3_235b_hd_LLM_1.json",
             "evaluate_result/dataset_fast_star1000+_dockerfile_qwen3_235b_hd_LLM_2.json",
-            # "evaluate_result/dataset_fast_star1000+_dockerfile_qwen3_32b_hd_LLM_nothink.json",
-            # "evaluate_result/dataset_fast_star1000+_dockerfile_qwen3_14b_hd_LLM_nothink.json",
+
         ]
     }
     
-    # 处理Star1000+数据集
+    # Process Star1000+ dataset
     results = process_dataset(star_dataset["files"], severity_file, star_dataset["name"])
     print_analysis_results(results, star_dataset["name"])
 

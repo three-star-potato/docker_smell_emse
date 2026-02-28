@@ -3,7 +3,7 @@ from collections import defaultdict, Counter
 import os
 
 def read_json_to_dict(file_path):
-    """读取JSON文件并返回字典"""
+    """Read JSON file and return dictionary"""
     try:
         with open(file_path, 'r') as file:
             return json.load(file)
@@ -18,14 +18,14 @@ def read_json_to_dict(file_path):
         return {}
 
 def count_smells(dockerfiles_data, severity_mapping, impact_mapping):
-    """统计问题数量和严重级别"""
-    smell_count = Counter()       # 问题类型计数
-    severity_count = Counter()    # 严重级别计数
-    impact_count = Counter()      # 功能影响类别计数
-    missing_severity = set()      # 缺少严重性定义的规则
-    missing_impact = set()         # 缺少功能影响定义的规则
-    smell_details = defaultdict(list)  # 存储每个问题类型的详细信息
-    no_smell_count = 0            # 完全没有问题的Dockerfile计数
+    """Count number of issues and severity levels"""
+    smell_count = Counter()       # Issue type count
+    severity_count = Counter()    # Severity level count
+    impact_count = Counter()      # Functional impact category count
+    missing_severity = set()      # Rules missing severity definition
+    missing_impact = set()        # Rules missing functional impact definition
+    smell_details = defaultdict(list)  # Store detailed information for each issue type
+    no_smell_count = 0            # Count of Dockerfiles with no issues
     
     for dockerfile in dockerfiles_data:
         issues = dockerfile.get('issues', [])
@@ -36,11 +36,11 @@ def count_smells(dockerfiles_data, severity_mapping, impact_mapping):
                 has_smell = True
                 parts = issue.split()
                 if len(parts) >= 2:
-                    issue_type = parts[1]  # 获取问题类型 (如 DL3008)
+                    issue_type = parts[1]  # Get issue type (e.g., DL3008)
                     smell_count[issue_type] += 1
-                    smell_details[issue_type].append(issue)  # 存储完整的问题描述
+                    smell_details[issue_type].append(issue)  # Store complete issue description
                     
-                    # 获取严重级别
+                    # Get severity level
                     if issue_type in severity_mapping:
                         severity = severity_mapping[issue_type]
                     else:
@@ -48,7 +48,7 @@ def count_smells(dockerfiles_data, severity_mapping, impact_mapping):
                         missing_severity.add(issue_type)
                     severity_count[severity] += 1
                     
-                    # 获取功能影响类别
+                    # Get functional impact category
                     if issue_type in impact_mapping:
                         impact = impact_mapping[issue_type]
                     else:
@@ -62,8 +62,8 @@ def count_smells(dockerfiles_data, severity_mapping, impact_mapping):
     return smell_count, severity_count, impact_count, missing_severity, missing_impact, smell_details, no_smell_count
 
 def calculate_quality_score(severity_distribution):
-    """计算量化质量分数（分数越高问题越严重）"""
-    # 权重配置（包含Unknown类型）
+    """Calculate quantitative quality score (higher score indicates more severe problems)"""
+    # Weight configuration (including Unknown type)
     SEVERITY_WEIGHTS = {
         "Error": 5,
         "Warning": 3,
@@ -74,12 +74,12 @@ def calculate_quality_score(severity_distribution):
     
     total_score = 0
     for severity, count in severity_distribution.items():
-        weight = SEVERITY_WEIGHTS.get(severity, 0)  # 未配置的严重级别权重为0
+        weight = SEVERITY_WEIGHTS.get(severity, 0)  # Unconfigured severity level weight is 0
         total_score += count * weight
     return total_score
 
 def process_file(file_path, severity_mapping, impact_mapping):
-    """处理单个文件并返回统计结果"""
+    """Process single file and return statistical results"""
     data = read_json_to_dict(file_path)
     if not data:
         return None
@@ -99,33 +99,33 @@ def process_file(file_path, severity_mapping, impact_mapping):
         "impact_distribution": dict(impact_count),
         "missing_severity_rules": list(missing_severity),
         "missing_impact_rules": list(missing_impact),
-        "smell_details": dict(smell_details),  # 添加详细问题信息
-        "no_smell_count": no_smell_count,      # 添加完全没有问题的计数
-        "total_files": len(data)               # 添加总文件数
+        "smell_details": dict(smell_details),  # Add detailed issue information
+        "no_smell_count": no_smell_count,      # Add count of completely problem-free files
+        "total_files": len(data)               # Add total file count
     }
 
 def calculate_ratio(base_result, processed_result):
-    """计算处理结果相对于基础结果的比率（处理后/处理前）"""
+    """Calculate ratio of processed result relative to base result (processed/before)"""
     def calculate_rate(base_value, processed_value):
         if base_value == 0:
-            # 避免除以零错误，如果基数为0
+            # Avoid division by zero error, if base is 0
             if processed_value == 0:
                 return 1.0  # 0/0 = 1
             else:
-                return float('inf')  # 非零除以无穷大
+                return float('inf')  # Non-zero divided by infinity
         return processed_value / base_value * 100
     
-    # 计算问题类型的净变化
+    # Calculate net change in issue types
     base_smell_types = set(base_result["smell_distribution"].keys())
     processed_smell_types = set(processed_result["smell_distribution"].keys())
     
-    # 完全消除的问题类型
+    # Completely eliminated issue types
     completely_removed_types = base_smell_types - processed_smell_types
     
-    # 新增的问题类型
+    # Newly introduced issue types
     newly_introduced_types = processed_smell_types - base_smell_types
     
-    # 计算共同类型中的数量变化
+    # Calculate quantity changes in common types
     common_types = base_smell_types & processed_smell_types
     count_increased_types = []
     count_decreased_types = []
@@ -150,7 +150,7 @@ def calculate_ratio(base_result, processed_result):
                 "to": processed_count
             })
     
-    # 改进的净变化计算：考虑类型变化和数量变化
+    # Improved net change calculation: consider type changes and quantity changes
     net_type_change = (len(completely_removed_types) + len(count_decreased_types)) - (len(newly_introduced_types) + len(count_increased_types))
     
     ratio_results = {
@@ -167,7 +167,7 @@ def calculate_ratio(base_result, processed_result):
             "ratio": calculate_rate(base_result["unique_smell_types"], processed_result["unique_smell_types"]),
             "display": f"{processed_result['unique_smell_types']}/{base_result['unique_smell_types']}"
         },
-        "net_smell_type_change": {  # 改进：包含数量变化的净变化
+        "net_smell_type_change": {  # Improved: include quantity changes in net change
             "completely_removed": len(completely_removed_types),
             "newly_introduced": len(newly_introduced_types),
             "count_increased": len(count_increased_types),
@@ -195,7 +195,7 @@ def calculate_ratio(base_result, processed_result):
         "removed_smells": []
     }
     
-    # 计算严重级别分布的比率
+    # Calculate ratio of severity level distribution
     for severity, base_count in base_result["severity_distribution"].items():
         processed_count = processed_result["severity_distribution"].get(severity, 0)
         ratio_results["severity_distribution"][severity] = {
@@ -204,7 +204,7 @@ def calculate_ratio(base_result, processed_result):
             "ratio": calculate_rate(base_count, processed_count)
         }
     
-    # 计算功能影响分布的比率
+    # Calculate ratio of functional impact distribution
     for impact, base_count in base_result["impact_distribution"].items():
         processed_count = processed_result["impact_distribution"].get(impact, 0)
         ratio_results["impact_distribution"][impact] = {
@@ -213,29 +213,29 @@ def calculate_ratio(base_result, processed_result):
             "ratio": calculate_rate(base_count, processed_count)
         }
     
-    # 比较基础文件和处理后文件的问题类型变化
+    # Compare issue type changes between base file and processed file
     base_smells = set(base_result["smell_distribution"].keys())
     processed_smells = set(processed_result["smell_distribution"].keys())
     
-    # 新增的问题类型
+    # Newly added issue types
     added_smells = processed_smells - base_smells
     for smell in added_smells:
         ratio_results["added_smells"].append({
             "type": smell,
             "count": processed_result["smell_distribution"][smell],
-            "examples": processed_result["smell_details"].get(smell, [])[:3]  # 最多显示3个例子
+            "examples": processed_result["smell_details"].get(smell, [])[:3]  # Show at most 3 examples
         })
     
-    # 减少的问题类型
+    # Reduced issue types
     removed_smells = base_smells - processed_smells
     for smell in removed_smells:
         ratio_results["removed_smells"].append({
             "type": smell,
             "count": base_result["smell_distribution"][smell],
-            "examples": base_result["smell_details"].get(smell, [])[:3]  # 最多显示3个例子
+            "examples": base_result["smell_details"].get(smell, [])[:3]  # Show at most 3 examples
         })
     
-    # 比较相同问题类型的数量变化
+    # Compare quantity changes of same issue types
     common_smells = base_smells & processed_smells
     for smell in common_smells:
         base_count = base_result["smell_distribution"][smell]
@@ -261,18 +261,18 @@ def calculate_ratio(base_result, processed_result):
     return ratio_results
 
 def process_group(base_file, processed_files, severity_mapping, impact_mapping):
-    """处理一个组（star1000+）中的所有文件"""
-    # 处理基础文件
+    """Process all files in a group (star1000+)"""
+    # Process base file
     base_result = process_file(base_file, severity_mapping, impact_mapping)
     if not base_result:
         print(f"Failed to process base file: {base_file}")
         return []
     
-    # 处理所有的处理文件
+    # Process all processed files
     processed_results = [process_file(file, severity_mapping, impact_mapping) for file in processed_files]
-    processed_results = [res for res in processed_results if res]  # 过滤失败的
+    processed_results = [res for res in processed_results if res]  # Filter failed ones
     
-    # 计算所有处理文件相对于基础文件的比率（处理后/处理前）
+    # Calculate ratio of all processed files relative to base file (processed/before)
     ratio_results = []
     for res in processed_results:
         ratio_results.append(calculate_ratio(base_result, res))
@@ -285,31 +285,30 @@ def process_group(base_file, processed_files, severity_mapping, impact_mapping):
     }
 
 def print_group_summary(group_name, group_results):
-    """打印组的汇总结果"""
+    """Print group summary results"""
     print(f"\n{'=' * 80}")
-    print(f"结果汇总: {group_name.upper()} 数据集")
+    print(f"Result Summary: {group_name.upper()} Dataset")
     print(f"{'=' * 80}")
     
-    # 打印基础文件信息
+    # Print base file information
     base_result = group_results["base_result"]
-    print(f"\n基础文件: {group_results['base_file']}")
-    print(f"  总文件数: {base_result['total_files']}")
-    print(f"  无问题文件数: {base_result['no_smell_count']} ({base_result['no_smell_count']/base_result['total_files']*100:.2f}%)")
-    print(f"  总问题数: {base_result['total_smells']}")
-    print(f"  问题类型数: {base_result['unique_smell_types']}")
-    print(f"  加权评分: {base_result['quality_score']}")
+    print(f"\nBase File: {group_results['base_file']}")
+    print(f"  Total files: {base_result['total_files']}")
+    print(f"  Problem-free files: {base_result['no_smell_count']} ({base_result['no_smell_count']/base_result['total_files']*100:.2f}%)")
+    print(f"  Total issues: {base_result['total_smells']}")
+    print(f"  Issue types: {base_result['unique_smell_types']}")
+    print(f"  Weighted score: {base_result['quality_score']}")
     
-    # 打印各处理文件相对于基础文件的比率和原始值
-    print(f"\n{'文件':<60}{'总问题数':>15}{'比率(%)':>15}{'类型数':>15}{'比率(%)':>15}{'加权评分':>15}{'比率(%)':>15}{'无问题文件':>15}{'比率(%)':>15}")
+    # Print ratio and raw values of each processed file relative to base file
+    print(f"\n{'File':<60}{'Total Issues':>15}{'Ratio(%)':>15}{'Type Count':>15}{'Ratio(%)':>15}{'Weighted Score':>15}{'Ratio(%)':>15}{'Problem-free':>15}{'Ratio(%)':>15}")
     
-    # 先按总问题比率排序（比率越低越好）
+    # First sort by total issue ratio (lower ratio is better)
     sorted_pairs = sorted(
         zip(group_results["processed_results"], group_results["ratio_results"]),
         key=lambda x: x[1]['total_smells']['ratio'] 
     )
     
-    # 打印表格
-   # 打印表格
+    # Print table
     for idx, (processed_result, ratio_result) in enumerate(sorted_pairs):
         total_base = ratio_result['total_smells']['base']
         total_processed = ratio_result['total_smells']['processed']
@@ -323,7 +322,7 @@ def print_group_summary(group_name, group_results):
         no_smell_processed = ratio_result['no_smell_files']['processed']
         no_smell_ratio = ratio_result['no_smell_files']['ratio']
         
-        # 获取改进的净变化信息
+        # Get improved net change information
         net_change_info = ratio_result['net_smell_type_change']
         net_change = net_change_info['net_change']
         removed_count = net_change_info['completely_removed']
@@ -331,15 +330,15 @@ def print_group_summary(group_name, group_results):
         count_decreased = net_change_info['count_decreased']
         count_increased = net_change_info['count_increased']
         
-        # 改进的净变化显示：包含类型变化和数量变化
+        # Improved net change display: include type changes and quantity changes
         net_change_display = f"{net_change:+d} ({removed_count+count_decreased}↓/{introduced_count+count_increased}↑)"
         
         file_name = os.path.basename(ratio_result['file'])
         
-        # 标记最优结果
+        # Mark optimal result
         rank_marker = "★" if idx == 0 else ""
-        print(f"{file_name:<60}{total_processed:>15}{total_ratio:>15.2f}%{net_change_display:>15}{quality_processed:>15}{quality_ratio:>15.2f}%{no_smell_processed:>15}{no_smell_ratio:>15.2f}%{rank_marker:>5}")    # 打印详细分布信息和变化类型
-# 打印详细分布信息和变化类型
+        print(f"{file_name:<60}{total_processed:>15}{total_ratio:>15.2f}%{net_change_display:>15}{quality_processed:>15}{quality_ratio:>15.2f}%{no_smell_processed:>15}{no_smell_ratio:>15.2f}%{rank_marker:>5}")    # Print detailed distribution information and change types
+# Print detailed distribution information and change types
     for processed_result, ratio_result in sorted_pairs:
         net_change_info = ratio_result['net_smell_type_change']
         net_change = net_change_info['net_change']
@@ -348,59 +347,59 @@ def print_group_summary(group_name, group_results):
         count_decreased = net_change_info['count_decreased']
         count_increased = net_change_info['count_increased']
         
-        print(f"\n文件: {os.path.basename(ratio_result['file'])}")
-        print(f"  问题类型净变化: {net_change:+d} (完全消除{removed_count}种 + 数量减少{count_decreased}种 - 新增{introduced_count}种 - 数量增加{count_increased}种)")
-        print(f"  无问题文件数: {ratio_result['no_smell_files']['processed']}/{ratio_result['no_smell_files']['base']} ({ratio_result['no_smell_files']['ratio']:.2f}%)")
+        print(f"\nFile: {os.path.basename(ratio_result['file'])}")
+        print(f"  Net issue type change: {net_change:+d} (completely eliminated {removed_count} types + quantity decreased {count_decreased} types - newly introduced {introduced_count} types - quantity increased {count_increased} types)")
+        print(f"  Problem-free files: {ratio_result['no_smell_files']['processed']}/{ratio_result['no_smell_files']['base']} ({ratio_result['no_smell_files']['ratio']:.2f}%)")
         
-        # # 打印数量增加的问题类型
+        # # Print issue types with quantity increase
         # if net_change_info['count_increased_details']:
-        #     print(f"  数量增加的问题类型 ({len(net_change_info['count_increased_details'])}种):")
+        #     print(f"  Issue types with quantity increase ({len(net_change_info['count_increased_details'])} types):")
         #     for item in net_change_info['count_increased_details']:
-        #         print(f"    {item['type']}: +{item['increase']} (从{item['from']}到{item['to']})")
+        #         print(f"    {item['type']}: +{item['increase']} (from {item['from']} to {item['to']})")
         
-        # # 打印数量减少的问题类型  
+        # # Print issue types with quantity decrease  
         # if net_change_info['count_decreased_details']:
-        #     print(f"  数量减少的问题类型 ({len(net_change_info['count_decreased_details'])}种):")
+        #     print(f"  Issue types with quantity decrease ({len(net_change_info['count_decreased_details'])} types):")
         #     for item in net_change_info['count_decreased_details']:
-        #         print(f"    {item['type']}: -{item['decrease']} (从{item['from']}到{item['to']})")
+        #         print(f"    {item['type']}: -{item['decrease']} (from {item['from']} to {item['to']})")
         
-        # # 原有的新增和减少问题类型打印保持不变 ...
-        # # 打印新增的问题类型
+        # # Original printing of newly added and reduced issue types remains unchanged...
+        # # Print newly added issue types
         # if ratio_result["added_smells"]:
-        #     print(f"  新增的问题类型 ({len(ratio_result['added_smells'])}种):")
+        #     print(f"  Newly added issue types ({len(ratio_result['added_smells'])} types):")
         #     for added in ratio_result["added_smells"]:
         #         if "count_change" in added:
-        #             print(f"    {added['type']}: 数量变化 {added['count_change']} (从{added['old_count']}到{added['new_count']})")
+        #             print(f"    {added['type']}: Quantity change {added['count_change']} (from {added['old_count']} to {added['new_count']})")
         #         else:
-        #             print(f"    {added['type']}: 新增 {added['count']}个")
-        #         # 打印示例
+        #             print(f"    {added['type']}: Newly added {added['count']}")
+        #         # Print examples
         #         for example in added.get("examples", [])[:1]:
         #             pass
-        #             # print(f"      - 示例: {example}")
+        #             # print(f"      - Example: {example}")
         
-        # # 打印减少的问题类型
+        # # Print reduced issue types
         # if ratio_result["removed_smells"]:
-        #     print(f"  减少的问题类型 ({len(ratio_result['removed_smells'])}种):")
+        #     print(f"  Reduced issue types ({len(ratio_result['removed_smells'])} types):")
         #     for removed in ratio_result["removed_smells"]:
         #         if "count_change" in removed:
-        #             print(f"    {removed['type']}: 数量变化 {removed['count_change']} (从{removed['old_count']}到{removed['new_count']})")
+        #             print(f"    {removed['type']}: Quantity change {removed['count_change']} (from {removed['old_count']} to {removed['new_count']})")
         #         else:
-        #             print(f"    {removed['type']}: 完全消除 (原{removed['count']}个)")
-        #         # 打印示例
+        #             print(f"    {removed['type']}: Completely eliminated (originally {removed['count']})")
+        #         # Print examples
         #         for example in removed.get("examples", [])[:1]:
         #             pass
-                    # print(f"      - 示例: {example}")
+                    # print(f"      - Example: {example}")
     return sorted_pairs
 
 def main():
-    # 读取严重级别映射和功能影响映射
+    # Read severity mapping and functional impact mapping
     severity_file = "evaluate/level.json"
     severity_data = read_json_to_dict(severity_file)
     if not severity_data:
         print(f"Failed to load severity mapping from {severity_file}")
         return
     
-    # 创建两个映射字典
+    # Create two mapping dictionaries
     severity_mapping = {}
     impact_mapping = {}
     
@@ -410,7 +409,7 @@ def main():
             severity_mapping[rule_id] = item.get("defaultSeverity", "Unknown")
             impact_mapping[rule_id] = item.get("function_impact", "Unknown")
     
-    # 定义Star1000+的文件分组
+    # Define file groups for Star1000+
     groups = {
         "star1000+": {
             "base": "evaluate_result/dataset_fast_star1000+_dockerfile.json",
@@ -435,7 +434,7 @@ def main():
         }
     }
     
-    # 处理所有组
+    # Process all groups
     all_results = {}
     for group_name, group_data in groups.items():
         group_results = process_group(
@@ -452,15 +451,15 @@ def main():
                 "ratio_results": [r[1] for r in sorted_results]
             }
     
-    # 分析每个模型在不同数据集上的表现
+    # Analyze performance of each model across different datasets
     print("\n\n" + "="*80)
-    print("模型表现综合分析")
+    print("Comprehensive Model Performance Analysis")
     print("="*80)
     
-    # 收集每个模型的比率数据
+    # Collect ratio data for each model
     model_performance = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
     
-    # 定义我们关心的所有指标
+    # Define all metrics we care about
     severity_metrics = ["Error", "Warning", "Info"]
     impact_metrics = ["Security", "Correctness", "Maintainability", "Efficiency"]
     
@@ -468,7 +467,7 @@ def main():
         for processed_result, ratio_result in zip(results["processed_results"], results["ratio_results"]):
             file_name = os.path.basename(ratio_result["file"])
             
-            # 提取模型名称和方法
+            # Extract model name and method
             model_info = extract_model_and_method(file_name)
             
             if model_info:
@@ -476,7 +475,7 @@ def main():
                 method_name = model_info["method"]
                                   
                 if "star1000+" in group_name:
-                    # 收集基本指标
+                    # Collect basic metrics
                     model_performance[model_name][method_name]["star_total"] = ratio_result["total_smells"]["processed"]
                     model_performance[model_name][method_name]["star_total_ratio"] = ratio_result["total_smells"]["ratio"]
                     model_performance[model_name][method_name]["star_types"] = ratio_result["unique_smell_types"]["processed"]
@@ -486,35 +485,35 @@ def main():
                     model_performance[model_name][method_name]["star_no_smell"] = ratio_result["no_smell_files"]["processed"]
                     model_performance[model_name][method_name]["star_no_smell_ratio"] = ratio_result["no_smell_files"]["ratio"]
                     
-                    # 收集严重级别比率
+                    # Collect severity level ratios
                     for severity in severity_metrics:
                         if severity in ratio_result["severity_distribution"]:
                             model_performance[model_name][method_name][f"star_{severity.lower()}"] = ratio_result["severity_distribution"][severity]["processed"]
                             model_performance[model_name][method_name][f"star_{severity.lower()}_ratio"] = ratio_result["severity_distribution"][severity]["ratio"]
                     
-                    # 收集功能影响比率
+                    # Collect functional impact ratios
                     for impact in impact_metrics:
                         if impact in ratio_result["impact_distribution"]:
                             model_performance[model_name][method_name][f"star_{impact.lower()}"] = ratio_result["impact_distribution"][impact]["processed"]
                             model_performance[model_name][method_name][f"star_{impact.lower()}_ratio"] = ratio_result["impact_distribution"][impact]["ratio"]
     
-    # 打印模型性能比较表
-    print("\n模型综合性能比较:")
-    print(f"{'模型':<15}{'方法':<25}{'数据集':<10}{'总问题数':>15}{'比率(%)':>15}{'类型数':>15}{'比率(%)':>15}{'评分':>15}{'比率(%)':>15}{'无问题文件':>15}{'比率(%)':>15}")
+    # Print model performance comparison table
+    print("\nModel Comprehensive Performance Comparison:")
+    print(f"{'Model':<15}{'Method':<25}{'Dataset':<10}{'Total Issues':>15}{'Ratio(%)':>15}{'Type Count':>15}{'Ratio(%)':>15}{'Score':>15}{'Ratio(%)':>15}{'Problem-free':>15}{'Ratio(%)':>15}")
     
-    # 收集所有模型方法组合
+    # Collect all model-method combinations
     model_methods = []
     for model, methods in model_performance.items():
         for method in methods:
             model_methods.append((model, method))
     
-    # 按模型名称和方法排序
+    # Sort by model name and method
     model_methods.sort(key=lambda x: (x[0], x[1]))
     
     for model, method in model_methods:
         data = model_performance[model][method]
         
-        # Star1000+数据
+        # Star1000+ data
         print(f"{'':<15}{'':<25}{'Star':<10}", end="")
         print(f"{data.get('star_total', 'N/A'):>15}", end="")
         print(f"{data.get('star_total_ratio', 'N/A'):>15.2f}%", end="")
@@ -525,58 +524,55 @@ def main():
         print(f"{data.get('star_no_smell', 'N/A'):>15}", end="")
         print(f"{data.get('star_no_smell_ratio', 'N/A'):>15.2f}%")
         
-        # 打印分隔线
+        # Print separator line
         print("-" * 180)
 
-
-
-    # 添加严重性指标表格
-    print("\n模型综合性能比较 (包含严重性指标):")
-    print(f"{'模型':<15}{'方法':<20}{'数据集':<10}{'总问题':>8}{'比率':>8}{'Error':>10}{'比率':>8}{'Warning':>10}{'比率':>8}{'Info':>10}{'比率':>8}")
+    # Add severity metrics table
+    print("\nModel Comprehensive Performance Comparison (including severity metrics):")
+    print(f"{'Model':<15}{'Method':<20}{'Dataset':<10}{'Total':>8}{'Ratio':>8}{'Error':>10}{'Ratio':>8}{'Warning':>10}{'Ratio':>8}{'Info':>10}{'Ratio':>8}")
 
     for model, method in model_methods:
         data = model_performance[model][method]
         
-        # Star1000+数据
+        # Star1000+ data
         print(f"{model:<15}{method:<20}{'Star':<10}", end="")
         print(f"{data.get('star_total', 'N/A'):>8}", end="")
         print(f"{data.get('star_total_ratio', 'N/A'):>8.1f}%", end="")
         
-        # 添加严重性指标
+        # Add severity metrics
         for severity in ["error", "warning", "info"]:
             severity_key = f"star_{severity}"
             ratio_key = f"star_{severity}_ratio"
             print(f"{data.get(severity_key, 'N/A'):>10}", end="")
             print(f"{data.get(ratio_key, 'N/A'):>8.1f}%", end="")
         
-        print()  # 换行
+        print()  # New line
 
-                # 修改表头，添加impact指标
-    print("\n模型综合性能比较 (包含Impact指标):")
-    print(f"{'模型':<15}{'方法':<20}{'数据集':<10}{'总问题':>8}{'比率':>8}{'Security':>10}{'比率':>8}{'Correctness':>12}{'比率':>8}{'Maintain':>10}{'比率':>8}{'Efficiency':>10}{'比率':>8}")
+    # Modify header to include impact metrics
+    print("\nModel Comprehensive Performance Comparison (including Impact metrics):")
+    print(f"{'Model':<15}{'Method':<20}{'Dataset':<10}{'Total':>8}{'Ratio':>8}{'Security':>10}{'Ratio':>8}{'Correctness':>12}{'Ratio':>8}{'Maintain':>10}{'Ratio':>8}{'Efficiency':>10}{'Ratio':>8}")
 
     for model, method in model_methods:
         data = model_performance[model][method]
         
-        # Star1000+数据
+        # Star1000+ data
         print(f"{model:<15}{method:<20}{'Star':<10}", end="")
         print(f"{data.get('star_total', 'N/A'):>8}", end="")
         print(f"{data.get('star_total_ratio', 'N/A'):>8.1f}%", end="")
         
-        # 添加impact指标
+        # Add impact metrics
         for impact in ["security", "correctness", "maintainability", "efficiency"]:
             impact_key = f"star_{impact}"
             ratio_key = f"star_{impact}_ratio"
             print(f"{data.get(impact_key, 'N/A'):>10}", end="")
             print(f"{data.get(ratio_key, 'N/A'):>8.1f}%", end="")
         
-        print()  # 换行
-        
+        print()  # New line
 
 def extract_model_and_method(file_name):
-    """从文件名中提取模型名称和方法"""
+    """Extract model name and method from file name"""
     if "qwen3_" in file_name:
-        # 提取模型大小和方法
+        # Extract model size and method
         parts = file_name.split("qwen3_")[1].split("_")
         model_size = parts[0]
         method = "_".join(parts[1:]).replace(".json", "")

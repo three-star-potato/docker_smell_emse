@@ -7,7 +7,7 @@ import json
 from datetime import datetime
 
 def find_dockerfiles(root_folder):
-    """查找所有Dockerfile"""
+    """Find all Dockerfiles"""
     dockerfiles = []
     for root, _, files in os.walk(root_folder):
         for filename in files:
@@ -16,27 +16,27 @@ def find_dockerfiles(root_folder):
     return dockerfiles
 
 def process_dockerfiles(input_dir, output_dir, time_log_file=None):
-    """处理Dockerfiles并记录时间"""
+    """Process Dockerfiles and record time"""
     dockerfiles = find_dockerfiles(input_dir)
     
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
-    # 时间记录数据结构
+    # Time record data structure
     time_records = []
     
     for dockerfile in tqdm(sorted(dockerfiles), desc="Processing Dockerfiles"):
         parfum_repaired_filepath = dockerfile.replace(input_dir, output_dir)
         
-        # 确保输出目录存在
+        # Ensure output directory exists
         os.makedirs(os.path.dirname(parfum_repaired_filepath), exist_ok=True)
         
-        # 如果文件已存在，跳过
+        # If file already exists, skip
         if os.path.exists(parfum_repaired_filepath):
             print(f"Skipping existing file: {parfum_repaired_filepath}")
             continue
         
-        # 记录开始时间
+        # Record start time
         start_time = time.time()
         
         command = f"docker-parfum repair {dockerfile} -o {parfum_repaired_filepath}"
@@ -44,13 +44,13 @@ def process_dockerfiles(input_dir, output_dir, time_log_file=None):
         try:
             result = subprocess.run(command, shell=True, check=True, 
                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
-                                  timeout=300)  # 5分钟超时
+                                  timeout=300)  # 5 minute timeout
             
-            # 记录结束时间
+            # Record end time
             end_time = time.time()
             repair_time = end_time - start_time
             
-            # 记录成功信息
+            # Record success information
             time_record = {
                 'dockerfile': dockerfile,
                 'repaired_file': parfum_repaired_filepath,
@@ -67,7 +67,7 @@ def process_dockerfiles(input_dir, output_dir, time_log_file=None):
             end_time = time.time()
             repair_time = end_time - start_time
             
-            # 记录错误信息
+            # Record error information
             time_record = {
                 'dockerfile': dockerfile,
                 'repaired_file': parfum_repaired_filepath,
@@ -81,7 +81,7 @@ def process_dockerfiles(input_dir, output_dir, time_log_file=None):
             
             print(f"❌ Error executing parfum command for {dockerfile}: {e}")
             
-            # 复制原始文件作为回退
+            # Copy original file as fallback
             shutil.copy2(dockerfile, parfum_repaired_filepath)
             
         except subprocess.TimeoutExpired:
@@ -102,25 +102,25 @@ def process_dockerfiles(input_dir, output_dir, time_log_file=None):
             print(f"⏰ Command timed out for {dockerfile}")
             shutil.copy2(dockerfile, parfum_repaired_filepath)
     
-    # 保存时间记录
+    # Save time records
     if time_log_file:
         save_time_records(time_records, time_log_file)
     
     return time_records
 
 def save_time_records(time_records, filename, mode='w'):
-    """保存时间记录到文件"""
+    """Save time records to file"""
     if not time_records:
         return
     
-    # 确保目录存在
+    # Ensure directory exists
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     
-    # 确定文件格式
+    # Determine file format
     if filename.endswith('.json'):
         with open(filename, mode, encoding='utf-8') as f:
             if mode == 'a' and os.path.exists(filename) and os.path.getsize(filename) > 0:
-                # 读取现有数据并追加
+                # Read existing data and append
                 try:
                     f.seek(0)
                     existing_data = json.load(f)
@@ -137,7 +137,7 @@ def save_time_records(time_records, filename, mode='w'):
     print(f"✅ Time records saved: {filename}")
 
 def generate_summary_report(time_log_file, output_file=None):
-    """生成修复时间摘要报告"""
+    """Generate repair time summary report"""
     if not os.path.exists(time_log_file):
         print(f"Time log file not found: {time_log_file}")
         return
@@ -152,7 +152,7 @@ def generate_summary_report(time_log_file, output_file=None):
         print("No records found in time log")
         return
     
-    # 分析数据
+    # Analyze data
     successful_repairs = [r for r in records if r.get('status') == 'success']
     failed_repairs = [r for r in records if r.get('status') in ['error', 'timeout']]
     
@@ -165,49 +165,49 @@ def generate_summary_report(time_log_file, output_file=None):
         'timestamp': datetime.now().isoformat()
     }
     
-    # 打印摘要
+    # Print summary
     print("\n" + "="*50)
-    print("修复时间摘要报告")
+    print("Repair Time Summary Report")
     print("="*50)
-    print(f"总处理文件数: {summary['total_files']}")
-    print(f"成功修复: {summary['successful_repairs']}")
-    print(f"修复失败: {summary['failed_repairs']}")
-    print(f"平均修复时间: {summary['avg_repair_time']}秒")
-    print(f"总处理时间: {summary['total_processing_time']}秒")
+    print(f"Total files processed: {summary['total_files']}")
+    print(f"Successful repairs: {summary['successful_repairs']}")
+    print(f"Failed repairs: {summary['failed_repairs']}")
+    print(f"Average repair time: {summary['avg_repair_time']} seconds")
+    print(f"Total processing time: {summary['total_processing_time']} seconds")
     
-    # 保存摘要报告
+    # Save summary report
     if output_file:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
-        print(f"摘要报告已保存至: {output_file}")
+        print(f"Summary report saved to: {output_file}")
     
     return summary
 
 def main():
-    """主执行函数"""
-    # 设置时间记录目录为 time/star/parfum
+    """Main execution function"""
+    # Set time log directory to time/star/parfum
     log_dir = 'time/star/parfum'
     os.makedirs(log_dir, exist_ok=True)
     
-    # 主执行
+    # Main execution
     output_root = 'repair_result'
 
-    # 处理star1000+ dockerfiles
-    print("\n处理star1000+ Dockerfiles...")
+    # Process star1000+ dockerfiles
+    print("\nProcessing star1000+ Dockerfiles...")
     star_input = 'dataset_fast/star1000+_dockerfile'
     star_output_dir = os.path.join(output_root, star_input, 'parfum')
     
-    # 时间记录文件路径
+    # Time log file path
     star_time_log = os.path.join(log_dir, 'star_repair_times.json')
     
-    # 执行修复
+    # Execute repair
     star_repair_times = process_dockerfiles(star_input, star_output_dir, star_time_log)
     
-    # 生成摘要报告
+    # Generate summary report
     summary_file = os.path.join(log_dir, 'summary_star_repair_times.json')
     generate_summary_report(star_time_log, summary_file)
     
-    print(f"\n所有处理完成！时间记录保存在: {log_dir}")
+    print(f"\nAll processing completed! Time records saved in: {log_dir}")
 
 if __name__ == "__main__":
     main()

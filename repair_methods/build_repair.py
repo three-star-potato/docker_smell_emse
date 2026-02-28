@@ -11,14 +11,14 @@ import time
 from datetime import datetime
 
 def send_message_and_get_response(message, model_name, no_think=False, use_openai_api=False):
-    """发送消息并获取响应，支持OpenAI API和本地Ollama API"""
+    """Send message and get response, supports OpenAI API and local Ollama API"""
     if use_openai_api:
         return _call_openai_api(message, model_name)
     else:
         return _call_ollama_api(message, model_name, no_think)
 
 def _call_openai_api(message, model_name):
-    """调用OpenAI兼容API（百炼）"""
+    """Call OpenAI-compatible API (Bailian)"""
     try:
         from openai import OpenAI
         
@@ -29,7 +29,7 @@ def _call_openai_api(message, model_name):
         
         messages = [{"role": "user", "content": message}]
         
-        # 设置超时
+        # Set timeout
         def timeout_handler(signum, frame):
             raise TimeoutError("Request timed out")
         
@@ -44,11 +44,11 @@ def _call_openai_api(message, model_name):
                 temperature=0.3,
                 max_tokens=4096
             )
-            signal.alarm(0)  # 重置超时
+            signal.alarm(0)  # Reset timeout
             
             message_content = completion.choices[0].message.content
             
-            # 提取Dockerfile内容
+            # Extract Dockerfile content
             dockerfile_pattern = re.compile(r'```dockerfile(.*?)```', re.DOTALL | re.IGNORECASE)
             match = dockerfile_pattern.search(message_content)
             if match:
@@ -62,21 +62,21 @@ def _call_openai_api(message, model_name):
             print("Request timed out after 180 seconds")
             return None
         except Exception as e:
-            print(f"OpenAI API调用错误: {str(e)}")
+            print(f"OpenAI API call error: {str(e)}")
             return None
             
     except ImportError:
-        print("OpenAI库未安装，请运行: pip install openai")
+        print("OpenAI library not installed, please run: pip install openai")
         return None
     except Exception as e:
-        print(f"初始化OpenAI客户端错误: {str(e)}")
+        print(f"Error initializing OpenAI client: {str(e)}")
         return None
 
 def _call_ollama_api(message, model_name, no_think=False):
-    """调用本地Ollama API"""
+    """Call local Ollama API"""
     url = "http://localhost:11434/api/chat"
     
-    # 模型差异化控制
+    # Model differentiation control
     if no_think:
         if "qwen3" in model_name.lower():
             message = f"/no_think\n\n{message}"
@@ -94,7 +94,7 @@ def _call_ollama_api(message, model_name, no_think=False):
     }
 
     try:
-        # 设置超时
+        # Set timeout
         def timeout_handler(signum, frame):
             raise requests.exceptions.Timeout("Request timed out")
 
@@ -108,7 +108,7 @@ def _call_ollama_api(message, model_name, no_think=False):
             result = response.json()
             message_content = result['message']['content']
             
-            # 提取Dockerfile内容
+            # Extract Dockerfile content
             dockerfile_pattern = re.compile(r'```dockerfile(.*?)```', re.DOTALL | re.IGNORECASE)
             match = dockerfile_pattern.search(message_content)
             if match:
@@ -118,7 +118,7 @@ def _call_ollama_api(message, model_name, no_think=False):
                 print("No Dockerfile found in the response")
                 return None
         else:
-            print(f"API返回错误状态码: {response.status_code}")
+            print(f"API returned error status code: {response.status_code}")
             return None
 
     except requests.exceptions.Timeout:
@@ -132,17 +132,17 @@ def _call_ollama_api(message, model_name, no_think=False):
         return None
 
 def remove_comments_in_lines(folder_path):
-    """移除Dockerfile中的注释"""
-    # 遍历指定文件夹下的所有文件
+    """Remove comments in Dockerfiles"""
+    # Traverse all files in specified folder
     for filename in os.listdir(folder_path):
         filepath = os.path.join(folder_path, filename)
-        print(f"处理文件: {filename}")
+        print(f"Processing file: {filename}")
         
-        # 读取文件内容
+        # Read file content
         with open(filepath, 'r') as f:
             lines = f.readlines()
             
-        # 处理文件内容，去除每行内的注释
+        # Process file content, remove comments within each line
         new_lines = []
         for line in lines:
             line = line.rstrip()
@@ -151,15 +151,15 @@ def remove_comments_in_lines(folder_path):
                 line = line[:comment_index].rstrip()
             new_lines.append(line + '\n')
             
-        # 将处理后的内容写回文件
+        # Write processed content back to file
         with open(filepath, 'w') as f:
             f.writelines(new_lines)
             
-    print(f"已完成: {folder_path}")
+    print(f"Completed: {folder_path}")
 
 def parse_log_content(log_content):
-    """解析包含<phase>、<path>和<error>标签的日志内容"""
-    # 使用正则表达式提取各部分内容
+    """Parse log content containing <phase>, <path>, and <error> tags"""
+    # Use regular expressions to extract each part
     phase_pattern = r'<phase>(.*?)<phase>'
     path_pattern = r'<path>(.*?)<path>'
     error_pattern = r'<error>(.*?)<error>'
@@ -168,7 +168,7 @@ def parse_log_content(log_content):
     path = re.search(path_pattern, log_content)
     error = re.search(error_pattern, log_content)
 
-    # 提取匹配到的内容
+    # Extract matched content
     phase_content = phase.group(1) if phase else None
     path_content = path.group(1) if path else None
     error_content = error.group(1) if error else None
@@ -180,36 +180,36 @@ def parse_log_content(log_content):
     }
 
 def extract_original_path(full_path):
-    """提取格式：dataset_fast/随后的路径/最后文件名"""
+    """Extract format: dataset_fast/subsequent_path/final_filename"""
     parts = full_path.split('/')
     try:
-        # 找到'dataset_fast'的索引位置
+        # Find index position of 'dataset_fast'
         start_idx = parts.index('dataset_fast')
-        # 获取前两个目录和最后文件名
+        # Get first two directories and final filename
         original_path = '/'.join([
             parts[start_idx],       # dataset_fast
             parts[start_idx+1],     # ctf_dockerfile
-            parts[-1]               # 最后文件名
+            parts[-1]               # final filename
         ])
         return original_path
     except (ValueError, IndexError):
         return None
 
 def process_dockerfiles(unbuild_path, model_name="qwen3:32b", no_think=False, use_openai_api=False):
-    """处理Dockerfiles修复，支持OpenAI API"""
+    """Process Dockerfile repairs, supports OpenAI API"""
     
     with open(unbuild_path, 'r', encoding='utf-8') as file:
         unbuild_content = file.readlines()
     
-    # 创建输出目录
+    # Create output directory
     output_dir = "build_repair_result"
     
     os.makedirs(output_dir, exist_ok=True)
     
-    # 记录处理结果
+    # Record processing results
     repair_records = []
     
-    for line in tqdm(unbuild_content, desc="修复构建失败的Dockerfiles"):
+    for line in tqdm(unbuild_content, desc="Repairing build-failed Dockerfiles"):
         line = line.strip()
         if not line:
             continue
@@ -219,29 +219,29 @@ def process_dockerfiles(unbuild_path, model_name="qwen3:32b", no_think=False, us
         repair_path = parsed_log['path']
         
         if not original_path or not os.path.exists(original_path):
-            print(f"原始文件不存在: {original_path}")
+            print(f"Original file does not exist: {original_path}")
             continue
             
         if not os.path.exists(repair_path):
-            print(f"修复文件不存在: {repair_path}")
+            print(f"Repair file does not exist: {repair_path}")
             continue
         
-        # 读取文件内容
+        # Read file contents
         with open(original_path, 'r', encoding='utf-8') as file:
             original_content = file.read()
         with open(repair_path, 'r', encoding='utf-8') as file:
             repair_content = file.read()
         
-        # 确定失败阶段
+        # Determine failure stage
         last_step = parsed_log['phase'] if parsed_log['phase'] else "beginning"
         
-        # 生成输出路径
+        # Generate output path
         relative_path = os.path.relpath(repair_path, "repair_result")
         modified_filepath = os.path.join(output_dir, relative_path)
         
-        # 检查目标文件是否已存在
+        # Check if target file already exists
         if os.path.exists(modified_filepath):
-            print(f"文件已存在，跳过处理: {modified_filepath}")
+            print(f"File already exists, skipping: {modified_filepath}")
             repair_records.append({
                 'original_path': original_path,
                 'repair_path': repair_path,
@@ -252,10 +252,10 @@ def process_dockerfiles(unbuild_path, model_name="qwen3:32b", no_think=False, us
             })
             continue
 
-        # 创建输出目录
+        # Create output directory
         os.makedirs(os.path.dirname(modified_filepath), exist_ok=True)
         
-        # 构造prompt
+        # Construct prompt
         prompt = (
             f"## Dockerfile Repair Analysis\n"
             f"**Original Dockerfile**:\n```dockerfile\n{original_content}\n```\n\n"
@@ -269,29 +269,29 @@ def process_dockerfiles(unbuild_path, model_name="qwen3:32b", no_think=False, us
             "4. Format:\n```dockerfile\n...\n```"
         )
         
-        # 调用LLM进行修复
+        # Call LLM for repair
         start_time = time.time()
         modified_content = send_message_and_get_response(prompt, model_name, no_think, use_openai_api)
         repair_time = time.time() - start_time
         
-        # 保存结果
+        # Save result
         if modified_content:
             with open(modified_filepath, 'w', encoding='utf-8') as file:
                 file.write(modified_content)
             
             status = 'success'
             reason = 'LLM repair successful'
-            print(f"✅ 修复成功: {repair_path} -> {modified_filepath} ({repair_time:.2f}s)")
+            print(f"✅ Repair successful: {repair_path} -> {modified_filepath} ({repair_time:.2f}s)")
         else:
-            # 如果LLM修复失败，保存原始修复内容
+            # If LLM repair fails, save original repair content
             with open(modified_filepath, 'w', encoding='utf-8') as file:
                 file.write(repair_content)
             
             status = 'failed'
             reason = 'LLM repair failed, saved original repair'
-            print(f"❌ 修复失败: {repair_path} -> {modified_filepath} ({repair_time:.2f}s)")
+            print(f"❌ Repair failed: {repair_path} -> {modified_filepath} ({repair_time:.2f}s)")
         
-        # 记录处理结果
+        # Record processing result
         repair_records.append({
             'original_path': original_path,
             'repair_path': repair_path,
@@ -307,23 +307,23 @@ def process_dockerfiles(unbuild_path, model_name="qwen3:32b", no_think=False, us
             'timestamp': datetime.now().isoformat()
         })
     
-    # 保存处理记录
+    # Save processing records
     if repair_records:
         record_file = f"build_repair_records_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(record_file, 'w', encoding='utf-8') as f:
             json.dump(repair_records, f, indent=2, ensure_ascii=False)
-        print(f"📊 修复记录已保存: {record_file}")
+        print(f"📊 Repair records saved: {record_file}")
     
-    # 生成统计摘要
+    # Generate statistical summary
     generate_repair_summary(repair_records, output_dir)
     
-    # 移除注释
+    # Remove comments
     # remove_comments_in_lines(os.path.dirname(modified_filepath))
     
-    print("所有Dockerfiles处理完成。")
+    print("All Dockerfiles processing completed.")
 
 def generate_repair_summary(repair_records, output_dir):
-    """生成修复统计摘要"""
+    """Generate repair statistical summary"""
     if not repair_records:
         return
     
@@ -343,40 +343,40 @@ def generate_repair_summary(repair_records, output_dir):
         'timestamp': datetime.now().isoformat()
     }
     
-    # 打印摘要
-    print(f"\n📊 修复统计摘要:")
-    print(f"   总处理文件数: {summary['total_files']}")
-    print(f"   成功修复: {summary['successful_repairs']} ({summary['success_rate']}%)")
-    print(f"   修复失败: {summary['failed_repairs']}")
-    print(f"   跳过修复: {summary['skipped_repairs']}")
-    print(f"   平均修复时间: {summary['avg_repair_time']}秒")
-    print(f"   总处理时间: {summary['total_processing_time']}秒")
-    print(f"   输出目录: {output_dir}")
+    # Print summary
+    print(f"\n📊 Repair Statistical Summary:")
+    print(f"   Total files processed: {summary['total_files']}")
+    print(f"   Successful repairs: {summary['successful_repairs']} ({summary['success_rate']}%)")
+    print(f"   Failed repairs: {summary['failed_repairs']}")
+    print(f"   Skipped repairs: {summary['skipped_repairs']}")
+    print(f"   Average repair time: {summary['avg_repair_time']} seconds")
+    print(f"   Total processing time: {summary['total_processing_time']} seconds")
+    print(f"   Output directory: {output_dir}")
     
-    # 保存摘要
+    # Save summary
     summary_file = os.path.join(output_dir, "repair_summary.json")
     with open(summary_file, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
-    print(f"📄 统计摘要已保存: {summary_file}")
+    print(f"📄 Statistical summary saved: {summary_file}")
 
 def main():
     if len(sys.argv) < 2:
         print("Usage: python build_repair.py unbuild_path [model_name] [--no-think] [--use-openai-api]")
-        print("\n参数说明:")
-        print("  unbuild_path: 包含构建失败日志的文件路径")
-        print("  model_name: 模型名称 (默认: qwen3:32b)")
-        print("  --no-think: 启用无思考模式（仅对Qwen有效）")
-        print("  --use-openai-api: 使用OpenAI兼容API（百炼）")
+        print("\nParameter description:")
+        print("  unbuild_path: File path containing build failure logs")
+        print("  model_name: Model name (default: qwen3:32b)")
+        print("  --no-think: Enable no-think mode (only effective for Qwen)")
+        print("  --use-openai-api: Use OpenAI-compatible API (Bailian)")
         sys.exit(1)
     
     unbuild_path = sys.argv[1]
     
-    # 默认模型名称
+    # Default model name
     # model_name = "qwen3:32b"
     no_think = False
     use_openai_api = False
     
-    # 解析参数
+    # Parse parameters
     for i in range(2, len(sys.argv)):
         if sys.argv[i] == "--no-think":
             no_think = True
@@ -385,17 +385,16 @@ def main():
         elif not sys.argv[i].startswith("--"):
             model_name = sys.argv[i]
     
-    print(f"🔧 配置信息:")
-    print(f"  构建失败日志: {unbuild_path}")
-    print(f"  模型名称: {model_name}")
-    print(f"  无思考模式: {no_think}")
+    print(f"🔧 Configuration information:")
+    print(f"  Build failure log: {unbuild_path}")
+    print(f"  Model name: {model_name}")
+    print(f"  No-think mode: {no_think}")
     print(f"  OpenAI API: {use_openai_api}")
     
-    # 执行修复
+    # Execute repair
     process_dockerfiles(unbuild_path, model_name, no_think, use_openai_api)
 
 if __name__ == "__main__":
     main()
-
 
 # python repair_methods/build_repair.py evaluate_result/star/qwen3_235b_hd_LLM/_unbuild.txt "qwen3-235b-a22b-instruct-2507" --use-openai-api

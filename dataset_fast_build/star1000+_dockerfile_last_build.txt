@@ -1,1 +1,1 @@
-/home/zhangchenhui/docker_smell_1027/dataset/star1000+_context/zyronon/typing-word/Dockerfile
+docker_smell/dataset/star1000+_context/zyronon/typing-word/Dockerfile

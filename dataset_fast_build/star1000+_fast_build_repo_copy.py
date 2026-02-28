@@ -2,18 +2,18 @@ import os
 import shutil
 from pathlib import Path
 import sys
-# 添加上级目录到Python路径
+# Add parent directory to Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from config import PATHS, LOG_CONFIG
 
 
-# 配置参数
+# Configuration parameters
 input_log = os.path.join(PATHS['dataset_fast_build_dir'], LOG_CONFIG['image_sizes_log'])
 src_base = PATHS['root_folder']
 dst_base = os.path.join(PATHS['project_root'], 'dataset_fast', 'star1000+_context')
 
 def extract_repo_names(log_file):
-    """从log文件中提取仓库名称"""
+    """Extract repository names from log file"""
     repo_names = set()
     base_path = PATHS['root_folder']
     
@@ -22,11 +22,11 @@ def extract_repo_names(log_file):
             line = line.strip()
             if not line or ':' not in line:
                 continue
-            # 提取Dockerfile路径
+            # Extract Dockerfile path
             dockerfile_path = line.split(':')[0].strip()
-            # 确保路径以base_path开头
+            # Ensure path starts with base_path
             if dockerfile_path.startswith(base_path):
-                # 获取相对路径并分割出两级目录
+                # Get relative path and split to get two-level directory
                 rel_path = os.path.relpath(dockerfile_path, base_path)
                 parts = rel_path.split(os.sep)
                 if len(parts) >= 2:
@@ -35,12 +35,12 @@ def extract_repo_names(log_file):
     return sorted(repo_names)
 
 def safe_copy(src, dst):
-    """安全复制文件，跳过不存在的文件或链接"""
+    """Safely copy files, skip non-existent files or links"""
     try:
-        if os.path.lexists(src):  # 检查文件或链接是否存在
-            if os.path.islink(src):  # 如果是符号链接，复制链接本身
+        if os.path.lexists(src):  # Check if file or link exists
+            if os.path.islink(src):  # If symbolic link, copy the link itself
                 linkto = os.readlink(src)
-                # 如果目标文件已存在，先删除
+                # If target file already exists, delete it first
                 if os.path.exists(dst) or os.path.islink(dst):
                     os.remove(dst)
                 os.symlink(linkto, dst)
@@ -50,7 +50,7 @@ def safe_copy(src, dst):
         print(f"Warning: Skipped {src} (reason: {str(e)})")
 
 def copy_repo(src, dst):
-    """递归复制目录，跳过缺失文件和 .git"""
+    """Recursively copy directory, skip missing files and .git"""
     if not os.path.exists(src):
         print(f"Warning: Source path does not exist - {src}")
         return
@@ -62,11 +62,11 @@ def copy_repo(src, dst):
             src_path = os.path.join(src, item)
             dst_path = os.path.join(dst, item)
             
-            # 跳过.git目录
+            # Skip .git directory
             if item == '.git':
                 continue
                 
-            # 跳过一些常见的大型或不必要文件
+            # Skip some common large or unnecessary files
             if item in ['__pycache__', '.pytest_cache', 'node_modules', '.DS_Store']:
                 continue
                 
@@ -79,13 +79,13 @@ def copy_repo(src, dst):
 
 
 def copy_repos_from_log():
-    """主函数：从log文件提取仓库并复制到两个位置"""
-    # 检查log文件是否存在
+    """Main function: Extract repositories from log file and copy to two locations"""
+    # Check if log file exists
     if not os.path.exists(input_log):
         print(f"Error: Log file not found - {input_log}")
         return
     
-    # 从log文件提取仓库名称
+    # Extract repository names from log file
     print("Extracting repository names from log file...")
     repos = extract_repo_names(input_log)
     print(f"Found {len(repos)} repositories in log file")
@@ -94,10 +94,10 @@ def copy_repos_from_log():
         print("No repositories found to copy.")
         return
     
-    # 创建目标目录
+    # Create target directory
     Path(dst_base).mkdir(parents=True, exist_ok=True)
     
-    # 确保 adalflow 目录存在
+    # Ensure adalflow directory exists
     adalflow_repos_dir = os.path.join(PATHS['adalflow_root'], 'repos')
     Path(adalflow_repos_dir).mkdir(parents=True, exist_ok=True)
     
@@ -114,7 +114,7 @@ def copy_repos_from_log():
         if os.path.exists(src_repo):
             print(f"[{i}/{len(repos)}] Copying {repo_name}")
             
-            # 复制到主目标目录
+            # Copy to main target directory
             try:
                 copy_repo(src_repo, dst_repo)
                 copied_count += 1

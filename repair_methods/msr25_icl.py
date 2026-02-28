@@ -11,18 +11,18 @@ import time
 from datetime import datetime
 
 def save_time_records(time_records, filename, mode='w'):
-    """保存时间记录到文件"""
+    """Save time records to file"""
     if not time_records:
         return
     
-    # 确保目录存在
+    # Ensure directory exists
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     
-    # 确定文件格式
+    # Determine file format
     if filename.endswith('.json'):
         with open(filename, mode, encoding='utf-8') as f:
             if mode == 'a' and os.path.exists(filename) and os.path.getsize(filename) > 0:
-                # 读取现有数据并追加
+                # Read existing data and append
                 try:
                     f.seek(0)
                     existing_data = json.load(f)
@@ -39,7 +39,7 @@ def save_time_records(time_records, filename, mode='w'):
     print(f"✅ Time records saved: {filename}")
 
 def generate_summary_report(time_log_file, output_file=None):
-    """生成修复时间摘要报告"""
+    """Generate repair time summary report"""
     if not os.path.exists(time_log_file):
         print(f"Time log file not found: {time_log_file}")
         return
@@ -54,7 +54,7 @@ def generate_summary_report(time_log_file, output_file=None):
         print("No records found in time log")
         return
     
-    # 分析数据
+    # Analyze data
     successful_repairs = [r for r in records if r.get('status') == 'success']
     failed_repairs = [r for r in records if r.get('status') in ['error', 'timeout']]
     
@@ -67,21 +67,21 @@ def generate_summary_report(time_log_file, output_file=None):
         'timestamp': datetime.now().isoformat()
     }
     
-    # 打印摘要
+    # Print summary
     print("\n" + "="*50)
-    print("修复时间摘要报告")
+    print("Repair Time Summary Report")
     print("="*50)
-    print(f"总处理文件数: {summary['total_files']}")
-    print(f"成功修复: {summary['successful_repairs']}")
-    print(f"修复失败: {summary['failed_repairs']}")
-    print(f"平均修复时间: {summary['avg_repair_time']}秒")
-    print(f"总处理时间: {summary['total_processing_time']}秒")
+    print(f"Total files processed: {summary['total_files']}")
+    print(f"Successful repairs: {summary['successful_repairs']}")
+    print(f"Failed repairs: {summary['failed_repairs']}")
+    print(f"Average repair time: {summary['avg_repair_time']} seconds")
+    print(f"Total processing time: {summary['total_processing_time']} seconds")
     
-    # 保存摘要报告
+    # Save summary report
     if output_file:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
-        print(f"摘要报告已保存至: {output_file}")
+        print(f"Summary report saved to: {output_file}")
     
     return summary
 
@@ -91,16 +91,16 @@ def generate_summary_report(time_log_file, output_file=None):
 from openai import OpenAI
 
 def send_message_and_get_response(message, model_name, no_think=False, use_openai_api=False):
-    # 判断使用哪种API
+    # Determine which API to use
     if use_openai_api:
-        # 使用OpenAI兼容API（百炼）
+        # Use OpenAI-compatible API (Bailian)
         return _call_openai_api(message, model_name)
     else:
-        # 使用本地Ollama API
+        # Use local Ollama API
         return _call_ollama_api(message, model_name, no_think)
 
 def _call_openai_api(message, model_name):
-    """调用OpenAI兼容API（百炼）"""
+    """Call OpenAI-compatible API (Bailian)"""
     try:
         client = OpenAI(
             api_key="you_api",
@@ -114,7 +114,7 @@ def _call_openai_api(message, model_name):
             {"role": "user", "content": message}
         ]
         
-        # 设置超时
+        # Set timeout
         def timeout_handler(signum, frame):
             raise TimeoutError("Request timed out")
         
@@ -129,30 +129,30 @@ def _call_openai_api(message, model_name):
                 temperature=0.3,
                 max_tokens=4096
             )
-            signal.alarm(0)  # 重置超时
+            signal.alarm(0)  # Reset timeout
             
             message_content = completion.choices[0].message.content
-            print("原始响应:", message_content)
+            print("Raw response:", message_content)
             
-            # 使用统一的响应解析函数
+            # Use unified response parsing function
             return _parse_response_content(message_content)
             
         except TimeoutError:
             print("Request timed out after 180 seconds")
             return None
         except Exception as e:
-            print(f"OpenAI API调用错误: {str(e)}")
+            print(f"OpenAI API call error: {str(e)}")
             return None
             
     except Exception as e:
-        print(f"初始化OpenAI客户端错误: {str(e)}")
+        print(f"Error initializing OpenAI client: {str(e)}")
         return None
 
 def _call_ollama_api(message, model_name, no_think=False):
-    """调用本地Ollama API"""
+    """Call local Ollama API"""
     url = "http://localhost:11434/api/chat"
     
-    # 模型差异化控制
+    # Model differentiation control
     if no_think:
         if "qwen3" in model_name.lower():
             message = f"/no_think\n\n{message}"
@@ -173,7 +173,7 @@ def _call_ollama_api(message, model_name, no_think=False):
     }
 
     try:
-        # 设置超时
+        # Set timeout
         def timeout_handler(signum, frame):
             raise requests.exceptions.Timeout("Request timed out")
 
@@ -181,17 +181,17 @@ def _call_ollama_api(message, model_name, no_think=False):
         signal.alarm(180)
 
         response = requests.post(url, json=payload)
-        signal.alarm(0)  # 重置超时
+        signal.alarm(0)  # Reset timeout
 
         if response.status_code == 200:
             result = response.json()
             message_content = result['message']['content']
-            print("原始响应:", message_content)
+            print("Raw response:", message_content)
             
-            # 使用统一的响应解析函数
+            # Use unified response parsing function
             return _parse_response_content(message_content)
         else:
-            print(f"API返回错误状态码: {response.status_code}")
+            print(f"API returned error status code: {response.status_code}")
             return None
 
     except requests.exceptions.Timeout:
@@ -205,27 +205,27 @@ def _call_ollama_api(message, model_name, no_think=False):
         return None
 
 def _parse_response_content(message_content):
-    """统一的响应内容解析函数"""
-    # 方法1：提取JSON代码块
+    """Unified response content parsing function"""
+    # Method 1: Extract JSON code block
     try:
         data = json.loads(message_content)
         dockerfile_content = data.get("Refactored Dockerfile")
         if dockerfile_content:
-            print("方法1成功：提取JSON代码块")
+            print("Method 1 success: extracted JSON code block")
             return dockerfile_content
     except json.JSONDecodeError as e:
-        print(f"JSON代码块解析错误: {e}")
+        print(f"JSON code block parsing error: {e}")
     
-    # 方法2：解析带标题和代码块的格式
-    # 匹配格式：**Refactored Dockerfile:** 后跟 ```dockerfile 代码块
+    # Method 2: Parse format with title and code block
+    # Match format: **Refactored Dockerfile:** followed by ```dockerfile code block
     pattern_title_codeblock = r'\*\*Refactored Dockerfile:\*\*\s*```(?:dockerfile)?\s*(.*?)\s*```'
     match = re.search(pattern_title_codeblock, message_content, re.DOTALL)
     if match:
         dockerfile_content = match.group(1).strip()
-        print("方法2成功：解析带标题的代码块格式")
+        print("Method 2 success: parsed format with title and code block")
         return dockerfile_content
     
-    # 方法3：宽松的正则表达式匹配
+    # Method 3: Flexible regular expression matching
     patterns = [
         r'"Refactored Dockerfile":\s*"((?:[^"\\]|\\.)*)"\s*}',
         r'"Refactored Dockerfile"\s*:\s*"([^"]*)"\s*}',
@@ -235,21 +235,21 @@ def _parse_response_content(message_content):
         match = re.search(pattern, message_content, re.DOTALL)
         if match:
             dockerfile_content = match.group(1)
-            # 处理转义字符
+            # Handle escape characters
             dockerfile_content = dockerfile_content.replace('\\n', '\n').replace('\\"', '"').replace('\\\\', '\\')
-            print(f"方法3.{i+1}成功：正则表达式匹配")
+            print(f"Method 3.{i+1} success: regular expression match")
             return dockerfile_content
     
-    # 方法4：如果所有方法都失败，返回原始内容让后续处理
-    print("所有解析方法都失败，返回原始响应内容")
+    # Method 4: If all methods fail, return original content for subsequent processing
+    print("All parsing methods failed, returning raw response content")
     return message_content
 
-def process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_file=None, no_think=False,use_openai=False):
-    """处理Dockerfiles并记录时间"""
+def process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_file=None, no_think=False, use_openai=False):
+    """Process Dockerfiles and record time"""
     if not os.path.exists(mode_dir):    
         os.makedirs(mode_dir)
     
-    # 时间记录数据结构
+    # Time record data structure
     time_records = []
     
     # Read data from the specified JSON file
@@ -260,7 +260,7 @@ def process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_fi
     for dockerfile in tqdm(sorted(data_json, key=lambda x: x['dockerfile_path'])):
         dockerfile_path = dockerfile["dockerfile_path"]
         
-        # 记录开始时间
+        # Record start time
         start_time = time.time()
         
         with open(dockerfile_path, 'r', encoding='utf-8') as file:
@@ -268,14 +268,14 @@ def process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_fi
         
         modified_filepath = dockerfile_path.replace(root_folder, mode_dir)
         
-        # 确保输出目录存在
+        # Ensure output directory exists
         os.makedirs(os.path.dirname(modified_filepath), exist_ok=True)
         
-        # 移除跳过无issues文件的逻辑，所有文件都处理
+        # Remove logic to skip files with no issues, process all files
         if os.path.exists(modified_filepath):
             print(f"Modified Dockerfile '{modified_filepath}' already exists. Skipping.")
             
-            # 记录跳过信息
+            # Record skip information
             end_time = time.time()
             repair_time = end_time - start_time
             time_record = {
@@ -319,9 +319,9 @@ def process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_fi
 Ensure that the final refactored Dockerfile is fully functional, ready to be built, and optimized according to the refactoring techniques listed. The response should be clear, concise, and directly applicable to the provided Dockerfile.
 """
 
-        modified_content = send_message_and_get_response(prompt, mode_name, no_think,use_openai)
+        modified_content = send_message_and_get_response(prompt, mode_name, no_think, use_openai)
         
-        # 记录结束时间
+        # Record end time
         end_time = time.time()
         repair_time = end_time - start_time
         
@@ -329,7 +329,7 @@ Ensure that the final refactored Dockerfile is fully functional, ready to be bui
             with open(modified_filepath, 'w', encoding='utf-8') as file:
                 file.write(modified_content)
             
-            # 记录成功信息
+            # Record success information
             time_record = {
                 'dockerfile': dockerfile_path,
                 'repaired_file': modified_filepath,
@@ -347,7 +347,7 @@ Ensure that the final refactored Dockerfile is fully functional, ready to be bui
             with open(modified_filepath, 'w', encoding='utf-8') as file:
                 file.write(original_content)
             
-            # 记录失败信息
+            # Record failure information
             time_record = {
                 'dockerfile': dockerfile_path,
                 'repaired_file': modified_filepath,
@@ -360,7 +360,7 @@ Ensure that the final refactored Dockerfile is fully functional, ready to be bui
             }
             time_records.append(time_record)
     
-    # 保存时间记录
+    # Save time records
     if time_log_file:
         save_time_records(time_records, time_log_file)
     
@@ -368,33 +368,33 @@ Ensure that the final refactored Dockerfile is fully functional, ready to be bui
     return time_records
 
 def remove_comments_in_lines(folder_path):
-    """移除Dockerfile中的注释"""
-    # 遍历指定文件夹下的所有文件
+    """Remove comments in Dockerfiles"""
+    # Traverse all files in specified folder
     for filename in os.listdir(folder_path):
         filepath = os.path.join(folder_path, filename)
-        # 只处理以 Dockerfile 开头的文件
+        # Only process files starting with Dockerfile
        
-        print(f"处理文件: {filename}")
-            # 读取文件内容
+        print(f"Processing file: {filename}")
+            # Read file content
         with open(filepath, 'r') as f:
             lines = f.readlines()
             
-            # 处理文件内容，去除每行内的注释
+            # Process file content, remove comments within each line
         new_lines = []
         for line in lines:
-            # 去除行尾的空白字符
+            # Remove trailing whitespace
             line = line.rstrip()
-                # 查找注释符号 '#' 的位置
+                # Find comment symbol '#' position
             comment_index = line.find('#')
             if comment_index != -1:
-                line = line[:comment_index].rstrip()  # 去除注释部分后的内容
-            new_lines.append(line + '\n')  # 添加换行符保持原有格式
+                line = line[:comment_index].rstrip()  # Remove content after comment
+            new_lines.append(line + '\n')  # Add newline to maintain original format
             
-            # 将处理后的内容写回文件
+            # Write processed content back to file
         with open(filepath, 'w') as f:
             f.writelines(new_lines)
             
-    print(f"已完成: {folder_path}")
+    print(f"Completed: {folder_path}")
 
 def main():
     if len(sys.argv) < 5:
@@ -406,15 +406,15 @@ def main():
     mode_name = sys.argv[3]
     mode_dir = sys.argv[4]
     
-    # 设置时间记录目录
+    # Set time log directory
     time_log_dir = 'time/star/msricl'
     if len(sys.argv) > 5 and not sys.argv[5].startswith('--'):
         time_log_dir = sys.argv[5]
     
-    # 创建时间记录目录
+    # Create time log directory
     os.makedirs(time_log_dir, exist_ok=True)
     
-    # 生成时间记录文件名（基于模型名称和模式）
+    # Generate time log filename (based on model name and mode)
     model_safe_name = mode_name.replace(':', '_').replace('/', '_')
     think_suffix = '_nothink' if '--no-think' in sys.argv else ''
     time_log_file = os.path.join(time_log_dir, f'hd_llm_repair_{model_safe_name}{think_suffix}.json')
@@ -423,17 +423,17 @@ def main():
     no_think = '--no-think' in sys.argv
     use_openai = '--use-openai-api' in sys.argv
     
-    # 执行修复
-    repair_times = process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_file, no_think,use_openai)
+    # Execute repair
+    repair_times = process_dockerfiles(json_path, root_folder, mode_name, mode_dir, time_log_file, no_think, use_openai)
     
-    # 移除注释
+    # Remove comments
     # remove_comments_in_lines(mode_dir)
     
-    # 生成摘要报告
+    # Generate summary report
     summary_file = os.path.join(time_log_dir, f'summary_hd_llm_repair_{model_safe_name}{think_suffix}.json')
     generate_summary_report(time_log_file, summary_file)
     
-    print(f"\n所有处理完成！时间记录保存在: {time_log_dir}")
+    print(f"\nAll processing completed! Time records saved in: {time_log_dir}")
 
 if __name__ == "__main__":
     main()

@@ -7,7 +7,7 @@ import os
 def get_repo_address(file):
     with open(file, 'r', encoding='utf-8') as f:
         data = json.load(f)
-        
+    
     repo_address = set()
     for item in data['items']:
         repo_address.add(item['name'])
@@ -21,7 +21,7 @@ def check_for_dockerfile_recursive(repo_owner, repo_name, path="", depth=0):
         'Accept': 'application/vnd.github.v3+json'
     }
 
-    time.sleep(1)  # 避免GitHub API速率限制
+    time.sleep(1)  # Avoid GitHub API rate limiting
     print(url)
 
     try:
@@ -38,12 +38,12 @@ def check_for_dockerfile_recursive(repo_owner, repo_name, path="", depth=0):
 
     except requests.exceptions.RequestException as e:
         print(f"Request failed: {e}")
-        raise  # 重新抛出异常，让外层处理
+        raise  # Re-raise the exception for outer handling
 
     return False
 
 def write_repositories_with_dockerfile(repo_set, output_file, output_file_without_dockerfile, output_file_failed):
-    # 加载已经确认有Dockerfile的仓库
+    # Load repositories already confirmed to have Dockerfile
     existing_with_docker = set()
     try:
         with open(output_file, 'r', encoding='utf-8') as f:
@@ -52,7 +52,7 @@ def write_repositories_with_dockerfile(repo_set, output_file, output_file_withou
     except FileNotFoundError:
         pass
     
-    # 加载已经确认没有Dockerfile的仓库
+    # Load repositories already confirmed to not have Dockerfile
     existing_without_docker = set()
     try:
         with open(output_file_without_dockerfile, 'r', encoding='utf-8') as f:
@@ -61,7 +61,7 @@ def write_repositories_with_dockerfile(repo_set, output_file, output_file_withou
     except FileNotFoundError:
         pass
     
-    # 加载之前失败的仓库
+    # Load previously failed repositories
     failed_repos = set()
     try:
         with open(output_file_failed, 'r', encoding='utf-8') as f:
@@ -70,14 +70,14 @@ def write_repositories_with_dockerfile(repo_set, output_file, output_file_withou
     except FileNotFoundError:
         pass
     
-    # 计算需要实际检查的仓库数量
+    # Calculate the number of repositories that actually need checking
     repos_to_check = [repo for repo in repo_set 
                      if repo not in existing_with_docker 
                      and repo not in existing_without_docker]
     
-    # 添加之前失败的仓库到检查列表
+    # Add previously failed repositories to the check list
     repos_to_check.extend(failed_repos)
-    repos_to_check = list(set(repos_to_check))  # 去重
+    repos_to_check = list(set(repos_to_check))  # Remove duplicates
     
     total_to_check = len(repos_to_check)
     print(f"\nTotal repositories to check: {total_to_check}")
@@ -85,19 +85,19 @@ def write_repositories_with_dockerfile(repo_set, output_file, output_file_withou
     print(f"Already confirmed without Dockerfile: {len(existing_without_docker)}")
     print(f"Previously failed checks: {len(failed_repos)}")
     
-    # 准备写入新发现的仓库
+    # Prepare to write newly discovered repositories
     docker_addresses = set()
     no_docker_addresses = set()
     new_failed_repos = set()
 
-    # 清空失败文件，重新记录
+    # Clear the failure file and re-record
     open(output_file_failed, 'w').close()
 
     with open(output_file, 'a', encoding='utf-8') as f_success, \
          open(output_file_without_dockerfile, 'a', encoding='utf-8') as f_without_dockerfile, \
          open(output_file_failed, 'a', encoding='utf-8') as f_failed:
         
-        # 使用tqdm显示进度，并设置总数
+        # Use tqdm to show progress, setting the total number
         progress_bar = tqdm(repos_to_check, desc="Checking repositories", unit="repo")
         for repo in progress_bar:
             try:
@@ -133,7 +133,7 @@ def write_repositories_with_dockerfile(repo_set, output_file, output_file_withou
     
     return docker_addresses, no_docker_addresses, new_failed_repos
 
-# 主程序
+# Main program
 print("Starting Dockerfile detection...")
 ctf = get_repo_address('dataset_build/star1000+.json')
 print(f"\nTotal repositories in input: {len(ctf)}")
@@ -142,7 +142,7 @@ output_file = 'dataset_build/star1000+_repos_with_dockerfile.txt'
 output_file_without_dockerfile = 'dataset_build/star1000+_repos_without_dockerfile.txt'
 output_file_failed = 'dataset_build/star1000+_repos_failed_checks.txt'
 
-# 确保输出目录存在
+# Ensure output directory exists
 os.makedirs('dataset_build', exist_ok=True)
 
 docker_addresses, no_docker_addresses, failed_repos = write_repositories_with_dockerfile(

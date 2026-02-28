@@ -21,7 +21,7 @@ def run_hadolint(dockerfile_path):
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         output = result.stdout.strip()
         if not output:
-            return []  # 如果没有输出，返回空列表
+            return []  
         issues = [line.strip() for line in output.splitlines() if line.strip()]
         return issues
     except subprocess.CalledProcessError as e:
@@ -34,7 +34,7 @@ def run_hadolint(dockerfile_path):
             global count 
             count=count+1
             print(count)
-            return issues  # 计算一下有多少格式错误
+            return issues  
 
 def analyze_dockerfiles(root_folder):
     dockerfiles = find_dockerfiles(root_folder)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     root_folder = sys.argv[1]
     output_file = sys.argv[2]
     
-    # 检查输出文件是否已存在  
+    
     if os.path.exists(output_file):  
         print(f"The output file '{output_file}' already exists. Skipping analysis and writing.")  
     else:  
